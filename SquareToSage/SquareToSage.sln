@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SquareToSage", "SquareToSage.dtproj", "{B567D2C4-5A81-4E6A-9A34-1532FEF269CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B567D2C4-5A81-4E6A-9A34-1532FEF269CF}.Development|Default.ActiveCfg = Development
+		{B567D2C4-5A81-4E6A-9A34-1532FEF269CF}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE5953B9-3A48-43FB-B1E4-FEC03A8AF016}
+	EndGlobalSection
+EndGlobal
