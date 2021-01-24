@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SquareToSageWOReport"
   DTS:PackageType="5"
-  DTS:VersionBuild="300"
-  DTS:VersionGUID="{7107BFD8-137D-4D21-9E71-FADF473D83D1}">
+  DTS:VersionBuild="314"
+  DTS:VersionGUID="{862BC4F8-6C53-4F5D-9E26-02ED4481A391}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1317,7 +1317,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAYpVcqFRT2StwPW+KuM3NtAAAAAASAAACgAAAAEAAAAMlmOMLgsneRIzGpH1k47oU4AAAAIHgx7X92r4sletFZwLbNrVF+7y8qmtXiguKEsL9F9kpTu1MnIGTR2ftPtFIkKKxn2K6foTezPCQUAAAAFHchzmTligNwCjrrLfzsji/xdfM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADqdIU3uSk0JichfVHPy4vuAAAAAASAAACgAAAAEAAAAMvR8AJ7I0bxvyjWsBzQ04s4AAAAAzlmM6/2I+hWtw6YwTOVBVKDmYC4DWwmLZ/nXft7tc67xgFmcpbq9v429pPOrmrpmzoRmewL2I4UAAAAOL2Mp19LtCkQybK4wJTRqYvj4X0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1332,7 +1332,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABsClZVqtYEh9tsW85eG/ZgAAAAAASAAACgAAAAEAAAAOUKftNRDl+mIhh6cLSRilo4AAAA33NPE5hFaDEWOBuJIjkAbge7veCFHKEOZJLZI9O3nqbNYxh+lGEgaSM4SDaJYbO5x9i+9ExxmhkUAAAAuyc0GJLZb3dKGu1g+Po4Zu7E5m4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABsIwifEy2WjE+88m3TWYFoAAAAAASAAACgAAAAEAAAAPXCzx6vgU6siHmYg1Avmlo4AAAAv2/tMHbXWLnfRViVV25sZt4lfru4iXsPSbDgsMlMa4eZU5M3S7VG5dbSd8y9LP4OuVi1p1dX680UAAAAjBxrGI0SAlE2yrGfVJsaNX1E8rc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1347,7 +1347,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACSKftFqMz3mzYyrfZzhC6pAAAAAASAAACgAAAAEAAAABZFdlXXbI9FGLsXdZkyTV5AAAAAAxfvofio3a7jMj/EZyrHHv14T71n3G2aZ8i4VEDkBbQUpracTCuU7u/cuWcBhSdx6jqDacWD7lJY1UmtHSRgvhQAAAAojIy07fVfOVaX5gdi3mhgqOFGaw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAQTD4P+Shvdo0ZPDJFYLhmAAAAAASAAACgAAAAEAAAAJtaKePSo8Fub6kr7cwQ1vVAAAAAbs0fJtMQtocZaz4HqxBsvVMKnoigosfS/QeWBtUXKy4UScgnyIncLbMR8XuALoFzM8ZQe2hU7WjKk3r4Qf997xQAAACT8fQJ1D/+xJR/xpyyEYVW5rRb8g</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -8168,7 +8168,6 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
       DTS:refId="Package\Execute Batch File that start VI Job in Sage"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
-      DTS:Disabled="True"
       DTS:DTSID="{3EC31C03-A217-43E7-9EA3-2DA1EC10DC2D}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -9682,6 +9681,530 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
               version="1">
               <components>
                 <component
+                  refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="KingswaySoft Inc.; http://www.kingswaysoft.com; support@kingswaysoft.com; Copyright (c) 2020 KingswaySoft Inc."
+                  description="Convert data types."
+                  name="Convert Value to Decimal"
+                  usesDispositions="true">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">KingswaySoft.IntegrationToolkit.ProductivityPack.PremiumConversionComponent</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="IgnoreFailure"
+                      hasSideEffects="true"
+                      name="Primary Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[_RowIndex]"
+                          cachedDataType="i8"
+                          cachedName="_RowIndex"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[_RowIndex]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[_RowIndex]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[_RowIndex]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[_ParentKeyField]"
+                          cachedDataType="i8"
+                          cachedName="_ParentKeyField"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[_ParentKeyField]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[_ParentKeyField]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[_ParentKeyField]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[id]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="id"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[id]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[id]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[id]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[variantId]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="variantId"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[variantId]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[variantId]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[variantId]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[sku]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="sku"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[sku]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[sku]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[sku]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[productId]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="productId"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[productId]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[productId]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[productId]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[productName]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="productName"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[productName]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[productName]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[productName]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[quantity]"
+                          cachedDataType="i8"
+                          cachedName="quantity"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[quantity]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[quantity]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[quantity]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[value]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="value"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[value]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[value]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[value]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[currency]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="currency"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[currency]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[currency]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[currency]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[customizations]"
+                          cachedDataType="nText"
+                          cachedName="customizations"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[customizations]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[customizations]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[customizations]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[imageUrl]"
+                          cachedDataType="wstr"
+                          cachedLength="4000"
+                          cachedName="imageUrl"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[imageUrl]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[imageUrl]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[imageUrl]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[lineItemType]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="lineItemType"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[lineItemType]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[lineItemType]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[lineItemType]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[consku]"
+                          cachedDataType="wstr"
+                          cachedLength="15"
+                          cachedName="consku"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output].Columns[consku]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[consku]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[consku]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[convRowID]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="convRowID"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ConvertRowIndex.Outputs[Data Conversion Output].Columns[convRowID]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[convRowID]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[convRowID]}</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input].Columns[SquareOrderNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="15"
+                          cachedName="SquareOrderNumber"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber.Outputs[Derived Column Output].Columns[SquareOrderNumber]">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="ErrorOutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[SquareOrderNumber]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              name="OutputColumnLineageId">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]}</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output]"
+                      isErrorOut="true"
+                      name="Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[ErrorMessage]"
+                          dataType="wstr"
+                          length="2048"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[ErrorMessage]"
+                          name="ErrorMessage" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[_RowIndex]"
+                          dataType="i8"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[_RowIndex]"
+                          name="_RowIndex" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[_ParentKeyField]"
+                          dataType="i8"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[_ParentKeyField]"
+                          name="_ParentKeyField" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[id]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[variantId]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[variantId]"
+                          name="variantId" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[sku]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[sku]"
+                          name="sku" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[productId]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[productId]"
+                          name="productId" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[productName]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[productName]"
+                          name="productName" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[quantity]"
+                          dataType="i8"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[quantity]"
+                          name="quantity" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[value]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[value]"
+                          name="value" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[currency]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[currency]"
+                          name="currency" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[customizations]"
+                          dataType="nText"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[customizations]"
+                          name="customizations" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[imageUrl]"
+                          dataType="wstr"
+                          length="4000"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[imageUrl]"
+                          name="imageUrl" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[lineItemType]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[lineItemType]"
+                          name="lineItemType" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[consku]"
+                          dataType="wstr"
+                          length="15"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[consku]"
+                          name="consku" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[convRowID]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[convRowID]"
+                          name="convRowID" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[SquareOrderNumber]"
+                          dataType="wstr"
+                          length="15"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Error Output].Columns[SquareOrderNumber]"
+                          name="SquareOrderNumber" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output]"
+                      name="Default Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[_RowIndex]"
+                          dataType="i8"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[_RowIndex]"
+                          name="_RowIndex" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[_ParentKeyField]"
+                          dataType="i8"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[_ParentKeyField]"
+                          name="_ParentKeyField" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[id]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[variantId]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[variantId]"
+                          name="variantId" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[sku]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[sku]"
+                          name="sku" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[productId]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[productId]"
+                          name="productId" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[productName]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[productName]"
+                          name="productName" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[quantity]"
+                          dataType="i8"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[quantity]"
+                          name="quantity" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[value]"
+                          dataType="numeric"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[value]"
+                          name="value"
+                          precision="8"
+                          scale="6">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="FormatString"
+                              name="FormatString" />
+                            <property
+                              dataType="System.Boolean"
+                              description="IgnoreCastException"
+                              name="IgnoreCastException">true</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[currency]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[currency]"
+                          name="currency" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[customizations]"
+                          dataType="nText"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[customizations]"
+                          name="customizations" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[imageUrl]"
+                          dataType="wstr"
+                          length="4000"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[imageUrl]"
+                          name="imageUrl" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[lineItemType]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[lineItemType]"
+                          name="lineItemType" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[consku]"
+                          dataType="wstr"
+                          length="15"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[consku]"
+                          name="consku" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[convRowID]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[convRowID]"
+                          name="convRowID" />
+                        <outputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]"
+                          dataType="wstr"
+                          length="15"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]"
+                          name="SquareOrderNumber" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
                   refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ConvertRowIndex"
                   componentClassID="Microsoft.DataConvert"
                   contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -9825,7 +10348,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                     <input
                       refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
@@ -9834,28 +10357,29 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                           cachedDataType="i8"
                           cachedName="quantity"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].ExternalColumns[QuantityOrdered]"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[quantity]" />
-                        <inputColumn
-                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].Columns[value]"
-                          cachedDataType="wstr"
-                          cachedLength="50"
-                          cachedName="value"
-                          externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[value]" />
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[quantity]" />
                         <inputColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].Columns[SquareOrderNumber]"
                           cachedDataType="wstr"
                           cachedLength="15"
                           cachedName="SquareOrderNumber"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].ExternalColumns[SquareOrderNumber]"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber.Outputs[Derived Column Output].Columns[SquareOrderNumber]" />
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]" />
                         <inputColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].Columns[consku]"
                           cachedDataType="wstr"
                           cachedLength="15"
                           cachedName="consku"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].ExternalColumns[ItemCode]"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output].Columns[consku]" />
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[consku]" />
+                        <inputColumn
+                          refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].Columns[value]"
+                          cachedDataType="numeric"
+                          cachedName="value"
+                          cachedPrecision="8"
+                          cachedScale="6"
+                          externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[value]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -10684,7 +11208,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[value]"
                           dataType="wstr"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].ExternalColumns[value]"
-                          length="50"
+                          length="255"
                           lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[value]"
                           name="value"
                           truncationRowDisposition="FailComponent" />
@@ -10762,7 +11286,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                         <externalMetadataColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].ExternalColumns[value]"
                           dataType="wstr"
-                          length="50"
+                          length="255"
                           name="value" />
                         <externalMetadataColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].ExternalColumns[currency]"
@@ -11168,7 +11692,7 @@ where [refTable].[ItemCode] = ? and [refTable].[convCustomerPONumber] = ?</prope
                           cachedDataType="wstr"
                           cachedLength="15"
                           cachedName="SquareOrderNumber"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber.Outputs[Derived Column Output].Columns[SquareOrderNumber]">
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -11185,7 +11709,7 @@ where [refTable].[ItemCode] = ? and [refTable].[convCustomerPONumber] = ?</prope
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="sku"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[sku]">
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[sku]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -11373,7 +11897,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output].Columns[consku]};#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber.Outputs[Derived Column Output].Columns[SquareOrderNumber]};</property>
+                      name="ParameterMap">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[consku]};#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -11401,7 +11925,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                           cachedDataType="wstr"
                           cachedLength="15"
                           cachedName="SquareOrderNumber"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber.Outputs[Derived Column Output].Columns[SquareOrderNumber]">
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -11418,7 +11942,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                           cachedDataType="wstr"
                           cachedLength="15"
                           cachedName="consku"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output].Columns[consku]">
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[consku]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -11604,14 +12128,14 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                           cachedLength="50"
                           cachedName="sku"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Line Fields.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[sku]" />
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[sku]" />
                         <inputColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Line Fields.Inputs[OLE DB Command Input].Columns[SquareOrderNumber]"
                           cachedDataType="wstr"
                           cachedLength="15"
                           cachedName="SquareOrderNumber"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Line Fields.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber.Outputs[Derived Column Output].Columns[SquareOrderNumber]" />
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -11721,14 +12245,14 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                           cachedLength="50"
                           cachedName="sku"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Tries.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[sku]" />
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[sku]" />
                         <inputColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Tries.Inputs[OLE DB Command Input].Columns[SquareOrderNumber]"
                           cachedDataType="wstr"
                           cachedLength="15"
                           cachedName="SquareOrderNumber"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Tries.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber.Outputs[Derived Column Output].Columns[SquareOrderNumber]" />
+                          lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output].Columns[SquareOrderNumber]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -11799,13 +12323,18 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                   name="Data Conversion Output"
                   startId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ConvertRowIndex.Outputs[Data Conversion Output]" />
                 <path
+                  refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Default Output]"
+                  endId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Line in Sage Sales Order.Inputs[Lookup Input]"
+                  name="Default Output"
+                  startId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Outputs[Default Output]" />
+                <path
                   refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output]"
                   endId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ConvertRowIndex.Inputs[Data Conversion Input]"
                   name="Derived Column Output"
                   startId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output1]"
-                  endId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Line in Sage Sales Order.Inputs[Lookup Input]"
+                  endId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal.Inputs[Primary Input]"
                   name="Derived Column Output"
                   startId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber.Outputs[Derived Column Output]" />
                 <path
@@ -11825,14 +12354,14 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                   startId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Staged?.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output]"
-                  endId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Staged?.Inputs[Lookup Input]"
-                  name="Lookup No Match Output"
-                  startId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Line in Sage Sales Order.Outputs[Lookup No Match Output]" />
-                <path
-                  refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output1]"
                   endId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input]"
                   name="Lookup No Match Output"
                   startId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Staged?.Outputs[Lookup No Match Output]" />
+                <path
+                  refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output1]"
+                  endId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Staged?.Inputs[Lookup Input]"
+                  name="Lookup No Match Output"
+                  startId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Line in Sage Sales Order.Outputs[Lookup No Match Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -22732,19 +23261,19 @@ WHERE SquareOrderNumber = ? </property>
         <NodeLayout
           Size="120,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Staged?"
-          TopLeft="263,424" />
+          TopLeft="261,385" />
         <NodeLayout
           Size="151,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode"
-          TopLeft="421,96" />
+          TopLeft="411,74.75" />
         <NodeLayout
           Size="195,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber"
-          TopLeft="400,227" />
+          TopLeft="398.75,209.5" />
         <NodeLayout
           Size="199,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql"
-          TopLeft="30.166669808328,543.473683824169" />
+          TopLeft="32.166669808328,514.973683824169" />
         <NodeLayout
           Size="171,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Line Fields"
@@ -22760,251 +23289,157 @@ WHERE SquareOrderNumber = ? </property>
         <NodeLayout
           Size="202,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Line in Sage Sales Order"
-          TopLeft="413,307" />
+          TopLeft="427.125,335.25" />
         <NodeLayout
           Size="166,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ConvertRowIndex"
-          TopLeft="406.166669808328,160.473683824169" />
-        <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output1]"
-          TopLeft="304.333333333333,466">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-174.666663525005,77.473683824169"
-              Start="0,0"
-              End="-174.666663525005,69.973683824169">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.6011078756479" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.6011078756479"
-                    Point2="0,31.6011078756479"
-                    Point3="-4,31.6011078756479" />
-                  <mssgle:LineSegment
-                    End="-170.666663525005,31.6011078756479" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-170.666663525005,31.6011078756479"
-                    Point2="-174.666663525005,31.6011078756479"
-                    Point3="-174.666663525005,35.6011078756479" />
-                  <mssgle:LineSegment
-                    End="-174.666663525005,69.973683824169" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-152.008370825002,36.6011078756479,129.350078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="404.916669808328,142.973683824169" />
         <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output]"
-          TopLeft="481.666666666667,349">
+          TopLeft="302.333333333333,427">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-158.666666666667,75"
+              EndConnector="-170.666663525005,87.973683824169"
               Start="0,0"
-              End="-158.666666666667,67.5">
+              End="-170.666663525005,80.473683824169">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.3536345776031" />
+                    End="0,31.88400261249" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.3536345776031"
-                    Point2="0,30.3536345776031"
-                    Point3="-4,30.3536345776031" />
+                    Point1="0,31.88400261249"
+                    Point2="0,35.88400261249"
+                    Point3="-4,35.88400261249" />
                   <mssgle:LineSegment
-                    End="-154.666666666667,30.3536345776031" />
+                    End="-166.666663525005,35.88400261249" />
                   <mssgle:CubicBezierSegment
-                    Point1="-154.666666666667,30.3536345776031"
-                    Point2="-158.666666666667,30.3536345776031"
-                    Point3="-158.666666666667,34.3536345776031" />
+                    Point1="-166.666663525005,35.88400261249"
+                    Point2="-170.666663525005,35.88400261249"
+                    Point3="-170.666663525005,39.88400261249" />
                   <mssgle:LineSegment
-                    End="-158.666666666667,67.5" />
+                    End="-170.666663525005,80.473683824169" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-135.139720052084,35.3536345776031,111.6127734375,11.609375"
+              BoundingBox="-141.139718481253,40.88400261249,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup Match Output1]"
-          TopLeft="341.666666666667,466">
+          TopLeft="339.666666666667,427">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="148.333333333333,70.5"
+              EndConnector="150.333333333333,109.5"
               Start="0,0"
-              End="148.333333333333,63">
+              End="150.333333333333,102">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.7565789473684" />
+                    End="0,40.6644736842106" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.7565789473684"
-                    Point2="0,28.7565789473684"
-                    Point3="4,28.7565789473684" />
+                    Point1="0,40.6644736842106"
+                    Point2="0,44.6644736842106"
+                    Point3="4,44.6644736842106" />
                   <mssgle:LineSegment
-                    End="144.333333333333,28.7565789473684" />
+                    End="146.333333333333,44.6644736842106" />
                   <mssgle:CubicBezierSegment
-                    Point1="144.333333333333,28.7565789473684"
-                    Point2="148.333333333333,28.7565789473684"
-                    Point3="148.333333333333,32.7565789473684" />
+                    Point1="146.333333333333,44.6644736842106"
+                    Point2="150.333333333333,44.6644736842106"
+                    Point3="150.333333333333,48.6644736842106" />
                   <mssgle:LineSegment
-                    End="148.333333333333,63" />
+                    End="150.333333333333,102" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="25.9752799479167,33.7565789473684,96.3827734375,11.609375"
+              BoundingBox="26.9752799479167,49.6644736842106,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup Match Output]"
-          TopLeft="546.333333333333,349">
+          TopLeft="528.125,377.25">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="259.166666666667,92"
+              EndConnector="277.375,63.75"
               Start="0,0"
-              End="259.166666666667,84.5">
+              End="277.375,56.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.2337917485265" />
+                    End="0,27.875" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33.2337917485265"
-                    Point2="0,37.2337917485265"
-                    Point3="4,37.2337917485265" />
+                    Point1="0,27.875"
+                    Point2="0,31.875"
+                    Point3="4,31.875" />
                   <mssgle:LineSegment
-                    End="255.166666666667,37.2337917485265" />
+                    End="273.375,31.875" />
                   <mssgle:CubicBezierSegment
-                    Point1="255.166666666667,37.2337917485265"
-                    Point2="259.166666666667,37.2337917485265"
-                    Point3="259.166666666667,41.2337917485265" />
+                    Point1="273.375,31.875"
+                    Point2="277.375,31.875"
+                    Point3="277.375,35.875" />
                   <mssgle:LineSegment
-                    End="259.166666666667,84.5" />
+                    End="277.375,56.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="81.3919466145835,42.2337917485265,96.3827734375,11.609375"
+              BoundingBox="90.49611328125,36.875,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[lineItems]"
-          TopLeft="486,50">
+          TopLeft="486.25,50">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="10.5,46"
+              EndConnector="0,24.75"
               Start="0,0"
-              End="10.5,38.5">
+              End="0,17.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19"
-                    Point2="0,23"
-                    Point3="4,23" />
-                  <mssgle:LineSegment
-                    End="6.5,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="6.5,23"
-                    Point2="10.5,23"
-                    Point3="10.5,27" />
-                  <mssgle:LineSegment
-                    End="10.5,38.5" />
+                    End="0,17.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-15.61943359375,28,41.7388671875,9.7294921875"
+              BoundingBox="-20.86943359375,3.76025390625,41.7388671875,9.7294921875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output1]"
-          TopLeft="497.5,269">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="16.5,38"
-              Start="0,0"
-              End="16.5,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15"
-                    Point2="0,19"
-                    Point3="4,19" />
-                  <mssgle:LineSegment
-                    End="12.5,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.5,19"
-                    Point2="16.5,19"
-                    Point3="16.5,23" />
-                  <mssgle:LineSegment
-                    End="16.5,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output]"
-          TopLeft="572,117">
+          TopLeft="487.208334904164,116.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0.166669808327924,64.473683824169"
+              EndConnector="0,26.223683824169"
               Start="0,0"
-              End="7.66666980832792,64.473683824169">
+              End="0,18.723683824169">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.6666698083279,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.6666698083279,0"
-                    Point2="22.6666698083279,0"
-                    Point3="22.6666698083279,4" />
-                  <mssgle:LineSegment
-                    End="22.6666698083279,60.473683824169" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.6666698083279,60.473683824169"
-                    Point2="22.6666698083279,64.473683824169"
-                    Point3="18.6666698083279,64.473683824169" />
-                  <mssgle:LineSegment
-                    End="7.66666980832792,64.473683824169" />
+                    End="0,18.723683824169" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23015,7 +23450,7 @@ WHERE SquareOrderNumber = ? </property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Data Conversion Output]"
-          TopLeft="489.166669808328,202.473683824169">
+          TopLeft="487.916669808328,184.973683824169">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -23047,9 +23482,140 @@ WHERE SquareOrderNumber = ? </property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="198,42"
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Convert Value to Decimal"
+          TopLeft="423.125,276.25" />
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output1]"
+          TopLeft="496.25,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.875,24.75"
+              Start="0,0"
+              End="25.875,17.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.375"
+                    Point2="0,12.375"
+                    Point3="4,12.375" />
+                  <mssgle:LineSegment
+                    End="21.875,12.375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.875,12.375"
+                    Point2="25.875,12.375"
+                    Point3="25.875,16.375" />
+                  <mssgle:LineSegment
+                    End="25.875,17.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Default Output]"
+          TopLeft="423.125,297.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="4,53.3333333333333"
+              Start="0,0"
+              End="-3.5,53.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
+                  <mssgle:LineSegment
+                    End="-22.5,49.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.5,49.3333333333333"
+                    Point2="-22.5,53.3333333333333"
+                    Point3="-18.5,53.3333333333333" />
+                  <mssgle:LineSegment
+                    End="-3.5,53.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output1]"
+          TopLeft="427.125,356.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-46.125,49.75"
+              Start="0,0"
+              End="-38.625,49.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-19.0625,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-19.0625,0"
+                    Point2="-23.0625,0"
+                    Point3="-23.0625,4" />
+                  <mssgle:LineSegment
+                    End="-23.0625,45.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-23.0625,45.75"
+                    Point2="-23.0625,49.75"
+                    Point3="-27.0625,49.75" />
+                  <mssgle:LineSegment
+                    End="-38.625,49.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-78.86888671875,-17.609375,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Staged?">
+    <Properties>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q2:string">[dbo].[tblLines]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q3:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q4:boolean">true</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql">
     <Properties>
@@ -23339,9 +23905,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23375,9 +23939,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23411,9 +23973,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23447,9 +24007,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
