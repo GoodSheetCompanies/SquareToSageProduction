@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SquareToSageWOReport"
   DTS:PackageType="5"
-  DTS:VersionBuild="345"
-  DTS:VersionGUID="{8D3FD6BF-9F2A-40CC-91F2-97D82DA38FCA}">
+  DTS:VersionBuild="350"
+  DTS:VersionGUID="{C2F99167-660A-461A-97B7-295F6EA5031A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1317,7 +1317,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACyXoUwbYI+XaJLZ8Cp9a84AAAAAASAAACgAAAAEAAAAE9ZVM6J/pBw3N77HfdekFA4AAAA4lpFIDZUYMV40v20sDw+dngcGXSGoQ2Fuua/mcNqidOQhY/uWQB+x9S7RqGi0+snGZvtaC+npfIUAAAAfgti/BQkldRl3OPuPjY/4V7r9Gg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACVFtaRHYg95dbaukOdSbPDAAAAAASAAACgAAAAEAAAAFwuMGrKMgwSW8UJe93rk4c4AAAA2Ppvf5+a2uGdzauunhlQeN5ufYUC5Egj4W8FUdH+U8r1NtVx3Ul8bhx0ReiMI3DSif+mZ9pztwkUAAAAlEy/i6swVWJLm1vBMTh5AE53sW0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1332,7 +1332,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZDlBgVTkgFP1LAPDRjoAkAAAAAASAAACgAAAAEAAAAPZ55d1t4looQNMBJNfMRVI4AAAAdBSzzXgLJpRQPIcEIJBW5DrGDJwR55Z8D+1G3giiQU3BZJVkWEw3YG5/HHJtq1uDdOjR5okk6T8UAAAAi8sr5vK9OZZJOQQsBbASOxK/SVc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD4d+nVTqy7ojxHLHpH8YQaAAAAAASAAACgAAAAEAAAAMhJDKcg9swhNr6XoHiwdx84AAAAu6F7fYsMGQB7iXB/c97VWfrVhKN1nxpbUSL7CMytM9eiLKAtGODq7VyAiyCinZXoN0bohR6qw2cUAAAAAuPsji8WXjnuNu7xskSL3wJFg7s</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1542,7 +1542,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADwWkd+bGQNOizhc/FipQd/AAAAAASAAACgAAAAEAAAAIvLKlb/MWUYCEbhcoLNLjpAAAAAdiBiwRwtjxWBCd8QWaxD9+SqoPrWveKD1Pvn+jpqZO5a47GmtQmHD+jJUEYcgksiDA4+m3CL2OSuYATXnzTL9hQAAABeZskMYqTE/ObmeB8M6kZ90jKJLg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtO6//kNEYkK9dElHHn7ZHQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACdOFiZSBJMqULE2G6chm8kAAAAAASAAACgAAAAEAAAAEJqROMG33TGk4VGn5QRNndAAAAAalkCQQhYki9kzCuQ4rLh+753QRP6eZT7evV7qenSZt2C6sXpiZvIxido6oGwjUs4yR7XDpNwrWUrxlhxa4rShRQAAAD8fsMDI0sNaCkBprX4whK28dOZpA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1726,7 +1726,7 @@
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select LTRIM(RTRIM(SquareOrderNumber)) SquareOrderNumber, RTRIM(LTRIM(ID)) ID, isNull(PaymentDocumentID,'empty') as PaymentDocumentID
 From tblOutletOrders
-Where Imported = 'N' and SageOrderNumber is null</property>
+Where Imported = 'N'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -8363,6 +8363,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
       DTS:refId="Package\Execute Batch File that start VI Job in Sage"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
+      DTS:Disabled="True"
       DTS:DTSID="{3EC31C03-A217-43E7-9EA3-2DA1EC10DC2D}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -22453,12 +22454,12 @@ WHERE SquareOrderNumber = ? </property>
         <NodeLayout
           Size="322,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace"
-          TopLeft="12.142857142857,10.9464286163982" />
+          TopLeft="12.142857142857,10.4464286163982" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="346.5,108"
-          Size="346.5,151"
+          PanelSize="339.5,107.5"
+          Size="339.5,150.5"
           Id="Package\Loop through tblOrders - Flagged as not imported"
           TopLeft="767.611111111111,180.640875132518" />
         <NodeLayout
@@ -22626,9 +22627,9 @@ WHERE SquareOrderNumber = ? </property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="95.8611096023679,32.733815301368"
+              EndConnector="95.8611096023679,32.483815301368"
               Start="0,0"
-              End="88.3611096023679,32.733815301368">
+              End="88.3611096023679,32.483815301368">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -22639,13 +22640,13 @@ WHERE SquareOrderNumber = ? </property>
                     Point2="47.930554801184,0"
                     Point3="47.930554801184,4" />
                   <mssgle:LineSegment
-                    End="47.930554801184,28.733815301368" />
+                    End="47.930554801184,28.483815301368" />
                   <mssgle:CubicBezierSegment
-                    Point1="47.930554801184,28.733815301368"
-                    Point2="47.930554801184,32.733815301368"
-                    Point3="51.930554801184,32.733815301368" />
+                    Point1="47.930554801184,28.483815301368"
+                    Point2="47.930554801184,32.483815301368"
+                    Point3="51.930554801184,32.483815301368" />
                   <mssgle:LineSegment
-                    End="88.3611096023679,32.733815301368" />
+                    End="88.3611096023679,32.483815301368" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22656,18 +22657,18 @@ WHERE SquareOrderNumber = ? </property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="1114.11111111111,252.903771281641">
+          TopLeft="1107.11111111111,252.778771281641">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="78.8888888888891,0"
+              EndConnector="85.8888888888891,0"
               Start="0,0"
-              End="71.3888888888891,0">
+              End="78.3888888888891,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="71.3888888888891,0" />
+                    End="78.3888888888891,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23081,13 +23082,13 @@ WHERE SquareOrderNumber = ? </property>
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode"
           TopLeft="455.5,173.75" />
         <NodeLayout
-          Size="113,42"
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Lookup"
-          TopLeft="282,429" />
-        <NodeLayout
           Size="199,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql"
           TopLeft="85.666669808328,535.473683824169" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Data Conversion"
+          TopLeft="447,106" />
         <NodeLayout
           Size="171,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Line Fields"
@@ -23105,85 +23106,21 @@ WHERE SquareOrderNumber = ? </property>
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Line in Sage Sales Order"
           TopLeft="431.125,362.25" />
         <NodeLayout
-          Size="195,42"
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber"
-          TopLeft="434.75,288.5" />
+          Size="154,42"
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Derived Column"
+          TopLeft="697.5,71.5" />
         <NodeLayout
           Size="166,42"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ConvertRowIndex"
           TopLeft="448.916669808328,224.973683824169" />
-        <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output1]"
-          TopLeft="321,471">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-135.833330191672,64.473683824169"
-              Start="0,0"
-              End="-135.833330191672,56.973683824169">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.3295672161528" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.3295672161528"
-                    Point2="0,26.3295672161528"
-                    Point3="-4,26.3295672161528" />
-                  <mssgle:LineSegment
-                    End="-131.833330191672,26.3295672161528" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-131.833330191672,26.3295672161528"
-                    Point2="-135.833330191672,26.3295672161528"
-                    Point3="-135.833330191672,30.3295672161528" />
-                  <mssgle:LineSegment
-                    End="-135.833330191672,56.973683824169" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-123.723051814586,31.3295672161528,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output]"
-          TopLeft="499.791666666667,404.25">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-161.291666666667,24.75"
-              Start="0,0"
-              End="-161.291666666667,17.25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,6.01669941060903" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,6.01669941060903"
-                    Point2="0,10.016699410609"
-                    Point3="-4,10.016699410609" />
-                  <mssgle:LineSegment
-                    End="-157.291666666667,10.016699410609" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-157.291666666667,10.016699410609"
-                    Point2="-161.291666666667,10.016699410609"
-                    Point3="-161.291666666667,14.016699410609" />
-                  <mssgle:LineSegment
-                    End="-161.291666666667,17.25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-136.452220052083,15.016699410609,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="195,42"
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber"
+          TopLeft="434.75,288.5" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Lookup"
+          TopLeft="282,429" />
         <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup Match Output1]"
           TopLeft="356,471">
@@ -23257,126 +23194,6 @@ WHERE SquareOrderNumber = ? </property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output1]"
-          TopLeft="532.1875,330.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,31.75"
-              Start="0,0"
-              End="0,24.25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output]"
-          TopLeft="455.5,194.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-6.58333019167208,45.5570171575023"
-              Start="0,0"
-              End="-14.0833301916721,45.5570171575023">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-25.0833301916721,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-25.0833301916721,0"
-                    Point2="-29.0833301916721,0"
-                    Point3="-29.0833301916721,4" />
-                  <mssgle:LineSegment
-                    End="-29.0833301916721,41.5570171575023" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-29.0833301916721,41.5570171575023"
-                    Point2="-29.0833301916721,45.5570171575023"
-                    Point3="-25.0833301916721,45.5570171575023" />
-                  <mssgle:LineSegment
-                    End="-14.0833301916721,45.5570171575023" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Data Conversion Output]"
-          TopLeft="448.916669808328,245.973683824169">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-14.1666698083279,63.526316175831"
-              Start="0,0"
-              End="-21.6666698083279,63.526316175831">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-32.6666698083279,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-32.6666698083279,0"
-                    Point2="-36.6666698083279,0"
-                    Point3="-36.6666698083279,4" />
-                  <mssgle:LineSegment
-                    End="-36.6666698083279,59.526316175831" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-36.6666698083279,59.526316175831"
-                    Point2="-36.6666698083279,63.526316175831"
-                    Point3="-32.6666698083279,63.526316175831" />
-                  <mssgle:LineSegment
-                    End="-21.6666698083279,63.526316175831" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Data Conversion"
-          TopLeft="447,106" />
-        <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Data Conversion Output1]"
-          TopLeft="527.25,148">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,25.75"
-              Start="0,0"
-              End="0,18.25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Derived Column"
-          TopLeft="697.5,71.5" />
-        <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[lineItems]"
           TopLeft="574.5,29">
           <EdgeLayout.Curve>
@@ -23446,32 +23263,193 @@ WHERE SquareOrderNumber = ? </property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output1]"
+          TopLeft="532.1875,330.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.75"
+              Start="0,0"
+              End="0,24.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Derived Column Output]"
+          TopLeft="455.5,194.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-6.58333019167208,45.5570171575023"
+              Start="0,0"
+              End="-14.0833301916721,45.5570171575023">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-25.0833301916721,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-25.0833301916721,0"
+                    Point2="-29.0833301916721,0"
+                    Point3="-29.0833301916721,4" />
+                  <mssgle:LineSegment
+                    End="-29.0833301916721,41.5570171575023" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-29.0833301916721,41.5570171575023"
+                    Point2="-29.0833301916721,45.5570171575023"
+                    Point3="-25.0833301916721,45.5570171575023" />
+                  <mssgle:LineSegment
+                    End="-14.0833301916721,45.5570171575023" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Data Conversion Output1]"
+          TopLeft="527.25,148">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25.75"
+              Start="0,0"
+              End="0,18.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Data Conversion Output]"
+          TopLeft="448.916669808328,245.973683824169">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14.1666698083279,63.526316175831"
+              Start="0,0"
+              End="-21.6666698083279,63.526316175831">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-32.6666698083279,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.6666698083279,0"
+                    Point2="-36.6666698083279,0"
+                    Point3="-36.6666698083279,4" />
+                  <mssgle:LineSegment
+                    End="-36.6666698083279,59.526316175831" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.6666698083279,59.526316175831"
+                    Point2="-36.6666698083279,63.526316175831"
+                    Point3="-32.6666698083279,63.526316175831" />
+                  <mssgle:LineSegment
+                    End="-21.6666698083279,63.526316175831" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output1]"
+          TopLeft="321,471">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-135.833330191672,64.473683824169"
+              Start="0,0"
+              End="-135.833330191672,56.973683824169">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.3295672161528" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.3295672161528"
+                    Point2="0,26.3295672161528"
+                    Point3="-4,26.3295672161528" />
+                  <mssgle:LineSegment
+                    End="-131.833330191672,26.3295672161528" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-131.833330191672,26.3295672161528"
+                    Point2="-135.833330191672,26.3295672161528"
+                    Point3="-135.833330191672,30.3295672161528" />
+                  <mssgle:LineSegment
+                    End="-135.833330191672,56.973683824169" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-123.723051814586,31.3295672161528,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup No Match Output]"
+          TopLeft="499.791666666667,404.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-161.291666666667,24.75"
+              Start="0,0"
+              End="-161.291666666667,17.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,6.01669941060903" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,6.01669941060903"
+                    Point2="0,10.016699410609"
+                    Point3="-4,10.016699410609" />
+                  <mssgle:LineSegment
+                    End="-157.291666666667,10.016699410609" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-157.291666666667,10.016699410609"
+                    Point2="-161.291666666667,10.016699410609"
+                    Point3="-161.291666666667,14.016699410609" />
+                  <mssgle:LineSegment
+                    End="-161.291666666667,17.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-136.452220052083,15.016699410609,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Lookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[tblLines]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql">
     <Properties>
@@ -23492,6 +23470,29 @@ WHERE SquareOrderNumber = ? </property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
           type="q2:string">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[tblLines]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -24082,9 +24083,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
