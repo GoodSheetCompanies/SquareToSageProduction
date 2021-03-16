@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SquareToSageWOReport"
   DTS:PackageType="5"
-  DTS:VersionBuild="362"
-  DTS:VersionGUID="{5BF56E4E-FA14-4DCD-B2C1-4AA35FD36BA5}">
+  DTS:VersionBuild="364"
+  DTS:VersionGUID="{D81678C3-0E49-482A-AA34-A7AFD4E90260}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1317,7 +1317,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe3fg6vzMJUC2Hl/9kLE2agAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAuw2AkIdfB9LSQ6Dpcf0V9AAAAAASAAACgAAAAEAAAAMk0bZS9cAMIfA3ZotcQYZw4AAAAfthSQhHpWUXi6r2n+tWDSZxL1OJMX0xLfoWo7w5xZKNLChaABCzNlzs55bUDeBNqfrEqjOm7cVsUAAAAPYVfSaRZJzlpjFqdgrQIW7O45IU</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe3fg6vzMJUC2Hl/9kLE2agAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD65PA1KVKzrICvAjm77O1EAAAAAASAAACgAAAAEAAAAIJIm7GtjgvpfC4sjQS6qxg4AAAAgHpvKyVNE5ywS1HxMkm9nLQdQp0iRBRWI3dQgBAayi8XD49bHkFLIHs7CBjxyS1HY+dH5PYrhUQUAAAATUV6WJ7yeMCfPKLrHxL2X9NsrI0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1332,7 +1332,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe3fg6vzMJUC2Hl/9kLE2agAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAMm9pA9meyim0UNuxNTaIiAAAAAASAAACgAAAAEAAAAL/8W521viVvp4a/6lzJFuo4AAAA5tYnUuCqoQZGjpllFyNdaoMzG2pfGwCxc08xx4cLWBgt/MkHSlQAZfuZLtZM8DIIisDIJooOpWkUAAAAwIZWUOwy4Uct8oIiiF7ZREemYGo</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe3fg6vzMJUC2Hl/9kLE2agAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYY6/m/dRxFNiITF7RGi6EAAAAAASAAACgAAAAEAAAABom51N+nGgjPW8a29bdQRU4AAAAo7aeHcnG1ntcRewa6m70iG2LafnyMVZSWTBo0RZxGnB5xvAZNS2ALD0YxpjIGAJYNMnMQi4Sx78UAAAAd9C4jojMMFDnBVtgc+NdNFZo5Bc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -8163,6 +8163,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
       DTS:refId="Package\Execute Batch File that start VI Job in Sage"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
+      DTS:Disabled="True"
       DTS:DTSID="{3EC31C03-A217-43E7-9EA3-2DA1EC10DC2D}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -9999,7 +10000,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                         <inputColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].Columns[consku]"
                           cachedDataType="wstr"
-                          cachedLength="15"
+                          cachedLength="20"
                           cachedName="consku"
                           externalMetadataColumnId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql.Inputs[OLE DB Destination Input].ExternalColumns[ItemCode]"
                           lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output].Columns[consku]" />
@@ -11321,7 +11322,7 @@ where [refTable].[ItemCode] = ? and [refTable].[convCustomerPONumber] = ?</prope
                         <inputColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Line in Sage Sales Order.Inputs[Lookup Input].Columns[consku]"
                           cachedDataType="wstr"
-                          cachedLength="15"
+                          cachedLength="20"
                           cachedName="consku"
                           lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output].Columns[consku]">
                           <properties>
@@ -11497,7 +11498,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                         <inputColumn
                           refId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Lines in Stagging.Inputs[Lookup Input].Columns[consku]"
                           cachedDataType="wstr"
-                          cachedLength="15"
+                          cachedLength="20"
                           cachedName="consku"
                           lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output].Columns[consku]">
                           <properties>
@@ -11666,7 +11667,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                           dataType="wstr"
                           errorOrTruncationOperation="Computation"
                           errorRowDisposition="IgnoreFailure"
-                          length="15"
+                          length="20"
                           lineageId="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode.Outputs[Derived Column Output].Columns[consku]"
                           name="consku"
                           truncationRowDisposition="IgnoreFailure">
@@ -11675,13 +11676,13 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">[RTRIM]([LTRIM]((DT_WSTR,15)#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[sku]}))</property>
+                              name="Expression">[RTRIM]([LTRIM]((DT_WSTR,20)#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source.Outputs[lineItems].Columns[sku]}))</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">RTRIM(LTRIM((DT_WSTR,15)sku))</property>
+                              name="FriendlyExpression">RTRIM(LTRIM((DT_WSTR,20)sku))</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -22895,6 +22896,10 @@ WHERE SquareOrderNumber = ? </property>
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Data Conversion"
           TopLeft="447,106" />
         <NodeLayout
+          Size="156,41.6"
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Imported"
+          TopLeft="669.166643780968,476.033331942029" />
+        <NodeLayout
           Size="142.4,41.6"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Tries"
           TopLeft="296,549.5" />
@@ -22922,6 +22927,42 @@ WHERE SquareOrderNumber = ? </property>
           Size="159.2,41.6"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Lines in Stagging"
           TopLeft="222.5,432" />
+        <EdgeLayout
+          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup Match Output1]"
+          TopLeft="563.691666666667,395.85">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="183.474977114301,80.1833319420285"
+              Start="0,0"
+              End="183.474977114301,72.6833319420285">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.4521516678761" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.4521516678761"
+                    Point2="0,32.4521516678761"
+                    Point3="4,32.4521516678761" />
+                  <mssgle:LineSegment
+                    End="179.474977114301,32.4521516678761" />
+                  <mssgle:CubicBezierSegment
+                    Point1="179.474977114301,32.4521516678761"
+                    Point2="183.474977114301,32.4521516678761"
+                    Point3="183.474977114301,36.4521516678761" />
+                  <mssgle:LineSegment
+                    End="183.474977114301,72.6833319420285" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="43.5461018384005,37.4521516678761,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup Match Output]"
           TopLeft="327.5,474">
@@ -23209,46 +23250,6 @@ WHERE SquareOrderNumber = ? </property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-137.473051814586,33.812407958415,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Imported"
-          TopLeft="669.166643780968,476.033331942029" />
-        <EdgeLayout
-          Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace.Paths[Lookup Match Output1]"
-          TopLeft="563.691666666667,395.85">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="183.474977114301,80.1833319420285"
-              Start="0,0"
-              End="183.474977114301,72.6833319420285">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.4521516678761" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.4521516678761"
-                    Point2="0,32.4521516678761"
-                    Point3="4,32.4521516678761" />
-                  <mssgle:LineSegment
-                    End="179.474977114301,32.4521516678761" />
-                  <mssgle:CubicBezierSegment
-                    Point1="179.474977114301,32.4521516678761"
-                    Point2="183.474977114301,32.4521516678761"
-                    Point3="183.474977114301,36.4521516678761" />
-                  <mssgle:LineSegment
-                    End="183.474977114301,72.6833319420285" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="43.5461018384005,37.4521516678761,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
