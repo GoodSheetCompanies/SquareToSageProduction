@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SquareToSageWOReport"
   DTS:PackageType="5"
-  DTS:VersionBuild="364"
-  DTS:VersionGUID="{D81678C3-0E49-482A-AA34-A7AFD4E90260}">
+  DTS:VersionBuild="372"
+  DTS:VersionGUID="{F50848B0-AD87-4DBD-9A03-249B40B8A703}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1317,7 +1317,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe3fg6vzMJUC2Hl/9kLE2agAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD65PA1KVKzrICvAjm77O1EAAAAAASAAACgAAAAEAAAAIJIm7GtjgvpfC4sjQS6qxg4AAAAgHpvKyVNE5ywS1HxMkm9nLQdQp0iRBRWI3dQgBAayi8XD49bHkFLIHs7CBjxyS1HY+dH5PYrhUQUAAAATUV6WJ7yeMCfPKLrHxL2X9NsrI0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYY+SWPiZO0SWiFM2vlh5vwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAD7353nJItneX5OO38pkf3AAAAAASAAACgAAAAEAAAAErvXDMOGz0f7jvcL2aVYNc4AAAADf4DbvJtyj9irI8hX9ZIBzc1SDPRX9xR5fGtiw/HxA0zieQrpntxfBSvQg5C9EE3n6VswopRnd0UAAAAH8PmbMTpts7FkJzjGy6YlmGB0H4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1332,7 +1332,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe3fg6vzMJUC2Hl/9kLE2agAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYY6/m/dRxFNiITF7RGi6EAAAAAASAAACgAAAAEAAAABom51N+nGgjPW8a29bdQRU4AAAAo7aeHcnG1ntcRewa6m70iG2LafnyMVZSWTBo0RZxGnB5xvAZNS2ALD0YxpjIGAJYNMnMQi4Sx78UAAAAd9C4jojMMFDnBVtgc+NdNFZo5Bc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYY+SWPiZO0SWiFM2vlh5vwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACPTGQ72SgW5+AfMsBJ/AMEAAAAAASAAACgAAAAEAAAAHVTDaG9Gm/Ns81NuKy1q/c4AAAAY6eQpf9And4oqdaz62N4APpfVlMgMlVDbo+e/HUkBVNAtmyfV6AQo1GlONBJ3TZDxjLOEGGwI5MUAAAA+yuxFkqEtGPBx/60j8BtQTNPnU4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -8163,7 +8163,6 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
       DTS:refId="Package\Execute Batch File that start VI Job in Sage"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
-      DTS:Disabled="True"
       DTS:DTSID="{3EC31C03-A217-43E7-9EA3-2DA1EC10DC2D}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -8353,7 +8352,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                   dataType="System.String"
                   description="The query string parameters that will be used in the request."
                   expressionType="Notify"
-                  name="RequestQueryStringParameters">[{"Key":"cursor","Value":{"IsExpression":true,"Value":"IsNull(GetValueFromJson(@[ResponseBody],\"pagination.nextPageCursor\"))? \"\":(DT_WSTR,500)GetValueFromJson(@[ResponseBody],\"pagination.nextPageCursor\")"}},{"Key":"fulfillmentStatus","Value":{"IsExpression":false,"Value":"PENDING"}}]</property>
+                  name="RequestQueryStringParameters">[{"Key":"cursor","Value":{"IsExpression":true,"Value":"@[RequestCount]==0? \"\":(DT_WSTR,500)GetValueFromJson(@[ResponseBody],\"pagination.nextPageCursor\")"}},{"Key":"fulfillmentStatus","Value":{"IsExpression":true,"Value":"@[RequestCount]==0?\"PENDING\":\"\""}}]</property>
                 <property
                   dataType="System.String"
                   description="The expression that determines if requests should keep being sent."
@@ -19570,7 +19569,7 @@ where [refTable].[convCustomerPONumber] = ?</property>
                   dataType="System.String"
                   description="The query string parameters that will be used in the request."
                   expressionType="Notify"
-                  name="RequestQueryStringParameters">[{"Key":"cursor","Value":{"IsExpression":true,"Value":"IsNull(GetValueFromJson(@[ResponseBody],\"pagination.nextPageCursor\"))? \"\":(DT_WSTR,500)GetValueFromJson(@[ResponseBody],\"pagination.nextPageCursor\")"}},{"Key":"fulfillmentStatus","Value":{"IsExpression":false,"Value":"PENDING"}}]</property>
+                  name="RequestQueryStringParameters">[{"Key":"cursor","Value":{"IsExpression":true,"Value":"@[RequestCount]==0? \"\":(DT_WSTR,500)GetValueFromJson(@[ResponseBody],\"pagination.nextPageCursor\")"}},{"Key":"fulfillmentStatus","Value":{"IsExpression":true,"Value":"@[RequestCount]==0?\"PENDING\":\"\""}}]</property>
                 <property
                   dataType="System.String"
                   description="The expression that determines if requests should keep being sent."
@@ -22228,46 +22227,46 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="239.2,41.6"
+          Size="239.333333333334,41.3333333333334"
           Id="Package\DFT Cache Orders with No Import"
           TopLeft="432.250001508743,202.40705983115" />
         <NodeLayout
-          Size="232.8,41.6"
+          Size="232.666666666667,41.3333333333334"
           Id="Package\DFT Cache Orders WO Payment"
           TopLeft="1193,228.666667430765" />
         <NodeLayout
-          Size="220,41.6"
+          Size="220,41.3333333333334"
           Id="Package\DFT Get Order Header Sage"
           TopLeft="173.611111111111,50.8214289150427" />
         <NodeLayout
-          Size="209.6,41.6"
+          Size="209.333333333334,41.3333333333334"
           Id="Package\DFT Get Order Lines Sage"
           TopLeft="434.642857142856,51.2420641785227" />
         <NodeLayout
-          Size="280.8,41.6"
+          Size="280.666666666667,41.3333333333334"
           Id="Package\Execute Batch File that start VI Job in Sage"
           TopLeft="861.611111111112,448.972224110939" />
         <NodeLayout
-          Size="204.8,41.6"
+          Size="204.666666666667,41.3333333333334"
           Id="Package\GetShipTypes and Cache"
           TopLeft="687.968253968254,50.8769852131728" />
         <NodeLayout
-          Size="321.6,41.6"
+          Size="321.333333333334,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace"
           TopLeft="12.142857142857,10.4464286163982" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="339.2,107.2"
-          Size="339.2,150.4"
+          PanelSize="339.333333333334,108"
+          Size="339.333333333334,150.666666666667"
           Id="Package\Loop through tblOrders - Flagged as not imported"
           TopLeft="767.611111111111,180.640875132518" />
         <NodeLayout
-          Size="187.2,41.6"
+          Size="187.333333333334,41.3333333333334"
           Id="Package\Loop Through tblOrdersWOPayments\Apply CC Authorization"
           TopLeft="45,82.9166670594782" />
         <NodeLayout
-          Size="223.2,41.6"
+          Size="223.333333333334,41.3333333333334"
           Id="Package\Loop Through tblOrdersWOPayments\DFT Apply Payment to Staging"
           TopLeft="31.357142857143,6.91666693033449" />
         <EdgeLayout
@@ -22295,36 +22294,36 @@ WHERE SquareOrderNumber = ? </property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="279.2,180"
-          Size="279.2,223.2"
+          PanelSize="279.333333333334,180.666666666667"
+          Size="279.333333333334,223.333333333334"
           Id="Package\Loop Through tblOrdersWOPayments"
           TopLeft="115.5,368.041667406551" />
         <NodeLayout
-          Size="280.8,41.6"
+          Size="280.666666666667,41.3333333333334"
           Id="Package\Retrieve Payment Transaction from Square"
           TopLeft="959.285714285714,48.005952532773" />
         <NodeLayout
-          Size="305.6,41.6"
+          Size="305.333333333334,41.3333333333334"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace"
           TopLeft="58.6746031746029,200.49206422695" />
         <NodeLayout
-          Size="297.6,41.6"
+          Size="297.333333333334,41.3333333333334"
           Id="Package\Update Order Headers will all Lines Imported"
           TopLeft="475.333333333333,454.125001423267" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="393.611111111111,72.0317465467827">
+          TopLeft="393.611111111111,71.6984132134494">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="41.031746031745,0"
+              EndConnector="41.0317460317448,0"
               Start="0,0"
-              End="33.531746031745,0">
+              End="33.5317460317448,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="33.531746031745,0" />
+                    End="33.5317460317448,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22622,13 +22621,13 @@ WHERE SquareOrderNumber = ? </property>
     design-time-name="Package\DFT Cache Orders WO Payment">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="249.5,42"
+          Size="249.333333333334,42"
           Id="Package\DFT Cache Orders WO Payment\Create Object tblOrdersWOPayment"
           TopLeft="1136,182" />
         <NodeLayout
-          Size="199,42"
+          Size="198.666666666667,42"
           Id="Package\DFT Cache Orders WO Payment\Retrieve Order Numbers"
           TopLeft="1142,45" />
         <EdgeLayout
@@ -22662,9 +22661,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22844,34 +22841,46 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="146,42"
-          Id="Package\GetShipTypes and Cache\JSON Source"
-          TopLeft="60,60" />
-        <NodeLayout
           Size="154,42"
           Id="Package\GetShipTypes and Cache\CacheShipType"
-          TopLeft="60,162" />
+          TopLeft="60,170" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\GetShipTypes and Cache\JSON Source"
+          TopLeft="74,47" />
         <EdgeLayout
           Id="Package\GetShipTypes and Cache.Paths[shippingLines]"
-          TopLeft="135,102">
+          TopLeft="147,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="-10,81"
               Start="0,0"
-              End="0,52.5">
+              End="-10,73.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.5"
+                    Point2="0,40.5"
+                    Point3="-4,40.5" />
+                  <mssgle:LineSegment
+                    End="-6,40.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6,40.5"
+                    Point2="-10,40.5"
+                    Point3="-10,44.5" />
+                  <mssgle:LineSegment
+                    End="-10,73.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-30.42265625,20.41845703125,60.8453125,11.6630859375"
+              BoundingBox="-35.42265625,45.5,60.8453125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -22884,47 +22893,47 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="148,41.6"
+          Size="148,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Trim itemCode"
           TopLeft="455.5,173.75" />
         <NodeLayout
-          Size="199.2,41.6"
+          Size="199.333333333334,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ImportOrdreLinesIntoSql"
           TopLeft="14.166669808328,544.973683824169" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Data Conversion"
           TopLeft="447,106" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Imported"
           TopLeft="669.166643780968,476.033331942029" />
         <NodeLayout
-          Size="142.4,41.6"
+          Size="142.666666666667,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Update Tries"
           TopLeft="296,549.5" />
         <NodeLayout
-          Size="145.6,41.6"
+          Size="145.333333333334,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\JSON Source"
           TopLeft="428.5,8" />
         <NodeLayout
-          Size="201.6,41.6"
+          Size="201.333333333334,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Line in Sage Sales Order"
           TopLeft="430.625,354.25" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="153.333333333334,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Derived Column"
           TopLeft="697.5,71.5" />
         <NodeLayout
-          Size="166.4,41.6"
+          Size="166.666666666667,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\ConvertRowIndex"
           TopLeft="448.916669808328,224.973683824169" />
         <NodeLayout
-          Size="195.2,41.6"
+          Size="195.333333333334,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Set SquarOrderNumber"
           TopLeft="434.75,288.5" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="159.333333333334,41.3333333333334"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\Lines in Stagging"
           TopLeft="222.5,432" />
         <EdgeLayout
@@ -23390,11 +23399,11 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="182.5,42"
+          Size="182.666666666667,42"
           Id="Package\Retrieve Payment Transaction from Square\Retrieve Payment Info"
           TopLeft="1152,27" />
         <NodeLayout
-          Size="182.5,42"
+          Size="182.666666666667,42"
           Id="Package\Retrieve Payment Transaction from Square\Cache Payment Table"
           TopLeft="1146,235" />
         <EdgeLayout
@@ -23434,7 +23443,7 @@ WHERE SquareOrderNumber = ? </property>
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Header In Sage?"
           TopLeft="849,288" />
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Lookup Payment ID"
           TopLeft="544,230.791666669357" />
         <NodeLayout
@@ -23442,11 +23451,11 @@ WHERE SquareOrderNumber = ? </property>
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Convert AddressLines to String"
           TopLeft="164.333333333333,578" />
         <NodeLayout
-          Size="224.5,42"
+          Size="224.666666666667,42"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Orders Created in Last 30 days"
           TopLeft="518.5,137.58333264995" />
         <NodeLayout
-          Size="145,42"
+          Size="145.333333333334,42"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\TrimColumns"
           TopLeft="572.222222222222,70.6666667527623" />
         <NodeLayout
@@ -23454,11 +23463,11 @@ WHERE SquareOrderNumber = ? </property>
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\JSON Source"
           TopLeft="569.722219080561,8.5263161758307" />
         <NodeLayout
-          Size="207.5,42"
+          Size="207.333333333334,42"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Import Orders into Stagging"
           TopLeft="179,767.791666669357" />
         <NodeLayout
-          Size="175,51"
+          Size="174.666666666667,50.6666666666667"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\LkupShipType"
           TopLeft="204.444444444444,349.666666666666" />
         <NodeLayout
@@ -23466,7 +23475,7 @@ WHERE SquareOrderNumber = ? </property>
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\convert Order Date and ShipExpire"
           TopLeft="160,670.333333333333" />
         <NodeLayout
-          Size="307,42"
+          Size="306.666666666667,42"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Update Staging Header with Sage Order Number"
           TopLeft="783,464.49999945114" />
         <NodeLayout
@@ -23568,9 +23577,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23604,9 +23611,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23640,9 +23645,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23676,9 +23679,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
