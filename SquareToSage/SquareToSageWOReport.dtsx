@@ -7,12 +7,12 @@
   DTS:CreatorName="HAWKSBOOTS\matthew"
   DTS:DTSID="{B4AFD42F-B98E-437B-ACFC-2D632C4B29CF}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.152"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
   DTS:LocaleID="1033"
   DTS:ObjectName="SquareToSageWOReport"
   DTS:PackageType="5"
-  DTS:VersionBuild="372"
-  DTS:VersionGUID="{F50848B0-AD87-4DBD-9A03-249B40B8A703}">
+  DTS:VersionBuild="378"
+  DTS:VersionGUID="{FB228A9C-DEDB-4126-94A5-473034C22EC0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -312,995 +312,1007 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Cache Sage Orders]"
+      DTS:refId="Package.ConnectionManagers[Cache Sales Order]"
       DTS:CreationName="CACHE"
-      DTS:DTSID="{273D813A-8E44-4B97-9DAC-5ABA78D4F5FB}"
-      DTS:ObjectName="Cache Sage Orders">
+      DTS:DTSID="{E8783C07-0226-4C45-99D6-B19DBA8E4CBA}"
+      DTS:ObjectName="Cache Sales Order">
       <DTS:ObjectData>
         <DTS:ConnectionManager>
           <DTS:CacheColumns>
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="7"
+              DTS:IndexPosition="1"
               DTS:ObjectName="SalesOrderNo"
-              DTS:DTSID="{1BBC7F13-3B3E-47C8-B9B7-1BAE841FE824}"
+              DTS:DTSID="{0652845A-400F-46D8-8B4F-4FA2D5EB38C1}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="OrderDate"
-              DTS:DTSID="{03DEAA90-3D43-437E-8488-DD68693AC8AF}"
+              DTS:DTSID="{71B3F64F-C495-4A19-BBD6-E3972C3D7F06}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="OrderType"
-              DTS:DTSID="{2C0B62E1-8250-4377-BDBB-F94A92988F8A}"
+              DTS:DTSID="{230A6BB2-BDE9-414B-8DF6-B560E7A56445}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="OrderStatus"
-              DTS:DTSID="{2A0029F0-6100-4128-AF2D-BA0876330D37}"
+              DTS:DTSID="{11043D30-5E3C-43C9-9CBF-B959F9006FB9}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="7"
               DTS:ObjectName="MasterRepeatingOrderNo"
-              DTS:DTSID="{C57BCE2F-8665-43CC-8070-338CC8739D0D}"
+              DTS:DTSID="{ACCB47CD-6E60-4DC6-8791-33DEE6785685}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="ShipExpireDate"
-              DTS:DTSID="{D8E90EA9-9018-4086-9322-C3B572FCF252}"
+              DTS:DTSID="{66F183BA-ADB9-4047-940D-209DD8471635}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="ARDivisionNo"
-              DTS:DTSID="{B9C87AFC-E2AA-424D-9C51-9A541EC1F492}"
+              DTS:DTSID="{2E73567A-7B40-4F17-BF8A-908E5C1080D4}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="20"
               DTS:ObjectName="CustomerNo"
-              DTS:DTSID="{53E20773-92DF-4228-AE5A-7ED8EA57C44B}"
+              DTS:DTSID="{5C8157D7-E2C1-4D08-A68F-5E8C346C750C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
-              DTS:Length="30"
+              DTS:Length="50"
               DTS:ObjectName="BillToName"
-              DTS:DTSID="{AB54EBB2-E054-43D5-90F3-19EE79B9C964}"
+              DTS:DTSID="{0E88F580-05AF-4156-B084-F4E7E80637E4}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
-              DTS:Length="30"
+              DTS:Length="40"
               DTS:ObjectName="BillToAddress1"
-              DTS:DTSID="{60768369-086D-48DB-BA8A-B23B5970B7BB}"
+              DTS:DTSID="{20A174A7-3259-4FF4-B269-A2F25ED0EAEE}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
-              DTS:Length="30"
+              DTS:Length="40"
               DTS:ObjectName="BillToAddress2"
-              DTS:DTSID="{CB584F7F-50AB-4930-969A-5BAE19B79385}"
+              DTS:DTSID="{53F241BB-41C8-4D58-B746-B336D23ED319}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="40"
+              DTS:ObjectName="BillToAddress3"
+              DTS:DTSID="{CF388567-50DB-4651-9479-CF8BDA4DB50D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
-              DTS:ObjectName="BillToAddress3"
-              DTS:DTSID="{162FC4D3-1473-4578-BADD-FA2300039535}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="130"
-              DTS:Length="20"
               DTS:ObjectName="BillToCity"
-              DTS:DTSID="{2055CD69-B78F-4360-91E0-D8092C7AF179}"
+              DTS:DTSID="{7482B4A6-2246-407F-8CFF-B0DC9C84CE75}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="BillToState"
-              DTS:DTSID="{0E05F46D-3C28-42FA-BDFF-6F94C77D720C}"
+              DTS:DTSID="{908CB1E8-3F55-4C46-A91F-0820C4AAD846}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="BillToZipCode"
-              DTS:DTSID="{0EE63903-D8D4-4CD1-B812-F91F3E0808E4}"
+              DTS:DTSID="{12F57A48-F950-4856-B1BD-3B05EA368354}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="3"
               DTS:ObjectName="BillToCountryCode"
-              DTS:DTSID="{40C997E4-D231-47D4-A8E3-585D224AB918}"
+              DTS:DTSID="{A99CA2D3-9A95-481A-84E5-A72F35D70309}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="4"
               DTS:ObjectName="ShipToCode"
-              DTS:DTSID="{6FCC9FC1-F086-4179-8084-BFFCAEAC1E7C}"
+              DTS:DTSID="{4D64C758-AE87-4464-863A-E9EC666CD73D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
-              DTS:Length="30"
+              DTS:Length="50"
               DTS:ObjectName="ShipToName"
-              DTS:DTSID="{0DD2FE6A-74AE-4443-BCD1-3E62BCDAB7CC}"
+              DTS:DTSID="{D7AE10FA-B08A-4B55-BD0D-7D25316E837D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
-              DTS:Length="30"
+              DTS:Length="40"
               DTS:ObjectName="ShipToAddress1"
-              DTS:DTSID="{C65FC0A3-00AE-497F-BD69-91AB69AB1E38}"
+              DTS:DTSID="{A5F49D87-2E7A-4331-9103-24C473B2E5DF}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
-              DTS:Length="30"
+              DTS:Length="40"
               DTS:ObjectName="ShipToAddress2"
-              DTS:DTSID="{48A9C114-C475-4244-A561-C84A55BD9152}"
+              DTS:DTSID="{5C2964A4-D406-4135-B4E9-3560072D0AA7}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="40"
+              DTS:ObjectName="ShipToAddress3"
+              DTS:DTSID="{3DEAF3A2-BB82-48C5-9C81-8D69A6386A37}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
-              DTS:ObjectName="ShipToAddress3"
-              DTS:DTSID="{1B2F2E88-34A5-479C-8950-33E17F971C2A}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="130"
-              DTS:Length="20"
               DTS:ObjectName="ShipToCity"
-              DTS:DTSID="{A72CACCD-84A5-4644-B0FA-EF69B6FFD0B5}"
+              DTS:DTSID="{C2054350-6A87-4E09-93E7-926718C0AA9B}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="ShipToState"
-              DTS:DTSID="{9F65115D-EE41-4C8A-99E0-253213CE9B43}"
+              DTS:DTSID="{AFDA6636-82C8-4F69-BC07-9E0E6D5501C0}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="ShipToZipCode"
-              DTS:DTSID="{41022558-0A50-44FC-99EA-965500AFA39C}"
+              DTS:DTSID="{1385BB73-8DE5-43F1-A5E7-CF6CC05D575F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="3"
               DTS:ObjectName="ShipToCountryCode"
-              DTS:DTSID="{8517EE24-F1FA-47F6-AE36-F5A92B13B68A}"
+              DTS:DTSID="{631B3C8D-9D0B-44CD-B8CC-91CC6D3BAF7B}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="15"
               DTS:ObjectName="ShipVia"
-              DTS:DTSID="{5A3C1765-1103-46F1-BF35-3D44A1B52CD2}"
+              DTS:DTSID="{9ECA58CA-2DDD-4846-85EF-4E551097851F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="5"
               DTS:ObjectName="ShipZone"
-              DTS:DTSID="{73B7F09D-D86B-464C-BDCF-888C037C35E3}"
+              DTS:DTSID="{E72518D2-17F9-466D-9406-DA328DABE64D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="5"
               DTS:ObjectName="ShipZoneActual"
-              DTS:DTSID="{F123EA1C-879C-4F97-A22B-9C6C1A8DAC03}"
+              DTS:DTSID="{A13786D7-9989-4123-9234-3C654F1D4951}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="5"
               DTS:ObjectName="ShipWeight"
-              DTS:DTSID="{81BC01ED-2D42-430E-8EA3-AC0870AF1156}"
+              DTS:DTSID="{7E8CACFD-1AFE-4770-8634-A616CAF65D37}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="CustomerPONo"
-              DTS:DTSID="{12E1FE06-4E73-454C-80BF-0C649F5C09EE}"
+              DTS:DTSID="{7B842813-DFDC-481D-9DB6-5DA23DC2F53D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="15"
               DTS:ObjectName="FOB"
-              DTS:DTSID="{1108313A-51BF-48C3-8845-2E3947F702BD}"
+              DTS:DTSID="{48EDAD2A-DC33-461A-824B-5459A1831C55}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="3"
               DTS:ObjectName="WarehouseCode"
-              DTS:DTSID="{4CE5CA6D-2E56-41F9-87D0-2AC35B6B2198}"
+              DTS:DTSID="{CEA9B287-3552-4295-9967-DB62E8F21222}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
-              DTS:Length="30"
+              DTS:Length="50"
               DTS:ObjectName="ConfirmTo"
-              DTS:DTSID="{258B2616-6DD8-422D-8FA0-9B3E8273A217}"
+              DTS:DTSID="{3FE2935C-B209-4966-AA66-A7EB381B66C1}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="Comment"
-              DTS:DTSID="{169E715F-0663-411F-9663-0B75062E1161}"
+              DTS:DTSID="{D4509700-4FF2-4FE2-A265-7E7E9B575A5E}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="TermsCode"
-              DTS:DTSID="{88BB579E-3882-4D76-8F78-0BA2E55D4858}"
+              DTS:DTSID="{92A02F37-8985-45DA-B621-6B7C468D1BFC}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="9"
               DTS:ObjectName="TaxSchedule"
-              DTS:DTSID="{596BF1D7-70F0-4BF3-A9EC-20F822051C48}"
+              DTS:DTSID="{0072DEA1-B75E-4830-99E1-6B0EFE2E90EB}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="15"
               DTS:ObjectName="TaxExemptNo"
-              DTS:DTSID="{A64E7721-557A-4463-8866-B8CEDA59E250}"
+              DTS:DTSID="{C2DBF21F-1E8D-4E18-9CEF-8128C6A41FBF}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="InvalidTaxCalc"
-              DTS:DTSID="{D5A4DE60-F1BB-4CBF-B46C-CC03809475C0}"
+              DTS:DTSID="{49D91BA3-F36E-4D6B-A8C2-1DC68BC64B2C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="PrintSalesOrders"
-              DTS:DTSID="{059F0C72-74CE-4F2F-9CFD-3B423FEED8C7}"
+              DTS:DTSID="{1B978D27-A386-4BF6-82FD-96966CC1968A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="PrintPickingSheets"
-              DTS:DTSID="{7A69B840-AEF0-4A4B-A9E2-8599DC4403CD}"
+              DTS:DTSID="{FB8DD787-7C75-4A60-BBF3-51684DA7835A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="LastInvoiceOrderDate"
-              DTS:DTSID="{EA47E7E8-E49A-46DF-9241-EC89DE4A1C50}"
+              DTS:DTSID="{EEE97CD0-E25E-4630-BED2-0A7AF3D2869F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="7"
               DTS:ObjectName="LastInvoiceOrderNo"
-              DTS:DTSID="{173A993D-26B8-4534-81BE-AFD635B81F05}"
+              DTS:DTSID="{532367B2-D135-4370-9459-0D6A767BA76A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="7"
               DTS:ObjectName="CurrentInvoiceNo"
-              DTS:DTSID="{935F1F14-498F-495C-ADAB-37E37050235F}"
+              DTS:DTSID="{159B345E-0670-4694-BA92-10480AB2942C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="CheckNoForDeposit"
-              DTS:DTSID="{91AAB8F1-2535-46D5-94FE-F54CD13F618C}"
+              DTS:DTSID="{83024172-41C4-4956-9A5E-675D398EFA79}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="CycleCode"
-              DTS:DTSID="{9C21D185-24CC-4E58-BD85-3DCB69156949}"
+              DTS:DTSID="{07170F49-78FD-4509-BF84-E4E1734219FC}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
-              DTS:Length="17"
+              DTS:Length="20"
               DTS:ObjectName="FaxNo"
-              DTS:DTSID="{3AC0F61E-656E-443C-A4A5-8E1020D17D61}"
+              DTS:DTSID="{5C30F30B-30FF-4AC9-9C4E-178D93558F90}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="BatchFax"
-              DTS:DTSID="{FA6886FA-181D-410C-805C-2C7EA6A6BB6D}"
+              DTS:DTSID="{A5179F9B-83D0-4DE9-A2C2-D56C489869C2}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="BatchEmail"
-              DTS:DTSID="{9D126EB3-912F-4397-B6C4-E3DA74F71A86}"
+              DTS:DTSID="{A34BC2CF-0172-453E-A56E-7F1E86A63AC1}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="250"
               DTS:ObjectName="EmailAddress"
-              DTS:DTSID="{633F1106-7C28-4F01-B19A-757C38ECE47C}"
+              DTS:DTSID="{A021967C-29A0-4D95-B6E9-B3DC59FBB743}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="FreightCalculationMethod"
-              DTS:DTSID="{C3C0C819-92AC-46D9-AF2A-685B0C7EB74A}"
+              DTS:DTSID="{C44CF0A4-6D11-4B2C-B729-76D456EB5515}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="LotSerialLinesExist"
-              DTS:DTSID="{E9F05934-E108-4FEB-BC2B-0AD3E05EFE36}"
+              DTS:DTSID="{FE32061F-215D-466C-B9AB-1B74BFBCBA4A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="SalespersonDivisionNo"
-              DTS:DTSID="{7318E501-3585-48F4-BD20-5A11848655C6}"
+              DTS:DTSID="{CCA8DF6D-6173-4E61-A416-E9815E91B55E}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="4"
               DTS:ObjectName="SalespersonNo"
-              DTS:DTSID="{7BAA11B3-5984-4D3C-AB59-344B244A722B}"
+              DTS:DTSID="{899EA4B4-5C67-45B5-ABBB-6B238457C49A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="SplitCommissions"
-              DTS:DTSID="{B14A3BEC-9371-482E-834D-79D2029AC22D}"
+              DTS:DTSID="{4C1A6F23-24D6-4A4B-9792-AA8E60F5875C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="SalespersonDivisionNo2"
-              DTS:DTSID="{8094C289-14EF-4A8D-B521-F1DB6FCCAAEF}"
+              DTS:DTSID="{ABF05E02-C4B2-4045-B3F7-415B776D81B7}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="4"
               DTS:ObjectName="SalespersonNo2"
-              DTS:DTSID="{D08F9F6E-8C43-4DFD-A35F-5D64EF28D6C2}"
+              DTS:DTSID="{E4295F6F-C70C-486C-B3C3-DA44F14C28D4}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="SalespersonDivisionNo3"
-              DTS:DTSID="{C2586BB2-452C-4A57-88A9-A3F5B3C5B739}"
+              DTS:DTSID="{DCDF81E1-61A1-416F-B1F4-A87B5CC034E6}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="4"
               DTS:ObjectName="SalespersonNo3"
-              DTS:DTSID="{B8023939-32A3-4D3B-9764-8DDFC7B5035C}"
+              DTS:DTSID="{8E641B75-9F1E-4F2E-9F24-489853756089}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="SalespersonDivisionNo4"
-              DTS:DTSID="{99F5C092-A8E9-466C-8D12-341483EFC82F}"
+              DTS:DTSID="{E4151C8A-84FD-4B30-9A2F-AE3E6CA3438F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="4"
               DTS:ObjectName="SalespersonNo4"
-              DTS:DTSID="{200E37F3-2BD2-498C-AB38-4711B7C0C9F5}"
+              DTS:DTSID="{3C517FC7-E2D9-4FDC-8E80-C28F791C7B5F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="SalespersonDivisionNo5"
-              DTS:DTSID="{A35FAB6A-84AB-46B2-8D2F-B5965BCD2C76}"
+              DTS:DTSID="{9306FEBE-17AB-4B5E-9872-A05ED6D6989F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="4"
               DTS:ObjectName="SalespersonNo5"
-              DTS:DTSID="{BC2C5719-910C-42F7-9AB0-371CF52D471C}"
+              DTS:DTSID="{22295859-06E4-49D6-9EDF-949CCE825B2A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="EBMUserType"
-              DTS:DTSID="{86B8F8D3-0377-41CF-9A73-793E8B72400D}"
+              DTS:DTSID="{754A690B-F786-48C9-9193-4F4BAFA3CD7D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="EBMSubmissionType"
-              DTS:DTSID="{465CBCA1-57C0-47AB-AA60-903F5656A859}"
+              DTS:DTSID="{B09FEB61-5639-48A1-B7DA-FE0F423B3669}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="15"
               DTS:ObjectName="EBMUserIDSubmittingThisOrder"
-              DTS:DTSID="{EA2DEA5D-D15A-4B77-A5CC-4E865CFB1390}"
+              DTS:DTSID="{2CA4B2B0-D6B5-469B-9341-B4305795BF33}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="5"
               DTS:ObjectName="PaymentType"
-              DTS:DTSID="{72F22EFC-4432-4551-9D6F-2D017E919805}"
+              DTS:DTSID="{9E7E55C0-3212-4CA8-A245-085B137DEC2E}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="24"
               DTS:ObjectName="OtherPaymentTypeRefNo"
-              DTS:DTSID="{B98014A3-82C4-4618-B825-E6641E009A37}"
+              DTS:DTSID="{E69D1A4F-BA7F-4E5A-9B14-CDF8EC3C2D4F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="5"
               DTS:ObjectName="CancelReasonCode"
-              DTS:DTSID="{A7A52E32-716A-4754-AE65-67539639BF28}"
+              DTS:DTSID="{25BFCDD1-F0F0-4B58-A340-A1003C3FC214}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="PaymentTypeCategory"
-              DTS:DTSID="{00B4AD98-6D59-46CA-8D38-68C5DF66BA84}"
+              DTS:DTSID="{2989F2AB-6824-45AC-BC5A-4485708A753C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="7"
               DTS:ObjectName="RMANo"
-              DTS:DTSID="{910643D9-1AC1-40B4-AA40-704875F4FFC2}"
+              DTS:DTSID="{A2079E4B-8AAF-46C6-9846-8057A2989023}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="7"
               DTS:ObjectName="JobNo"
-              DTS:DTSID="{C5ED72A4-DA5A-420B-930C-17B65D346846}"
+              DTS:DTSID="{66CB4858-4455-4DFE-96B5-A6DD8EAB31C9}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="ResidentialAddress"
-              DTS:DTSID="{AF5892B4-B31C-4741-9675-41BBF01B51CE}"
+              DTS:DTSID="{62235828-EBDE-4C6A-B9CA-89E4FB381690}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="11"
               DTS:ObjectName="CRMUserID"
-              DTS:DTSID="{780EF1A0-C30E-4231-8E80-1C4D30BDE8FC}"
+              DTS:DTSID="{12F65B7C-700E-4285-9917-34F4AC532A25}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="11"
               DTS:ObjectName="CRMPersonID"
-              DTS:DTSID="{304A9FAD-5BD8-458E-9304-788901B4D2C2}"
+              DTS:DTSID="{E7ED82BE-6CE7-4D78-A6C9-B5C1199AA02C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="11"
               DTS:ObjectName="CRMOpportunityID"
-              DTS:DTSID="{8DB32467-BA5D-4BB5-8B77-28D5452C41F0}"
+              DTS:DTSID="{D44EEA2B-9592-43FC-88D1-CD68F893AB5C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="11"
               DTS:ObjectName="CRMCompanyID"
-              DTS:DTSID="{6CD41B44-FE11-4CCA-9D1F-106110C5E2E5}"
+              DTS:DTSID="{C4F6F78A-FA07-4C54-9C10-B56E64D1C72D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="11"
               DTS:ObjectName="CRMProspectID"
-              DTS:DTSID="{01BA81AF-3EF9-4CA0-BAF3-8D4033129579}"
+              DTS:DTSID="{BD614F94-78E4-4030-A57A-E58DAB708340}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="TaxableSubjectToDiscount"
-              DTS:DTSID="{71D6701A-5832-4D9E-9E80-6826C1D180BF}"
+              DTS:DTSID="{34C332E9-1430-4102-9501-00A131A71632}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="NonTaxableSubjectToDiscount"
-              DTS:DTSID="{47FC8144-EFBB-4010-819E-1D560D83E674}"
+              DTS:DTSID="{78606873-0348-48BF-BBD4-205D9C7FE4EE}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="TaxSubjToDiscPrcntOfTotSubjTo"
-              DTS:DTSID="{0E2C9207-18EF-4103-95DD-FFAF202CA17A}"
+              DTS:DTSID="{9A71E58F-29D5-4026-8661-36FC5FADEDAD}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="DiscountRate"
-              DTS:DTSID="{3BCAFD8F-2E18-4DCF-B6AB-4883562B34B1}"
+              DTS:DTSID="{48072BF5-72D9-4D5F-B3D0-F1DB8852EAA3}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="DiscountAmt"
-              DTS:DTSID="{02BE5A16-E5E1-48D4-B79E-756FA74959EF}"
+              DTS:DTSID="{EA14F645-B0BA-461B-B16C-1D123B25B09E}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="TaxableAmt"
-              DTS:DTSID="{E61AA947-2CA0-494C-8F50-79296D9AB64B}"
+              DTS:DTSID="{ABF298D6-74CE-4CE9-B0F7-B43106F23BF2}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="NonTaxableAmt"
-              DTS:DTSID="{819898F1-9670-4D56-A226-E124A950467A}"
+              DTS:DTSID="{D3EC2B24-01F0-435D-84AB-97EBE0833E5A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="SalesTaxAmt"
-              DTS:DTSID="{1E0CB6AF-AAAF-44CA-A56F-5EE05DD493EE}"
+              DTS:DTSID="{24FE42E1-6F4E-463E-8196-06622A4A2A42}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="Weight"
-              DTS:DTSID="{FFAFD230-F6DF-4AF8-B093-C399F130DB6D}"
+              DTS:DTSID="{39372467-5BAA-4D25-8864-06C110C47054}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="FreightAmt"
-              DTS:DTSID="{1CFC11F5-C880-409F-AEBD-13C5689D97E8}"
+              DTS:DTSID="{5DA185E6-16A8-401A-8F70-9F4F38E84231}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="DepositAmt"
-              DTS:DTSID="{C4A53F2E-68DF-4B5E-8C7B-02DC5F495F14}"
+              DTS:DTSID="{2F4C0C83-FE5A-4E3D-B777-2FBF3266785F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="CommissionRate"
-              DTS:DTSID="{008B7995-D9B6-4252-9455-A6D5AE019851}"
+              DTS:DTSID="{45AAA266-DD38-4A46-84A3-D83B9207E1CB}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="SplitCommRate2"
-              DTS:DTSID="{F7343BEF-2B21-49F5-A2AB-33BD84AAB28D}"
+              DTS:DTSID="{1FF9C4F2-C3EA-445D-AD8B-E1842F71A7F4}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="SplitCommRate3"
-              DTS:DTSID="{9D823128-82E0-4DB1-819F-7467B80EB708}"
+              DTS:DTSID="{F3AFA301-BBBB-471A-8793-18229BD30B55}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="SplitCommRate4"
-              DTS:DTSID="{FBCA72C6-ACA5-43E1-9F86-D43CDD1FBDE6}"
+              DTS:DTSID="{678B8460-1E60-47EA-B4A0-592C2D4BE5EA}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="SplitCommRate5"
-              DTS:DTSID="{5C6B98D4-D19C-4E27-A609-571F0D507AAC}"
+              DTS:DTSID="{1D9910D8-91FF-4125-AD4B-58DF594F4649}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="NumberOfShippingLabels"
-              DTS:DTSID="{A818CD04-2F31-42B8-8DE6-DF3F33BB6FE0}"
+              DTS:DTSID="{ADB2E9E5-64A9-4A63-ADED-C844E8A0BD98}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="LastNoOfShippingLabels"
-              DTS:DTSID="{26144E37-5379-4599-A46D-264DD1EA50E3}"
+              DTS:DTSID="{6409E409-16E3-4960-928F-BC591D00ED76}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="DateCreated"
-              DTS:DTSID="{CDEB4CFC-66E3-4BCF-B4CC-B9F40E8AD8A2}"
+              DTS:DTSID="{80961EE6-76AE-4E03-A047-45814FB3411F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="8"
               DTS:ObjectName="TimeCreated"
-              DTS:DTSID="{47F31AA6-BE48-4C2D-9D9C-E8BEDC960B4A}"
+              DTS:DTSID="{19BF66B5-78C9-4949-BC32-6ACD22E0C32F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="UserCreatedKey"
-              DTS:DTSID="{4144D3DF-E0FA-407A-9DB1-9FD36C73B33D}"
+              DTS:DTSID="{1D0B0B90-51F8-415C-8BAE-724A3F815F0F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="DateUpdated"
-              DTS:DTSID="{724881E2-8FFD-48A7-B0BC-DF3E8106D7D1}"
+              DTS:DTSID="{01DA1D04-4BE4-462F-8D45-13ED608CF7EB}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="8"
               DTS:ObjectName="TimeUpdated"
-              DTS:DTSID="{C7D1AC47-2A02-4EC3-8597-0F41BA0D9093}"
+              DTS:DTSID="{97CE9037-67AF-406D-8B79-F7A16F05B652}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="UserUpdatedKey"
-              DTS:DTSID="{F26889D2-5D94-445A-9C64-8B41B8E3C79D}"
+              DTS:DTSID="{D7B6E83A-1A93-4F7A-92D6-A187A67046AC}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="UDF_CANCEL_AFTER"
-              DTS:DTSID="{355A3C8F-B431-4100-9E95-377666FE92D6}"
+              DTS:DTSID="{1E04F389-7F6D-4DF4-86D2-2EDA72AE4DCA}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="6"
               DTS:ObjectName="UDF_TC_ASN_CONSOLIDATED"
-              DTS:DTSID="{4B14387A-41FA-439E-B75A-15D8710FA957}"
+              DTS:DTSID="{680FCD73-0B94-42AD-A3E4-60620708678C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="7"
               DTS:ObjectName="UDF_TC_ASN_TYPE"
-              DTS:DTSID="{1A77D0AE-1AC6-4FC1-B194-A8F424CC9551}"
+              DTS:DTSID="{1D80B4A6-4672-476A-A571-DDAB02FE5FA5}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_TC_BILL_OF_LADING"
-              DTS:DTSID="{61BE7A40-50E4-4AB5-800F-56EDF5A62301}"
+              DTS:DTSID="{366CF677-3B8A-4A2F-AF1D-BB6EFF41F6CE}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_TC_CARRIER_PRO"
-              DTS:DTSID="{C1F36374-2DC3-462A-85BC-DBC87072DBE8}"
+              DTS:DTSID="{59CFE40E-897D-49F4-9351-7D206123553C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_TC_CARRIER_TRAILER_NO"
-              DTS:DTSID="{AD808CEE-D1FB-4B78-AB10-7B31796FD806}"
+              DTS:DTSID="{9A5A86DF-989F-4B0B-9AFD-7BE3EA12E0DD}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="15"
               DTS:ObjectName="UDF_TC_DC_CODE"
-              DTS:DTSID="{4133DE23-00F1-46C9-BE3A-EC8FEFEB37E6}"
+              DTS:DTSID="{D0FD2968-2471-4B68-B5D5-5E6F0D185917}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="15"
               DTS:ObjectName="UDF_TC_DEPT_NO"
-              DTS:DTSID="{065B71BA-FB5A-4E06-8E9C-507A21A1AD3E}"
+              DTS:DTSID="{4B4F834B-0FFD-4B99-A3C2-D0D509859230}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="UDF_TC_SCAC"
-              DTS:DTSID="{09941807-6D09-4FE7-84DF-A40FCF2FC2DE}"
+              DTS:DTSID="{4F01FAC1-5D08-4654-B485-5C52B8494C38}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="15"
               DTS:ObjectName="UDF_TC_STORE_NO"
-              DTS:DTSID="{6BE3FA76-D846-4ADB-9707-D2FD81A62605}"
+              DTS:DTSID="{B0FECDBD-1D37-4B5E-B045-9BD80AF5698D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="20"
               DTS:ObjectName="UDF_TC_TIME_SHIPPED"
-              DTS:DTSID="{8C4F493E-53A6-4CFC-972C-3D9828087DAE}"
+              DTS:DTSID="{86CBD173-8EA2-4679-8332-FADBE6F98FCB}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="20"
               DTS:ObjectName="UDF_TC_TRAILER_INITIAL"
-              DTS:DTSID="{78936CF8-16CE-48EF-B347-22B8D5911BAD}"
+              DTS:DTSID="{D719B3D8-E331-48C3-AD54-43DF1563F7E2}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="UDF_TC_TRANSPORT_METHOD"
-              DTS:DTSID="{F2A070DD-5104-4F15-A110-8859ED84A517}"
+              DTS:DTSID="{4FA6AF7E-01B0-456B-ADEC-341C3E4A4FE3}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_TC_USER_1"
-              DTS:DTSID="{75963D74-95FA-4069-B0E3-03BE40D33D21}"
+              DTS:DTSID="{116A7D97-3F22-465D-89E5-078D7E1012E5}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_TC_USER_2"
-              DTS:DTSID="{633766F4-B6D6-462C-9A5B-1803779FF575}"
+              DTS:DTSID="{7BEAAD50-732C-4411-9ADD-F7A357412384}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="UDF_DEFAULT_CARRIER"
-              DTS:DTSID="{55DD1402-5C3D-4C8D-9813-E623D4BE9E3A}"
+              DTS:DTSID="{21B30A18-AB2B-4B0B-96C3-4F1946B6C62B}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="12"
               DTS:ObjectName="UDF_SHIP_ACCOUNT_NO"
-              DTS:DTSID="{60050172-16D4-4FCE-AEDC-78DF5664FFE9}"
+              DTS:DTSID="{62F4EBD3-061C-4CEF-AB1B-C09FAE829478}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="4"
               DTS:ObjectName="UDF_INCLUDE_INVOICE"
-              DTS:DTSID="{8BD72153-3582-4D73-8565-390CAF0ADBEA}"
+              DTS:DTSID="{1661B196-D7FE-4C87-876B-855DFB418D2F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="12"
               DTS:ObjectName="UDF_FREIGHT_TERMS"
-              DTS:DTSID="{B403ACBF-93CF-4516-9258-47CE0DF1BF15}"
+              DTS:DTSID="{CFFB5B49-5C09-4C06-A34C-D6A0E6640386}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="UDF_TC"
-              DTS:DTSID="{6A0304AB-EE56-44DE-BD38-9BDFA5EEACBE}"
+              DTS:DTSID="{E18CA510-2C6B-420E-BD2D-1317287CE820}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="UDF_PALLET"
-              DTS:DTSID="{C7981D34-F0AD-4F59-A915-BFB71104B7C2}"
+              DTS:DTSID="{40CF6CF7-636D-45B2-BE34-C1069596C788}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="UDF_EXCHANGE_RATE"
-              DTS:DTSID="{5DF4B5AC-9431-4BED-9D74-08983605DEEF}"
+              DTS:DTSID="{FEF5C277-8A09-4DD7-8970-BC6314DABACC}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="17"
               DTS:ObjectName="UDF_TELEPHONE"
-              DTS:DTSID="{850A2E1C-0946-47E7-91B3-5EE141211EDF}"
+              DTS:DTSID="{F0ECFF60-B871-4D10-96BF-10A33CDBADE8}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="UDF_FREE_FRGHT"
-              DTS:DTSID="{3C670896-9F66-43CE-81BA-1262E9877AF9}"
+              DTS:DTSID="{FE3B56BA-B215-47BE-A68C-CC9F32041315}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="UDF_COMMISSION_OVERRIDE"
-              DTS:DTSID="{CB302AB6-7E0F-4751-A32E-D52D0A0E2EDB}"
+              DTS:DTSID="{C4B54B9A-6C27-4D85-A5B4-254ECA1D161E}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="6"
               DTS:ObjectName="UDF_CUSTOMER_TYPE"
-              DTS:DTSID="{FC01E29F-6B43-42FE-8E22-72ED72F7BA49}"
+              DTS:DTSID="{67F14BFD-22F5-45E7-9B08-0CBF17D2D50F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="UDF_ASAP"
-              DTS:DTSID="{7B05337E-D141-427E-B590-EF82F0173AE9}"
+              DTS:DTSID="{35193B4D-8223-456B-8E45-DFBC9456497C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_DELIVERY_CONTACT"
-              DTS:DTSID="{DC4B3FCA-E2B9-47EB-A587-AB7F676477E8}"
+              DTS:DTSID="{5818A002-F6E3-4CBF-95B7-C401C8E88BF2}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="80"
               DTS:ObjectName="UDF_DELIVERY_NOTE"
-              DTS:DTSID="{B31FD1A6-2EF3-426E-A55F-3FFA56DE8F27}"
+              DTS:DTSID="{23F4920F-E673-41EC-9745-400DA893F8BF}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="20"
               DTS:ObjectName="UDF_DELIVERY_PHONE"
-              DTS:DTSID="{C6F2E759-608C-4A47-AC71-8CC701A682E9}"
+              DTS:DTSID="{7875440D-F608-43E0-892E-67EC242BF233}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="UDF_DONT_SHIP_EARLY"
-              DTS:DTSID="{A6C3CEB8-0077-4C37-9298-70AFD21E4780}"
+              DTS:DTSID="{D155D830-3477-4674-AA2B-A393E5B77B5D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="UDF_TOTAL_PIECES"
-              DTS:DTSID="{43E1CB69-CC9E-47F7-B40E-EECF393F52C8}"
+              DTS:DTSID="{88CE2FFD-8CE3-4E23-A459-373436BEA18E}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="UDF_TOTAL_SLP"
-              DTS:DTSID="{21B48420-8E72-48E9-8E08-12C3535A3187}"
+              DTS:DTSID="{300008EA-9F25-4AFC-AD73-7E8B818CC2AB}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
               DTS:ObjectName="UDF_TOTAL_WEIGHT"
-              DTS:DTSID="{67991BFA-9AAB-4525-AD59-4DEC83D0F44D}"
+              DTS:DTSID="{31D53E35-146B-41D8-8A82-FD9518169F59}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="UDF_ADJUSTED_SHIP_DATE"
-              DTS:DTSID="{331A16C2-B7DD-4C48-9256-C6E514D62A3A}"
+              DTS:DTSID="{7CE93736-E648-4855-8781-7CA70D8E597F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="UDF_COMPLETED"
-              DTS:DTSID="{A543A8A0-0845-4935-BF29-CB94885CCA4C}"
+              DTS:DTSID="{547FFDA9-004A-4749-8253-FC59097C4876}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="UDF_BAK02"
-              DTS:DTSID="{5F8C1F43-8129-4709-BDB9-14DA67751380}"
+              DTS:DTSID="{159939DF-8142-4407-9924-B1CB7C507EF2}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="UDF_BT"
-              DTS:DTSID="{A0FCB1FF-6EEE-45D2-874C-7D8948DB2838}"
+              DTS:DTSID="{F4B05050-C4C0-4DA9-AB51-E913060D20E9}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="UDF_CANCEL_DATE"
-              DTS:DTSID="{422E8F5D-FFC4-4059-A0E7-50DF5637155F}"
+              DTS:DTSID="{D4D585FC-A6CB-4720-BF58-B2D35D8D1245}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_CUST_ORD_NO"
-              DTS:DTSID="{29F2E1A0-D6EA-427B-B874-D8EC6A264D07}"
+              DTS:DTSID="{32A2E111-14BF-465E-A520-E23D8FA5321D}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="15"
               DTS:ObjectName="UDF_DEPT"
-              DTS:DTSID="{99C8C64F-0060-4F55-A30A-D0D5B0E3F94F}"
+              DTS:DTSID="{6CCF53EC-58DC-4D94-877D-54D892B18C9C}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_DIV_REGION"
-              DTS:DTSID="{3AFE30FF-1628-46CB-819E-07652E69E492}"
+              DTS:DTSID="{ED9EF3B7-62B7-42AB-B6D1-6ABC1A504D1F}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_LETTER_CR"
-              DTS:DTSID="{069256A9-3B70-4337-B532-F2BDB56A9AC0}"
+              DTS:DTSID="{FAAED1D6-2758-48D5-B840-7917924D7EBE}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_MR"
-              DTS:DTSID="{7E5EE844-25C5-4F8A-9C17-91C34F699E2B}"
+              DTS:DTSID="{C2A06FC9-61C5-4D97-BA73-8EA4A42452D3}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="UDF_PO_DATE"
-              DTS:DTSID="{A69E65A3-DBBA-48AA-9AAC-47420BDB96EF}"
+              DTS:DTSID="{488F2124-8333-4D24-B84E-39FEBFC4AAFB}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_PROMO_DEAL"
-              DTS:DTSID="{AE02B0FC-9DB6-4FF1-916D-6F914430DBAC}"
+              DTS:DTSID="{96D10C42-3099-4356-A134-EE04BCCCF0C5}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="UDF_REQUESTED_DELIVERY"
-              DTS:DTSID="{696DEDE5-D06B-4DBA-B6B7-643C13A8520C}"
+              DTS:DTSID="{7F1FE1C7-1819-493B-AB4A-DAEE51A64D63}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="UDF_ST"
-              DTS:DTSID="{425FB086-791C-4D95-824E-0D3CEB358EBE}"
+              DTS:DTSID="{3F932E98-6B18-4C09-9969-72CD1E888147}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_VENDOR_NO"
-              DTS:DTSID="{19E3E92A-3584-4AA1-81DA-EA83C1E7A562}"
+              DTS:DTSID="{0E89400B-55BF-4C0C-9FA8-67E5F92383CF}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="UDF_Z7"
-              DTS:DTSID="{FBB4BC97-338C-4334-B249-933E10C7A396}"
+              DTS:DTSID="{1F724248-2064-4005-A7FA-48CD03CA775B}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="2"
               DTS:ObjectName="BillToDivisionNo"
-              DTS:DTSID="{F64DDACF-A189-4251-BD35-DB66739BCF4F}"
+              DTS:DTSID="{96CD5FF7-4503-4D0E-B99D-5766630F8EEE}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="20"
               DTS:ObjectName="BillToCustomerNo"
-              DTS:DTSID="{47D72EA3-B00F-4B32-B9A2-BB1A03DA3BCC}"
+              DTS:DTSID="{D2EF4D58-14F1-4636-B021-477438DA0FC4}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="SalesOrderPrinted"
-              DTS:DTSID="{D367AE88-FF45-4345-83FB-F4FD8F410BCD}"
+              DTS:DTSID="{F0DCE3D2-35E1-43B0-989A-7A708A2EB378}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
               DTS:ObjectName="PickingSheetPrinted"
-              DTS:DTSID="{3AB45132-AB0B-4529-9505-40A755CACFBA}"
+              DTS:DTSID="{94B02415-C9E3-45DE-9062-82B60FD40A4E}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="25"
               DTS:ObjectName="UDF_IMPORTER"
-              DTS:DTSID="{C8758557-A7AD-45AF-9106-578F49AF426F}"
+              DTS:DTSID="{2E0A538B-E484-485A-9278-FCDA670B4129}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="9"
               DTS:ObjectName="UDF_PO_VENDOR"
-              DTS:DTSID="{C2835C92-846A-4066-83E4-EADF084FD303}"
+              DTS:DTSID="{A8D3F4A1-27C5-4A7C-8D65-C260092B201A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
               DTS:ObjectName="UDF_DC"
-              DTS:DTSID="{E9194E2E-49DE-4B2D-938C-9538C3BA79A3}"
+              DTS:DTSID="{D6A6B947-7B7C-4A77-AB2C-EAF97D0E373A}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
               DTS:ObjectName="UDF_ORD_REF_1"
-              DTS:DTSID="{BD6D7A4C-4E1F-4AD2-852A-CA17752CAB15}"
+              DTS:DTSID="{63455968-F9A1-4069-B533-5F5A5D5221C2}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
               DTS:ObjectName="PromotedDate"
-              DTS:DTSID="{3F1E6303-E6EB-420F-B56A-AE9BE3071A34}"
+              DTS:DTSID="{40B64881-EE5B-42D8-8E13-BCF14EADB130}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="1"
-              DTS:ObjectName="D404_AllocateOrder"
-              DTS:DTSID="{E9D448B4-D28B-4EB1-8BBE-1D33DFC697C4}"
+              DTS:ObjectName="AttachTaggedDocuments_234"
+              DTS:DTSID="{12C3A2C3-FFBE-4073-98B1-5F27DD2C427E}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="1"
+              DTS:ObjectName="PayBalance"
+              DTS:DTSID="{C020D475-6026-47E7-864B-7EACF3A1E2AD}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="1"
+              DTS:ObjectName="D140_AllocateOrder"
+              DTS:DTSID="{F4A9EF56-CBEC-4364-879F-75F27B5FD0E6}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="10"
-              DTS:ObjectName="D404_WavePickNo"
-              DTS:DTSID="{0E32944A-5C3F-4910-AD8C-598E47537188}"
+              DTS:ObjectName="D140_WavePickNo"
+              DTS:DTSID="{90E7912B-B59C-4822-8DD4-9E0F860692A3}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
-              DTS:ObjectName="D404_PickDate1"
-              DTS:DTSID="{DF11105B-1B7A-4432-8BEB-7602CB068712}"
+              DTS:ObjectName="D140_PickDate1"
+              DTS:DTSID="{3D359905-4CD2-42BD-8AF1-73FADFBA93D6}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="8"
-              DTS:ObjectName="D404_PickTime1"
-              DTS:DTSID="{CAE8BFF6-2BC4-406E-BB30-133F3C3C3264}"
+              DTS:ObjectName="D140_PickTime1"
+              DTS:DTSID="{FBA6990C-B7B0-4D8A-AACD-9DC3A1C66A49}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
-              DTS:ObjectName="D404_PickDate2"
-              DTS:DTSID="{77E2808C-6B81-4515-9405-91D4A4051B86}"
+              DTS:ObjectName="D140_PickDate2"
+              DTS:DTSID="{A5CC232A-3C6D-44F1-87EB-31E7E7501F16}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="8"
-              DTS:ObjectName="D404_PickTime2"
-              DTS:DTSID="{A2248E5C-5295-4DBC-A4AC-2CBD9B21998F}"
+              DTS:ObjectName="D140_PickTime2"
+              DTS:DTSID="{BD284D2D-CDE2-4CC7-9285-8288314BC1FE}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
-              DTS:ObjectName="D404_StageDate1"
-              DTS:DTSID="{90A53F4F-A8D5-4522-8AF6-526C227E7426}"
+              DTS:ObjectName="D140_StageDate1"
+              DTS:DTSID="{F5043C87-48BA-488A-8BAD-DB65900A0152}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="135"
-              DTS:ObjectName="D404_StageDate2"
-              DTS:DTSID="{7C9CF98F-34A5-49A9-B3B8-BC1780C9E7C7}"
+              DTS:ObjectName="D140_StageDate2"
+              DTS:DTSID="{AF4C55DC-9402-43A0-ABBB-0BE2B56EA0E5}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="5"
-              DTS:ObjectName="D404_QtyPicked"
-              DTS:DTSID="{A76C4748-30C3-4748-8C03-7F343DBE0BE0}"
+              DTS:ObjectName="D140_QtyPicked"
+              DTS:DTSID="{2FE65905-1EF9-4117-9AED-79D8D00EA5DD}"
               DTS:CreationName="" />
             <DTS:CacheColumn
               DTS:DataType="130"
               DTS:Length="30"
-              DTS:IndexPosition="1"
               DTS:ObjectName="convCustomerPONumber"
-              DTS:DTSID="{6F92B797-6347-444F-83ED-C30281E6AE7B}"
+              DTS:DTSID="{459000E2-BE27-4B73-9B20-C929150550B9}"
               DTS:CreationName="" />
           </DTS:CacheColumns>
         </DTS:ConnectionManager>
@@ -1313,11 +1325,13 @@
       DTS:ObjectName="EPIC-INV-SQL01.ECSSquareSpace.ECS_DATA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=EPIC-INV-SQL01;User ID=ECS_DATA;Initial Catalog=ECSSquareSpace;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYY+SWPiZO0SWiFM2vlh5vwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAD7353nJItneX5OO38pkf3AAAAAASAAACgAAAAEAAAAErvXDMOGz0f7jvcL2aVYNc4AAAADf4DbvJtyj9irI8hX9ZIBzc1SDPRX9xR5fGtiw/HxA0zieQrpntxfBSvQg5C9EE3n6VswopRnd0UAAAAH8PmbMTpts7FkJzjGy6YlmGB0H4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7zEIU3FEU+S7iczgxP/4wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADB8UFiHDI378uXXeLhTX4yAAAAAASAAACgAAAAEAAAAAG9msZhZtAs+B0uCRCgGXg4AAAALJz2yqGeWttp0G2wr15i46V6x9AwUevbuwIMQHZ801gSrCzvJdLl6yp8MavQBjg29aWhV7XmaUIUAAAAYKSxiAHNSZvY7nR458NNjy4Ym3E</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1332,7 +1346,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYY+SWPiZO0SWiFM2vlh5vwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACPTGQ72SgW5+AfMsBJ/AMEAAAAAASAAACgAAAAEAAAAHVTDaG9Gm/Ns81NuKy1q/c4AAAAY6eQpf9And4oqdaz62N4APpfVlMgMlVDbo+e/HUkBVNAtmyfV6AQo1GlONBJ3TZDxjLOEGGwI5MUAAAA+yuxFkqEtGPBx/60j8BtQTNPnU4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7zEIU3FEU+S7iczgxP/4wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADPs0bKAxoiQDG/tgNQOQ1xAAAAAASAAACgAAAAEAAAAOVnOlrZNs1855vVHGspf7Q4AAAAE+t86bHem3lfSGMxA6OXeiVnVlf+Askn3Fq5ccxPgBgJbiWh2/Rr3dQGeB+qi3CiO2U1C+QhGW8UAAAAR1nYauteA6mPPT46mu7Wzd/fHOw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1343,7 +1357,12 @@
       DTS:ObjectName="SAGE100.ODBC">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="uid=ODBC;Dsn=SAGE100;" />
+          DTS:ConnectionString="uid=ODBC;Dsn=SAGE100;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7zEIU3FEU+S7iczgxP/4wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD2/Ic/cnGSdODo5kfdcPPjAAAAAASAAACgAAAAEAAAAPPqoY9Iw4QhAsGljifu6G9AAAAA30gTrpOuQEO2OUz6kPHZrFu8MgtyJoX4iEyCTJerodWdePG9yKSRT63NniCjsJ9rstIWzEH1GrxnDqQ9xpjaIxQAAABZQAxZCpgWqM9zjAWFaXCg8kU4cA</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1903,8 +1922,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
               componentClassID="Microsoft.Cache"
               contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
-              name="Cache Transform"
-              version="1">
+              name="Cache Transform">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -1914,8 +1932,8 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
               <connections>
                 <connection
                   refId="Package\DFT Get Order Header Sage\Cache Transform.Connections[CacheConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Cache Sage Orders]"
-                  connectionManagerRefId="Package.ConnectionManagers[Cache Sage Orders]"
+                  connectionManagerID="Package.ConnectionManagers[Cache Sales Order]"
+                  connectionManagerRefId="Package.ConnectionManagers[Cache Sales Order]"
                   description="The connection used to access the cache."
                   name="CacheConnection" />
               </connections>
@@ -2030,7 +2048,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToName]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="50"
                       cachedName="BillToName"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToName]">
                       <properties>
@@ -2043,7 +2061,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToAddress1]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="40"
                       cachedName="BillToAddress1"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToAddress1]">
                       <properties>
@@ -2056,7 +2074,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToAddress2]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="40"
                       cachedName="BillToAddress2"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToAddress2]">
                       <properties>
@@ -2069,7 +2087,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToAddress3]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="40"
                       cachedName="BillToAddress3"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToAddress3]">
                       <properties>
@@ -2082,7 +2100,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToCity]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="30"
                       cachedName="BillToCity"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToCity]">
                       <properties>
@@ -2147,7 +2165,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToName]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="50"
                       cachedName="ShipToName"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToName]">
                       <properties>
@@ -2160,7 +2178,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToAddress1]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="40"
                       cachedName="ShipToAddress1"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToAddress1]">
                       <properties>
@@ -2173,7 +2191,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToAddress2]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="40"
                       cachedName="ShipToAddress2"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToAddress2]">
                       <properties>
@@ -2186,7 +2204,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToAddress3]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="40"
                       cachedName="ShipToAddress3"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToAddress3]">
                       <properties>
@@ -2199,7 +2217,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToCity]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="30"
                       cachedName="ShipToCity"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToCity]">
                       <properties>
@@ -2342,7 +2360,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ConfirmTo]"
                       cachedDataType="wstr"
-                      cachedLength="30"
+                      cachedLength="50"
                       cachedName="ConfirmTo"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ConfirmTo]">
                       <properties>
@@ -2510,7 +2528,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                     <inputColumn
                       refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[FaxNo]"
                       cachedDataType="wstr"
-                      cachedLength="17"
+                      cachedLength="20"
                       cachedName="FaxNo"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[FaxNo]">
                       <properties>
@@ -3973,115 +3991,141 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_AllocateOrder]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[AttachTaggedDocuments_234]"
                       cachedDataType="wstr"
                       cachedLength="1"
-                      cachedName="D404_AllocateOrder"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_AllocateOrder]">
+                      cachedName="AttachTaggedDocuments_234"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[AttachTaggedDocuments_234]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_AllocateOrder</property>
+                          name="CacheColumnName">AttachTaggedDocuments_234</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_WavePickNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[PayBalance]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="PayBalance"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[PayBalance]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">PayBalance</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_AllocateOrder]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="D140_AllocateOrder"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_AllocateOrder]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">D140_AllocateOrder</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_WavePickNo]"
                       cachedDataType="wstr"
                       cachedLength="10"
-                      cachedName="D404_WavePickNo"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_WavePickNo]">
+                      cachedName="D140_WavePickNo"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_WavePickNo]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_WavePickNo</property>
+                          name="CacheColumnName">D140_WavePickNo</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_PickDate1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_PickDate1]"
                       cachedDataType="dbTimeStamp"
-                      cachedName="D404_PickDate1"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickDate1]">
+                      cachedName="D140_PickDate1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickDate1]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_PickDate1</property>
+                          name="CacheColumnName">D140_PickDate1</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_PickTime1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_PickTime1]"
                       cachedDataType="wstr"
                       cachedLength="8"
-                      cachedName="D404_PickTime1"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickTime1]">
+                      cachedName="D140_PickTime1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickTime1]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_PickTime1</property>
+                          name="CacheColumnName">D140_PickTime1</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_PickDate2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_PickDate2]"
                       cachedDataType="dbTimeStamp"
-                      cachedName="D404_PickDate2"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickDate2]">
+                      cachedName="D140_PickDate2"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickDate2]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_PickDate2</property>
+                          name="CacheColumnName">D140_PickDate2</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_PickTime2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_PickTime2]"
                       cachedDataType="wstr"
                       cachedLength="8"
-                      cachedName="D404_PickTime2"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickTime2]">
+                      cachedName="D140_PickTime2"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickTime2]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_PickTime2</property>
+                          name="CacheColumnName">D140_PickTime2</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_StageDate1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_StageDate1]"
                       cachedDataType="dbTimeStamp"
-                      cachedName="D404_StageDate1"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_StageDate1]">
+                      cachedName="D140_StageDate1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_StageDate1]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_StageDate1</property>
+                          name="CacheColumnName">D140_StageDate1</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_StageDate2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_StageDate2]"
                       cachedDataType="dbTimeStamp"
-                      cachedName="D404_StageDate2"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_StageDate2]">
+                      cachedName="D140_StageDate2"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_StageDate2]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_StageDate2</property>
+                          name="CacheColumnName">D140_StageDate2</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D404_QtyPicked]"
+                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_QtyPicked]"
                       cachedDataType="r8"
-                      cachedName="D404_QtyPicked"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_QtyPicked]">
+                      cachedName="D140_QtyPicked"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_QtyPicked]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="The cache column associated with the input column."
-                          name="CacheColumnName">D404_QtyPicked</property>
+                          name="CacheColumnName">D140_QtyPicked</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -4324,7 +4368,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToName]"
-                      length="30"
+                      length="50"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToName]"
                       name="BillToName"
                       truncationRowDisposition="FailComponent" />
@@ -4334,7 +4378,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToAddress1]"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToAddress1]"
                       name="BillToAddress1"
                       truncationRowDisposition="FailComponent" />
@@ -4344,7 +4388,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToAddress2]"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToAddress2]"
                       name="BillToAddress2"
                       truncationRowDisposition="FailComponent" />
@@ -4354,7 +4398,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToAddress3]"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToAddress3]"
                       name="BillToAddress3"
                       truncationRowDisposition="FailComponent" />
@@ -4364,7 +4408,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToCity]"
-                      length="20"
+                      length="30"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[BillToCity]"
                       name="BillToCity"
                       truncationRowDisposition="FailComponent" />
@@ -4414,7 +4458,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToName]"
-                      length="30"
+                      length="50"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToName]"
                       name="ShipToName"
                       truncationRowDisposition="FailComponent" />
@@ -4424,7 +4468,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToAddress1]"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToAddress1]"
                       name="ShipToAddress1"
                       truncationRowDisposition="FailComponent" />
@@ -4434,7 +4478,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToAddress2]"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToAddress2]"
                       name="ShipToAddress2"
                       truncationRowDisposition="FailComponent" />
@@ -4444,7 +4488,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToAddress3]"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToAddress3]"
                       name="ShipToAddress3"
                       truncationRowDisposition="FailComponent" />
@@ -4454,7 +4498,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToCity]"
-                      length="20"
+                      length="30"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipToCity]"
                       name="ShipToCity"
                       truncationRowDisposition="FailComponent" />
@@ -4564,7 +4608,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ConfirmTo]"
-                      length="30"
+                      length="50"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ConfirmTo]"
                       name="ConfirmTo"
                       truncationRowDisposition="FailComponent" />
@@ -4693,7 +4737,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[FaxNo]"
-                      length="17"
+                      length="20"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[FaxNo]"
                       name="FaxNo"
                       truncationRowDisposition="FailComponent" />
@@ -5817,91 +5861,6 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       name="PromotedDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_AllocateOrder]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_AllocateOrder]"
-                      length="1"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_AllocateOrder]"
-                      name="D404_AllocateOrder"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_WavePickNo]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_WavePickNo]"
-                      length="10"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_WavePickNo]"
-                      name="D404_WavePickNo"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickDate1]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_PickDate1]"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickDate1]"
-                      name="D404_PickDate1"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickTime1]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_PickTime1]"
-                      length="8"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickTime1]"
-                      name="D404_PickTime1"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickDate2]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_PickDate2]"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickDate2]"
-                      name="D404_PickDate2"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickTime2]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_PickTime2]"
-                      length="8"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_PickTime2]"
-                      name="D404_PickTime2"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_StageDate1]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_StageDate1]"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_StageDate1]"
-                      name="D404_StageDate1"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_StageDate2]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_StageDate2]"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_StageDate2]"
-                      name="D404_StageDate2"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_QtyPicked]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_QtyPicked]"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D404_QtyPicked]"
-                      name="D404_QtyPicked"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_GIFT_MESSAGE]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
@@ -5927,6 +5886,111 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[UDF_RETURNINST]"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_RETURNINST]"
                       name="UDF_RETURNINST"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[AttachTaggedDocuments_234]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[AttachTaggedDocuments_234]"
+                      length="1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[AttachTaggedDocuments_234]"
+                      name="AttachTaggedDocuments_234"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[PayBalance]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[PayBalance]"
+                      length="1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[PayBalance]"
+                      name="PayBalance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_AllocateOrder]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_AllocateOrder]"
+                      length="1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_AllocateOrder]"
+                      name="D140_AllocateOrder"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_WavePickNo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_WavePickNo]"
+                      length="10"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_WavePickNo]"
+                      name="D140_WavePickNo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickDate1]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_PickDate1]"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickDate1]"
+                      name="D140_PickDate1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickTime1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_PickTime1]"
+                      length="8"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickTime1]"
+                      name="D140_PickTime1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickDate2]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_PickDate2]"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickDate2]"
+                      name="D140_PickDate2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickTime2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_PickTime2]"
+                      length="8"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickTime2]"
+                      name="D140_PickTime2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_StageDate1]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_StageDate1]"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_StageDate1]"
+                      name="D140_StageDate1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_StageDate2]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_StageDate2]"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_StageDate2]"
+                      name="D140_StageDate2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_QtyPicked]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_QtyPicked]"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_QtyPicked]"
+                      name="D140_QtyPicked"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -5972,27 +6036,27 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToName]"
                       dataType="wstr"
-                      length="30"
+                      length="50"
                       name="BillToName" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToAddress1]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       name="BillToAddress1" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToAddress2]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       name="BillToAddress2" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToAddress3]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       name="BillToAddress3" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToCity]"
                       dataType="wstr"
-                      length="20"
+                      length="30"
                       name="BillToCity" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BillToState]"
@@ -6017,27 +6081,27 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToName]"
                       dataType="wstr"
-                      length="30"
+                      length="50"
                       name="ShipToName" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToAddress1]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       name="ShipToAddress1" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToAddress2]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       name="ShipToAddress2" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToAddress3]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       name="ShipToAddress3" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToCity]"
                       dataType="wstr"
-                      length="20"
+                      length="30"
                       name="ShipToCity" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ShipToState]"
@@ -6092,7 +6156,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[ConfirmTo]"
                       dataType="wstr"
-                      length="30"
+                      length="50"
                       name="ConfirmTo" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[Comment]"
@@ -6156,7 +6220,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[FaxNo]"
                       dataType="wstr"
-                      length="17"
+                      length="20"
                       name="FaxNo" />
                     <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[BatchFax]"
@@ -6703,46 +6767,6 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       dataType="dbTimeStamp"
                       name="PromotedDate" />
                     <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_AllocateOrder]"
-                      dataType="wstr"
-                      length="1"
-                      name="D404_AllocateOrder" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_WavePickNo]"
-                      dataType="wstr"
-                      length="10"
-                      name="D404_WavePickNo" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_PickDate1]"
-                      dataType="dbTimeStamp"
-                      name="D404_PickDate1" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_PickTime1]"
-                      dataType="wstr"
-                      length="8"
-                      name="D404_PickTime1" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_PickDate2]"
-                      dataType="dbTimeStamp"
-                      name="D404_PickDate2" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_PickTime2]"
-                      dataType="wstr"
-                      length="8"
-                      name="D404_PickTime2" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_StageDate1]"
-                      dataType="dbTimeStamp"
-                      name="D404_StageDate1" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_StageDate2]"
-                      dataType="dbTimeStamp"
-                      name="D404_StageDate2" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D404_QtyPicked]"
-                      dataType="r8"
-                      name="D404_QtyPicked" />
-                    <externalMetadataColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[UDF_GIFT_MESSAGE]"
                       dataType="nText"
                       name="UDF_GIFT_MESSAGE" />
@@ -6754,6 +6778,56 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[UDF_RETURNINST]"
                       dataType="nText"
                       name="UDF_RETURNINST" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[AttachTaggedDocuments_234]"
+                      dataType="wstr"
+                      length="1"
+                      name="AttachTaggedDocuments_234" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[PayBalance]"
+                      dataType="wstr"
+                      length="1"
+                      name="PayBalance" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_AllocateOrder]"
+                      dataType="wstr"
+                      length="1"
+                      name="D140_AllocateOrder" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_WavePickNo]"
+                      dataType="wstr"
+                      length="10"
+                      name="D140_WavePickNo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_PickDate1]"
+                      dataType="dbTimeStamp"
+                      name="D140_PickDate1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_PickTime1]"
+                      dataType="wstr"
+                      length="8"
+                      name="D140_PickTime1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_PickDate2]"
+                      dataType="dbTimeStamp"
+                      name="D140_PickDate2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_PickTime2]"
+                      dataType="wstr"
+                      length="8"
+                      name="D140_PickTime2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_StageDate1]"
+                      dataType="dbTimeStamp"
+                      name="D140_StageDate1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_StageDate2]"
+                      dataType="dbTimeStamp"
+                      name="D140_StageDate2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].ExternalColumns[D140_QtyPicked]"
+                      dataType="r8"
+                      name="D140_QtyPicked" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -6810,31 +6884,31 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToName]"
                       dataType="wstr"
-                      length="30"
+                      length="50"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToName]"
                       name="BillToName" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToAddress1]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToAddress1]"
                       name="BillToAddress1" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToAddress2]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToAddress2]"
                       name="BillToAddress2" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToAddress3]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToAddress3]"
                       name="BillToAddress3" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToCity]"
                       dataType="wstr"
-                      length="20"
+                      length="30"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[BillToCity]"
                       name="BillToCity" />
                     <outputColumn
@@ -6864,31 +6938,31 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToName]"
                       dataType="wstr"
-                      length="30"
+                      length="50"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToName]"
                       name="ShipToName" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToAddress1]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToAddress1]"
                       name="ShipToAddress1" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToAddress2]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToAddress2]"
                       name="ShipToAddress2" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToAddress3]"
                       dataType="wstr"
-                      length="30"
+                      length="40"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToAddress3]"
                       name="ShipToAddress3" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToCity]"
                       dataType="wstr"
-                      length="20"
+                      length="30"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ShipToCity]"
                       name="ShipToCity" />
                     <outputColumn
@@ -6954,7 +7028,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ConfirmTo]"
                       dataType="wstr"
-                      length="30"
+                      length="50"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ConfirmTo]"
                       name="ConfirmTo" />
                     <outputColumn
@@ -7031,7 +7105,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[FaxNo]"
                       dataType="wstr"
-                      length="17"
+                      length="20"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[FaxNo]"
                       name="FaxNo" />
                     <outputColumn
@@ -7694,55 +7768,6 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[PromotedDate]"
                       name="PromotedDate" />
                     <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_AllocateOrder]"
-                      dataType="wstr"
-                      length="1"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_AllocateOrder]"
-                      name="D404_AllocateOrder" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_WavePickNo]"
-                      dataType="wstr"
-                      length="10"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_WavePickNo]"
-                      name="D404_WavePickNo" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_PickDate1]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_PickDate1]"
-                      name="D404_PickDate1" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_PickTime1]"
-                      dataType="wstr"
-                      length="8"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_PickTime1]"
-                      name="D404_PickTime1" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_PickDate2]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_PickDate2]"
-                      name="D404_PickDate2" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_PickTime2]"
-                      dataType="wstr"
-                      length="8"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_PickTime2]"
-                      name="D404_PickTime2" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_StageDate1]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_StageDate1]"
-                      name="D404_StageDate1" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_StageDate2]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_StageDate2]"
-                      name="D404_StageDate2" />
-                    <outputColumn
-                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_QtyPicked]"
-                      dataType="r8"
-                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D404_QtyPicked]"
-                      name="D404_QtyPicked" />
-                    <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[UDF_GIFT_MESSAGE]"
                       dataType="nText"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[UDF_GIFT_MESSAGE]"
@@ -7757,6 +7782,67 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       dataType="nText"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[UDF_RETURNINST]"
                       name="UDF_RETURNINST" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[AttachTaggedDocuments_234]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[AttachTaggedDocuments_234]"
+                      name="AttachTaggedDocuments_234" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[PayBalance]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[PayBalance]"
+                      name="PayBalance" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_AllocateOrder]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_AllocateOrder]"
+                      name="D140_AllocateOrder" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_WavePickNo]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_WavePickNo]"
+                      name="D140_WavePickNo" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_PickDate1]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_PickDate1]"
+                      name="D140_PickDate1" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_PickTime1]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_PickTime1]"
+                      name="D140_PickTime1" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_PickDate2]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_PickDate2]"
+                      name="D140_PickDate2" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_PickTime2]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_PickTime2]"
+                      name="D140_PickTime2" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_StageDate1]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_StageDate1]"
+                      name="D140_StageDate1" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_StageDate2]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_StageDate2]"
+                      name="D140_StageDate2" />
+                    <outputColumn
+                      refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_QtyPicked]"
+                      dataType="r8"
+                      lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[D140_QtyPicked]"
+                      name="D140_QtyPicked" />
                     <outputColumn
                       refId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -11295,7 +11381,7 @@ where [refTable].[ItemCode] = ? and [refTable].[convCustomerPONumber] = ?</prope
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\890:invalid};#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\891:invalid};</property>
+                      name="ParameterMap">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\1237:invalid};#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\1238:invalid};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -18894,7 +18980,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from () [refTable]
-where [refTable].[convCustomerPONumber] = ?</property>
+where [refTable].[SalesOrderNo] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -18925,7 +19011,7 @@ where [refTable].[convCustomerPONumber] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="SalesOrderNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OrderDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OrderType" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OrderStatus" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MasterRepeatingOrderNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipExpireDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ARDivisionNo" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CustomerNo" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToName" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToAddress1" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToAddress2" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToAddress3" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToCity" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToState" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToZipCode" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToCountryCode" dataType="DT_WSTR" length="3" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToCode" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToName" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToAddress1" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToAddress2" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToAddress3" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToCity" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToState" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToZipCode" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToCountryCode" dataType="DT_WSTR" length="3" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipVia" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipZone" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipZoneActual" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipWeight" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CustomerPONo" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FOB" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WarehouseCode" dataType="DT_WSTR" length="3" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ConfirmTo" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Comment" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TermsCode" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxSchedule" dataType="DT_WSTR" length="9" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxExemptNo" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InvalidTaxCalc" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PrintSalesOrders" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PrintPickingSheets" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastInvoiceOrderDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastInvoiceOrderNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentInvoiceNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CheckNoForDeposit" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CycleCode" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FaxNo" dataType="DT_WSTR" length="17" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BatchFax" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BatchEmail" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmailAddress" dataType="DT_WSTR" length="250" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FreightCalculationMethod" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LotSerialLinesExist" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommissions" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo2" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo2" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo3" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo3" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo4" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo4" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo5" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo5" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EBMUserType" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EBMSubmissionType" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EBMUserIDSubmittingThisOrder" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PaymentType" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OtherPaymentTypeRefNo" dataType="DT_WSTR" length="24" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CancelReasonCode" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PaymentTypeCategory" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RMANo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="JobNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ResidentialAddress" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMUserID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMPersonID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMOpportunityID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMCompanyID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMProspectID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxableSubjectToDiscount" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NonTaxableSubjectToDiscount" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxSubjToDiscPrcntOfTotSubjTo" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DiscountRate" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DiscountAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxableAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NonTaxableAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalesTaxAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Weight" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FreightAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DepositAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CommissionRate" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommRate2" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommRate3" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommRate4" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommRate5" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NumberOfShippingLabels" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastNoOfShippingLabels" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DateCreated" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TimeCreated" dataType="DT_WSTR" length="8" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UserCreatedKey" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DateUpdated" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TimeUpdated" dataType="DT_WSTR" length="8" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UserUpdatedKey" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_CANCEL_AFTER" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_ASN_CONSOLIDATED" dataType="DT_WSTR" length="6" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_ASN_TYPE" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_BILL_OF_LADING" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_CARRIER_PRO" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_CARRIER_TRAILER_NO" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_DC_CODE" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_DEPT_NO" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_SCAC" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_STORE_NO" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_TIME_SHIPPED" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_TRAILER_INITIAL" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_TRANSPORT_METHOD" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_USER_1" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_USER_2" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DEFAULT_CARRIER" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_SHIP_ACCOUNT_NO" dataType="DT_WSTR" length="12" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_INCLUDE_INVOICE" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_FREIGHT_TERMS" dataType="DT_WSTR" length="12" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_PALLET" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_EXCHANGE_RATE" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TELEPHONE" dataType="DT_WSTR" length="17" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_FREE_FRGHT" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_COMMISSION_OVERRIDE" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_CUSTOMER_TYPE" dataType="DT_WSTR" length="6" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_ASAP" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DELIVERY_CONTACT" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DELIVERY_NOTE" dataType="DT_WSTR" length="80" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DELIVERY_PHONE" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DONT_SHIP_EARLY" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TOTAL_PIECES" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TOTAL_SLP" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TOTAL_WEIGHT" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_ADJUSTED_SHIP_DATE" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_COMPLETED" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_BAK02" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_BT" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_CANCEL_DATE" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_CUST_ORD_NO" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DEPT" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DIV_REGION" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_LETTER_CR" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_MR" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_PO_DATE" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_PROMO_DEAL" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_REQUESTED_DELIVERY" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_ST" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_VENDOR_NO" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_Z7" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToDivisionNo" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToCustomerNo" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalesOrderPrinted" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PickingSheetPrinted" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_IMPORTER" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_PO_VENDOR" dataType="DT_WSTR" length="9" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DC" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_ORD_REF_1" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PromotedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_AllocateOrder" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_WavePickNo" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_PickDate1" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_PickTime1" dataType="DT_WSTR" length="8" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_PickDate2" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_PickTime2" dataType="DT_WSTR" length="8" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_StageDate1" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_StageDate2" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D404_QtyPicked" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="convCustomerPONumber" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="SalesOrderNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OrderDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OrderType" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OrderStatus" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MasterRepeatingOrderNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipExpireDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ARDivisionNo" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CustomerNo" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToAddress1" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToAddress2" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToAddress3" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToCity" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToState" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToZipCode" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToCountryCode" dataType="DT_WSTR" length="3" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToCode" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToAddress1" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToAddress2" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToAddress3" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToCity" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToState" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToZipCode" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipToCountryCode" dataType="DT_WSTR" length="3" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipVia" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipZone" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipZoneActual" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ShipWeight" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CustomerPONo" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FOB" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WarehouseCode" dataType="DT_WSTR" length="3" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ConfirmTo" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Comment" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TermsCode" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxSchedule" dataType="DT_WSTR" length="9" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxExemptNo" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InvalidTaxCalc" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PrintSalesOrders" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PrintPickingSheets" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastInvoiceOrderDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastInvoiceOrderNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentInvoiceNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CheckNoForDeposit" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CycleCode" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FaxNo" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BatchFax" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BatchEmail" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmailAddress" dataType="DT_WSTR" length="250" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FreightCalculationMethod" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LotSerialLinesExist" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommissions" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo2" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo2" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo3" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo3" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo4" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo4" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonDivisionNo5" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalespersonNo5" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EBMUserType" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EBMSubmissionType" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EBMUserIDSubmittingThisOrder" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PaymentType" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OtherPaymentTypeRefNo" dataType="DT_WSTR" length="24" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CancelReasonCode" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PaymentTypeCategory" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RMANo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="JobNo" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ResidentialAddress" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMUserID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMPersonID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMOpportunityID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMCompanyID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CRMProspectID" dataType="DT_WSTR" length="11" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxableSubjectToDiscount" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NonTaxableSubjectToDiscount" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxSubjToDiscPrcntOfTotSubjTo" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DiscountRate" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DiscountAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TaxableAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NonTaxableAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalesTaxAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Weight" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FreightAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DepositAmt" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CommissionRate" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommRate2" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommRate3" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommRate4" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SplitCommRate5" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NumberOfShippingLabels" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastNoOfShippingLabels" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DateCreated" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TimeCreated" dataType="DT_WSTR" length="8" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UserCreatedKey" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DateUpdated" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TimeUpdated" dataType="DT_WSTR" length="8" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UserUpdatedKey" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_CANCEL_AFTER" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_ASN_CONSOLIDATED" dataType="DT_WSTR" length="6" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_ASN_TYPE" dataType="DT_WSTR" length="7" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_BILL_OF_LADING" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_CARRIER_PRO" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_CARRIER_TRAILER_NO" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_DC_CODE" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_DEPT_NO" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_SCAC" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_STORE_NO" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_TIME_SHIPPED" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_TRAILER_INITIAL" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_TRANSPORT_METHOD" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_USER_1" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC_USER_2" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DEFAULT_CARRIER" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_SHIP_ACCOUNT_NO" dataType="DT_WSTR" length="12" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_INCLUDE_INVOICE" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_FREIGHT_TERMS" dataType="DT_WSTR" length="12" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TC" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_PALLET" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_EXCHANGE_RATE" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TELEPHONE" dataType="DT_WSTR" length="17" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_FREE_FRGHT" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_COMMISSION_OVERRIDE" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_CUSTOMER_TYPE" dataType="DT_WSTR" length="6" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_ASAP" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DELIVERY_CONTACT" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DELIVERY_NOTE" dataType="DT_WSTR" length="80" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DELIVERY_PHONE" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DONT_SHIP_EARLY" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TOTAL_PIECES" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TOTAL_SLP" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_TOTAL_WEIGHT" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_ADJUSTED_SHIP_DATE" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_COMPLETED" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_BAK02" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_BT" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_CANCEL_DATE" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_CUST_ORD_NO" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DEPT" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DIV_REGION" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_LETTER_CR" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_MR" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_PO_DATE" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_PROMO_DEAL" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_REQUESTED_DELIVERY" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_ST" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_VENDOR_NO" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_Z7" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToDivisionNo" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BillToCustomerNo" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SalesOrderPrinted" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PickingSheetPrinted" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_IMPORTER" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_PO_VENDOR" dataType="DT_WSTR" length="9" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_DC" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UDF_ORD_REF_1" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PromotedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AttachTaggedDocuments_234" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PayBalance" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_AllocateOrder" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_WavePickNo" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_PickDate1" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_PickTime1" dataType="DT_WSTR" length="8" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_PickDate2" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_PickTime2" dataType="DT_WSTR" length="8" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_StageDate1" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_StageDate2" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D140_QtyPicked" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="convCustomerPONumber" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -18943,8 +19029,8 @@ where [refTable].[convCustomerPONumber] = ?</property>
               <connections>
                 <connection
                   refId="Package\Stage Orders in Sql Database ECSSquareSpace\Header In Sage?.Connections[CacheConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Cache Sage Orders]"
-                  connectionManagerRefId="Package.ConnectionManagers[Cache Sage Orders]"
+                  connectionManagerID="Package.ConnectionManagers[Cache Sales Order]"
+                  connectionManagerRefId="Package.ConnectionManagers[Cache Sales Order]"
                   description="Connection manager used to access lookup data."
                   name="CacheConnection" />
               </connections>
@@ -18963,7 +19049,7 @@ where [refTable].[convCustomerPONumber] = ?</property>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">convCustomerPONumber</property>
+                          name="JoinToReferenceColumn">SalesOrderNo</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -20904,7 +20990,7 @@ where [refTable].[_ParentKeyField] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Stage Orders in Sql Database ECSSquareSpace\892:invalid};</property>
+                  name="ParameterMap">#{Package\Stage Orders in Sql Database ECSSquareSpace\1239:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -22251,14 +22337,14 @@ WHERE SquareOrderNumber = ? </property>
           Id="Package\GetShipTypes and Cache"
           TopLeft="687.968253968254,50.8769852131728" />
         <NodeLayout
-          Size="321.333333333334,41.3333333333334"
+          Size="333.333333333334,42.6666666666667"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace"
           TopLeft="12.142857142857,10.4464286163982" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="339.333333333334,108"
-          Size="339.333333333334,150.666666666667"
+          PanelSize="350.666666666667,108"
+          Size="350.666666666667,150.666666666667"
           Id="Package\Loop through tblOrders - Flagged as not imported"
           TopLeft="767.611111111111,180.640875132518" />
         <NodeLayout
@@ -22573,13 +22659,13 @@ WHERE SquareOrderNumber = ? </property>
     design-time-name="Package\DFT Cache Orders with No Import">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="187,42"
+          Size="186.666666666667,42"
           Id="Package\DFT Cache Orders with No Import\Recordset Destination"
           TopLeft="520,273" />
         <NodeLayout
-          Size="193,42"
+          Size="193.333333333334,42"
           Id="Package\DFT Cache Orders with No Import\Retrieve Order Numbers"
           TopLeft="521,35" />
         <EdgeLayout
@@ -22601,9 +22687,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22621,7 +22705,7 @@ WHERE SquareOrderNumber = ? </property>
     design-time-name="Package\DFT Cache Orders WO Payment">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="249.333333333334,42"
           Id="Package\DFT Cache Orders WO Payment\Create Object tblOrdersWOPayment"
@@ -22661,7 +22745,9 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22679,28 +22765,24 @@ WHERE SquareOrderNumber = ? </property>
     design-time-name="Package\DFT Get Order Header Sage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="161,42"
+          Size="158.666666666667,42.6666666666667"
           Id="Package\DFT Get Order Header Sage\Data Conversion"
           TopLeft="508,140" />
         <NodeLayout
-          Size="164,42"
-          Id="Package\DFT Get Order Header Sage\Cache Transform"
-          TopLeft="502,269" />
-        <NodeLayout
-          Size="285,42"
+          Size="285.333333333334,42"
           Id="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO"
           TopLeft="506,27" />
         <EdgeLayout
           Id="Package\DFT Get Order Header Sage.Paths[ADO NET Source Output]"
-          TopLeft="648.5,69">
+          TopLeft="648.666666666667,69">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-60,71"
+              EndConnector="-61.3333333333334,71"
               Start="0,0"
-              End="-60,63.5">
+              End="-61.3333333333334,63.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -22711,45 +22793,45 @@ WHERE SquareOrderNumber = ? </property>
                     Point2="0,35.5"
                     Point3="-4,35.5" />
                   <mssgle:LineSegment
-                    End="-56,35.5" />
+                    End="-57.3333333333334,35.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-56,35.5"
-                    Point2="-60,35.5"
-                    Point3="-60,39.5" />
+                    Point1="-57.3333333333334,35.5"
+                    Point2="-61.3333333333334,35.5"
+                    Point3="-61.3333333333334,39.5" />
                   <mssgle:LineSegment
-                    End="-60,63.5" />
+                    End="-61.3333333333334,63.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="161.333333333334,42.6666666666667"
+          Id="Package\DFT Get Order Header Sage\Cache Transform"
+          TopLeft="513.749992344529,248.368425727551" />
         <EdgeLayout
           Id="Package\DFT Get Order Header Sage.Paths[Data Conversion Output]"
-          TopLeft="586.25,182">
+          TopLeft="590.874996172264,182.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,87"
+              EndConnector="0,65.7017590608845"
               Start="0,0"
-              End="0,79.5">
+              End="0,58.2017590608845">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,79.5" />
+                    End="0,58.2017590608845" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22759,9 +22841,9 @@ WHERE SquareOrderNumber = ? </property>
     design-time-name="Package\DFT Get Order Lines Sage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="277,42"
+          Size="277.333333333334,42"
           Id="Package\DFT Get Order Lines Sage\Get Sage SO_SalesOrderDetail with OO"
           TopLeft="195,44" />
         <NodeLayout
@@ -22791,9 +22873,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22827,9 +22907,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22841,13 +22919,13 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="154,42"
-          Id="Package\GetShipTypes and Cache\CacheShipType"
-          TopLeft="60,170" />
-        <NodeLayout
           Size="146,42"
           Id="Package\GetShipTypes and Cache\JSON Source"
           TopLeft="74,47" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\GetShipTypes and Cache\CacheShipType"
+          TopLeft="60,170" />
         <EdgeLayout
           Id="Package\GetShipTypes and Cache.Paths[shippingLines]"
           TopLeft="147,89">
@@ -23840,6 +23918,16 @@ WHERE SquareOrderNumber = ? </property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Stage Orders in Sql Database ECSSquareSpace\Header In Sage?">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Stage Orders in Sql Database ECSSquareSpace\Import Orders into Stagging">
     <Properties>
       <Property>
@@ -23858,15 +23946,15 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\Update Order Headers will all Lines Imported\Update Line Fields"
           TopLeft="502,220" />
         <NodeLayout
-          Size="159,42"
+          Size="158.666666666667,42"
           Id="Package\Update Order Headers will all Lines Imported\Conditional Split"
           TopLeft="509,116" />
         <NodeLayout
-          Size="153.5,42"
+          Size="153.333333333334,42"
           Id="Package\Update Order Headers will all Lines Imported\OLE DB Source"
           TopLeft="507,8" />
         <EdgeLayout
@@ -23888,9 +23976,7 @@ WHERE SquareOrderNumber = ? </property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
