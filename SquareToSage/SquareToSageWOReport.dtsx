@@ -7,12 +7,12 @@
   DTS:CreatorName="HAWKSBOOTS\matthew"
   DTS:DTSID="{B4AFD42F-B98E-437B-ACFC-2D632C4B29CF}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="1033"
   DTS:ObjectName="SquareToSageWOReport"
   DTS:PackageType="5"
-  DTS:VersionBuild="378"
-  DTS:VersionGUID="{FB228A9C-DEDB-4126-94A5-473034C22EC0}">
+  DTS:VersionBuild="380"
+  DTS:VersionGUID="{E72D4965-B783-4A2C-8853-14A147C56C90}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1327,11 +1327,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=EPIC-INV-SQL01;User ID=ECS_DATA;Initial Catalog=ECSSquareSpace;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=EPIC-INV-SQL01.hawksboots.int;User ID=ECS_DATA;Initial Catalog=ECSSquareSpace;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7zEIU3FEU+S7iczgxP/4wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADB8UFiHDI378uXXeLhTX4yAAAAAASAAACgAAAAEAAAAAG9msZhZtAs+B0uCRCgGXg4AAAALJz2yqGeWttp0G2wr15i46V6x9AwUevbuwIMQHZ801gSrCzvJdLl6yp8MavQBjg29aWhV7XmaUIUAAAAYKSxiAHNSZvY7nR458NNjy4Ym3E</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAWU+3pYBvVUqQ3AUIc6nq8wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACY5ZZNcK3Va5hXi5N3G6JXkD5EQVjijzG5Wpku5obZmwAAAAAOgAAAAAIAACAAAAD04ETnIgtcHglKW4jr0c6fmWXm07F1+SGntub8/XYGgkAAAABSpltR+/ZpdQ9Q5p/qKD+5G9tXveZYhP91/VgCQ/KogaRso935hybg1Nx+dcZO2DP7KSGzH+sN7ps9IIwmh2D5QAAAABwaXmw4QKpg83/hofeGEZhK3lhRj/wuATbJDVmDMizMCRiFVFMVfzcSrtDMyej5O8/YfPpGXb5XJGhn73Ei4w0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1342,11 +1342,11 @@
       DTS:ObjectName="EPIC-INV-SQL01.ECSSquareSpace.ECS_DATA 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=EPIC-INV-SQL01;User ID=ECS_DATA;Initial Catalog=ECSSquareSpace;Persist Security Info=True;Application Name=&quot;SSIS-Package-{C7506434-3E61-450D-8A9D-05D6006EEED5}EPIC-INV-SQL01.ECSSquareSpace.ECS_DATA 1&quot;;">
+          DTS:ConnectionString="Data Source=EPIC-INV-SQL01.hawksboots.int;User ID=ECS_DATA;Initial Catalog=ECSSquareSpace;Persist Security Info=True;Application Name=&quot;SSIS-Package-{C7506434-3E61-450D-8A9D-05D6006EEED5}EPIC-INV-SQL01.ECSSquareSpace.ECS_DATA 1&quot;;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7zEIU3FEU+S7iczgxP/4wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADPs0bKAxoiQDG/tgNQOQ1xAAAAAASAAACgAAAAEAAAAOVnOlrZNs1855vVHGspf7Q4AAAAE+t86bHem3lfSGMxA6OXeiVnVlf+Askn3Fq5ccxPgBgJbiWh2/Rr3dQGeB+qi3CiO2U1C+QhGW8UAAAAR1nYauteA6mPPT46mu7Wzd/fHOw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAWU+3pYBvVUqQ3AUIc6nq8wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHiw/EBowy2hzEgtWQCZtCG/ujf3KJhvvsF2k44z27AgAAAAAOgAAAAAIAACAAAABH9DkZDHDFMJy+3nc3FDqrTUGOXZsA33sWIRtAYrSspUAAAADp+uE2kJVDYp+0efujME6yQuXscIj8OZCq7d6BdzvItzNX2t2q6zE1juCuKTEZPYsM8EjsEZa0S2XizcWQXVDnQAAAADOU73tp+zarACYNgNQHuXGgAL5qq0fa/JieK5v9QwLv3P8Muzm636RbATRK4Y51NfxPLbFgK6cNzohBYqoqAUM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1361,7 +1361,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAe7zEIU3FEU+S7iczgxP/4wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD2/Ic/cnGSdODo5kfdcPPjAAAAAASAAACgAAAAEAAAAPPqoY9Iw4QhAsGljifu6G9AAAAA30gTrpOuQEO2OUz6kPHZrFu8MgtyJoX4iEyCTJerodWdePG9yKSRT63NniCjsJ9rstIWzEH1GrxnDqQ9xpjaIxQAAABZQAxZCpgWqM9zjAWFaXCg8kU4cA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAWU+3pYBvVUqQ3AUIc6nq8wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACZPwFRZ8uLT8ky1qMboowDTfBK/2/fqXY04ntSrSe/eQAAAAAOgAAAAAIAACAAAABocaBQQ0DwizdmE96FMbRAQmMY/lvj5Q7bPWo4Y9JHgkAAAABZkawfHoid8wA8Nt+1WvH/YwstV3c+qbIa4l8478oAQiIMdn18LXJZWKw/MAc/tWBRe2PtZ0+Wgp7G7bN3lXrMQAAAAEv69GWwUN1go3BpNXFG/lkaHvk5epeu5HO40DIu3vXkAPcU06k4vsGrf9c4zgnDXhH7XDpWHQaEAltnS+NOTf4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1372,7 +1372,7 @@
       DTS:ObjectName="Squarespace Orders">
       <DTS:ObjectData>
         <ConnectionManager
-          ConnectionString="BaseUrl=https://api.squarespace.com/;AuthenticationMode=None;JwtClaims='{&#xA;  &quot;header&quot;: {},&#xA;  &quot;payload&quot;: {}&#xA;}';CustomTokenCurlFile=;CustomTokenFindStrategy=JPath;CustomTokenFindExpression=;CustomTokenExpiry=0;AwsSignatureVersion=Version4;AwsSignatureMethod=HmacSHA1;AwsAccessKey=;AwsRegion=;AwsServiceName=;PathToTokenFile=;AccessTokenRequestLocation=HttpHeader;Domain=;UserName=;ProxyMode=NoProxy;ProxyUsername=;ProxyServer=;ProxyServerPort=0;ThrottleRate=120;ThrottleRateUnit=PerMinute;ServiceTimeout=120;RetryOnIntermittentErrors=True;ChunkSize=0;CertificateLocation=Store;CertificateThumbprint=;PathToCertificate=;IgnoreCertificateErrors=False;CustomHeaders='{&#xA;  &quot;Authorization&quot;: {&#xA;    &quot;value&quot;: &quot;Bearer 68cf5906-cf60-4c77-83c4-361802c7e2a6&quot;&#xA;  },&#xA;  &quot;User-Agent&quot;: {&#xA;    &quot;value&quot;: &quot;EpicApiPull&quot;&#xA;  },&#xA;  &quot;Content-Type&quot;: {&#xA;    &quot;value&quot;: &quot;application/json&quot;&#xA;  }&#xA;}';ErrorCodes='[{&quot;code&quot;:&quot;408&quot;,&quot;retryable&quot;:true},{&quot;code&quot;:&quot;500&quot;,&quot;retryable&quot;:false},{&quot;code&quot;:&quot;502&quot;,&quot;retryable&quot;:true},{&quot;code&quot;:&quot;503&quot;,&quot;retryable&quot;:true},{&quot;code&quot;:&quot;504&quot;,&quot;retryable&quot;:true}]';HttpMethod=POST"
+          ConnectionString="BaseUrl=https://api.squarespace.com/;AuthenticationMode=None;JwtClaims='{&#xA;  &quot;header&quot;: {},&#xA;  &quot;payload&quot;: {}&#xA;}';CustomTokenCurlFile=;CustomTokenFindStrategy=JPath;CustomTokenFindExpression=;CustomTokenExpiry=0;AwsSignatureVersion=Version4;AwsSignatureMethod=HmacSHA1;AwsAccessKey=;AwsRegion=;AwsServiceName=;AzureOAuthType=ClientCredentials;AzureTenantId=;AzureClientId=;AzureCertificateLocation=Store;AzureCertificateThumbprint=;AzurePathToCertificate=;GoogleServiceAccount=;GoogleCertificateLocation=Store;GoogleCertificateThumbprint=;GooglePathToCertificate=;GoogleScope=;AzureScope=;PathToTokenFile=;AccessTokenRequestLocation=HttpHeader;Domain=;UserName=;ProxyMode=NoProxy;ProxyUsername=;ProxyServer=;ProxyServerPort=0;ThrottleRate=120;ThrottleRateUnit=PerMinute;ServiceTimeout=120;RetryOnIntermittentErrors=True;ChunkSize=0;CertificateLocation=Store;CertificateThumbprint=;PathToCertificate=;IgnoreCertificateErrors=False;CustomHeaders='{&#xA;  &quot;Authorization&quot;: {&#xA;    &quot;value&quot;: &quot;Bearer 68cf5906-cf60-4c77-83c4-361802c7e2a6&quot;&#xA;  },&#xA;  &quot;User-Agent&quot;: {&#xA;    &quot;value&quot;: &quot;EpicApiPull&quot;&#xA;  },&#xA;  &quot;Content-Type&quot;: {&#xA;    &quot;value&quot;: &quot;application/json&quot;&#xA;  }&#xA;}';HttpMethod=POST;ErrorCodes='[{&quot;code&quot;:&quot;408&quot;,&quot;retryable&quot;:true},{&quot;code&quot;:&quot;500&quot;,&quot;retryable&quot;:false},{&quot;code&quot;:&quot;502&quot;,&quot;retryable&quot;:true},{&quot;code&quot;:&quot;503&quot;,&quot;retryable&quot;:true},{&quot;code&quot;:&quot;504&quot;,&quot;retryable&quot;:true}]'"
           ConnectByProxy="False" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1543,7 +1543,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select LTRIM(RTRIM(SquareOrderNumber)) SquareOrderNumber, RTRIM(LTRIM(ID)) ID, isNull(PaymentDocumentID,'empty') as PaymentDocumentID
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select LTRIM(RTRIM(SquareOrderNumber)) SquareOrderNumber, RTRIM(LTRIM(ID)) ID, isNull(PaymentDocumentID,'empty') as PaymentDocumentID
 From tblOutletOrders
 Where Imported = 'N'</property>
                 <property
@@ -1762,7 +1762,7 @@ Where Imported = 'N'</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select LTRIM(RTRIM(SquareOrderNumber)) SquareOrderNumber, RTRIM(LTRIM(ID)) ID, isNull(PaymentDocumentID,'empty') as PaymentDocumentID
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Select LTRIM(RTRIM(SquareOrderNumber)) SquareOrderNumber, RTRIM(LTRIM(ID)) ID, isNull(PaymentDocumentID,'empty') as PaymentDocumentID
 From tblOutletOrders
 Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                 <property
@@ -1918,11 +1918,12 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
           version="1">
           <components>
             <component
-              refId="Package\DFT Get Order Header Sage\Cache Transform"
+              refId="Package\DFT Get Order Header Sage\Cache Sales Order Header"
               componentClassID="Microsoft.Cache"
               contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
-              name="Cache Transform">
+              name="Cache Sales Order Header"
+              version="1">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -1931,7 +1932,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT Get Order Header Sage\Cache Transform.Connections[CacheConnection]"
+                  refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Connections[CacheConnection]"
                   connectionManagerID="Package.ConnectionManagers[Cache Sales Order]"
                   connectionManagerRefId="Package.ConnectionManagers[Cache Sales Order]"
                   description="The connection used to access the cache."
@@ -1939,12 +1940,12 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input]"
+                  refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input]"
                   hasSideEffects="true"
                   name="Cache Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalesOrderNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalesOrderNo]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="SalesOrderNo"
@@ -1957,7 +1958,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[OrderDate]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[OrderDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="OrderDate"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[OrderDate]">
@@ -1969,7 +1970,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[OrderType]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[OrderType]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="OrderType"
@@ -1982,7 +1983,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[OrderStatus]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[OrderStatus]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="OrderStatus"
@@ -1995,7 +1996,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[MasterRepeatingOrderNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[MasterRepeatingOrderNo]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="MasterRepeatingOrderNo"
@@ -2008,7 +2009,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipExpireDate]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipExpireDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="ShipExpireDate"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[ShipExpireDate]">
@@ -2020,7 +2021,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ARDivisionNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ARDivisionNo]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="ARDivisionNo"
@@ -2033,7 +2034,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CustomerNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CustomerNo]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="CustomerNo"
@@ -2046,7 +2047,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToName]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToName]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="BillToName"
@@ -2059,7 +2060,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToAddress1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToAddress1]"
                       cachedDataType="wstr"
                       cachedLength="40"
                       cachedName="BillToAddress1"
@@ -2072,7 +2073,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToAddress2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToAddress2]"
                       cachedDataType="wstr"
                       cachedLength="40"
                       cachedName="BillToAddress2"
@@ -2085,7 +2086,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToAddress3]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToAddress3]"
                       cachedDataType="wstr"
                       cachedLength="40"
                       cachedName="BillToAddress3"
@@ -2098,7 +2099,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToCity]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToCity]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="BillToCity"
@@ -2111,7 +2112,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToState]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToState]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="BillToState"
@@ -2124,7 +2125,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToZipCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToZipCode]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="BillToZipCode"
@@ -2137,7 +2138,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToCountryCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToCountryCode]"
                       cachedDataType="wstr"
                       cachedLength="3"
                       cachedName="BillToCountryCode"
@@ -2150,7 +2151,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToCode]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="ShipToCode"
@@ -2163,7 +2164,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToName]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToName]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ShipToName"
@@ -2176,7 +2177,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToAddress1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToAddress1]"
                       cachedDataType="wstr"
                       cachedLength="40"
                       cachedName="ShipToAddress1"
@@ -2189,7 +2190,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToAddress2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToAddress2]"
                       cachedDataType="wstr"
                       cachedLength="40"
                       cachedName="ShipToAddress2"
@@ -2202,7 +2203,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToAddress3]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToAddress3]"
                       cachedDataType="wstr"
                       cachedLength="40"
                       cachedName="ShipToAddress3"
@@ -2215,7 +2216,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToCity]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToCity]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="ShipToCity"
@@ -2228,7 +2229,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToState]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToState]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="ShipToState"
@@ -2241,7 +2242,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToZipCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToZipCode]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="ShipToZipCode"
@@ -2254,7 +2255,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipToCountryCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipToCountryCode]"
                       cachedDataType="wstr"
                       cachedLength="3"
                       cachedName="ShipToCountryCode"
@@ -2267,7 +2268,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipVia]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipVia]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="ShipVia"
@@ -2280,7 +2281,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipZone]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipZone]"
                       cachedDataType="wstr"
                       cachedLength="5"
                       cachedName="ShipZone"
@@ -2293,7 +2294,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipZoneActual]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipZoneActual]"
                       cachedDataType="wstr"
                       cachedLength="5"
                       cachedName="ShipZoneActual"
@@ -2306,7 +2307,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ShipWeight]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ShipWeight]"
                       cachedDataType="wstr"
                       cachedLength="5"
                       cachedName="ShipWeight"
@@ -2319,7 +2320,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CustomerPONo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CustomerPONo]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="CustomerPONo"
@@ -2332,7 +2333,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[FOB]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[FOB]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="FOB"
@@ -2345,7 +2346,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[WarehouseCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[WarehouseCode]"
                       cachedDataType="wstr"
                       cachedLength="3"
                       cachedName="WarehouseCode"
@@ -2358,7 +2359,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ConfirmTo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ConfirmTo]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ConfirmTo"
@@ -2371,7 +2372,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[Comment]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[Comment]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="Comment"
@@ -2384,7 +2385,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[TermsCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[TermsCode]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="TermsCode"
@@ -2397,7 +2398,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[TaxSchedule]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[TaxSchedule]"
                       cachedDataType="wstr"
                       cachedLength="9"
                       cachedName="TaxSchedule"
@@ -2410,7 +2411,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[TaxExemptNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[TaxExemptNo]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="TaxExemptNo"
@@ -2423,7 +2424,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[InvalidTaxCalc]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[InvalidTaxCalc]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="InvalidTaxCalc"
@@ -2436,7 +2437,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[PrintSalesOrders]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[PrintSalesOrders]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="PrintSalesOrders"
@@ -2449,7 +2450,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[PrintPickingSheets]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[PrintPickingSheets]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="PrintPickingSheets"
@@ -2462,7 +2463,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[LastInvoiceOrderDate]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[LastInvoiceOrderDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="LastInvoiceOrderDate"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[LastInvoiceOrderDate]">
@@ -2474,7 +2475,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[LastInvoiceOrderNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[LastInvoiceOrderNo]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="LastInvoiceOrderNo"
@@ -2487,7 +2488,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CurrentInvoiceNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CurrentInvoiceNo]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="CurrentInvoiceNo"
@@ -2500,7 +2501,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CheckNoForDeposit]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CheckNoForDeposit]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="CheckNoForDeposit"
@@ -2513,7 +2514,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CycleCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CycleCode]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="CycleCode"
@@ -2526,7 +2527,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[FaxNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[FaxNo]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="FaxNo"
@@ -2539,7 +2540,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BatchFax]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BatchFax]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="BatchFax"
@@ -2552,7 +2553,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BatchEmail]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BatchEmail]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="BatchEmail"
@@ -2565,7 +2566,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[EmailAddress]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[EmailAddress]"
                       cachedDataType="wstr"
                       cachedLength="250"
                       cachedName="EmailAddress"
@@ -2578,7 +2579,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[FreightCalculationMethod]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[FreightCalculationMethod]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="FreightCalculationMethod"
@@ -2591,7 +2592,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[LotSerialLinesExist]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[LotSerialLinesExist]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="LotSerialLinesExist"
@@ -2604,7 +2605,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonDivisionNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonDivisionNo]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="SalespersonDivisionNo"
@@ -2617,7 +2618,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonNo]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="SalespersonNo"
@@ -2630,7 +2631,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SplitCommissions]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SplitCommissions]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="SplitCommissions"
@@ -2643,7 +2644,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonDivisionNo2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonDivisionNo2]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="SalespersonDivisionNo2"
@@ -2656,7 +2657,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonNo2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonNo2]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="SalespersonNo2"
@@ -2669,7 +2670,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonDivisionNo3]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonDivisionNo3]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="SalespersonDivisionNo3"
@@ -2682,7 +2683,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonNo3]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonNo3]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="SalespersonNo3"
@@ -2695,7 +2696,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonDivisionNo4]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonDivisionNo4]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="SalespersonDivisionNo4"
@@ -2708,7 +2709,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonNo4]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonNo4]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="SalespersonNo4"
@@ -2721,7 +2722,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonDivisionNo5]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonDivisionNo5]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="SalespersonDivisionNo5"
@@ -2734,7 +2735,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalespersonNo5]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalespersonNo5]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="SalespersonNo5"
@@ -2747,7 +2748,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[EBMUserType]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[EBMUserType]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="EBMUserType"
@@ -2760,7 +2761,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[EBMSubmissionType]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[EBMSubmissionType]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="EBMSubmissionType"
@@ -2773,7 +2774,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[EBMUserIDSubmittingThisOrder]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[EBMUserIDSubmittingThisOrder]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="EBMUserIDSubmittingThisOrder"
@@ -2786,7 +2787,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[PaymentType]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[PaymentType]"
                       cachedDataType="wstr"
                       cachedLength="5"
                       cachedName="PaymentType"
@@ -2799,7 +2800,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[OtherPaymentTypeRefNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[OtherPaymentTypeRefNo]"
                       cachedDataType="wstr"
                       cachedLength="24"
                       cachedName="OtherPaymentTypeRefNo"
@@ -2812,7 +2813,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CancelReasonCode]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CancelReasonCode]"
                       cachedDataType="wstr"
                       cachedLength="5"
                       cachedName="CancelReasonCode"
@@ -2825,7 +2826,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[PaymentTypeCategory]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[PaymentTypeCategory]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="PaymentTypeCategory"
@@ -2838,7 +2839,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[RMANo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[RMANo]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="RMANo"
@@ -2851,7 +2852,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[JobNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[JobNo]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="JobNo"
@@ -2864,7 +2865,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[ResidentialAddress]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[ResidentialAddress]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="ResidentialAddress"
@@ -2877,7 +2878,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CRMUserID]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CRMUserID]"
                       cachedDataType="wstr"
                       cachedLength="11"
                       cachedName="CRMUserID"
@@ -2890,7 +2891,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CRMPersonID]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CRMPersonID]"
                       cachedDataType="wstr"
                       cachedLength="11"
                       cachedName="CRMPersonID"
@@ -2903,7 +2904,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CRMOpportunityID]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CRMOpportunityID]"
                       cachedDataType="wstr"
                       cachedLength="11"
                       cachedName="CRMOpportunityID"
@@ -2916,7 +2917,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CRMCompanyID]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CRMCompanyID]"
                       cachedDataType="wstr"
                       cachedLength="11"
                       cachedName="CRMCompanyID"
@@ -2929,7 +2930,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CRMProspectID]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CRMProspectID]"
                       cachedDataType="wstr"
                       cachedLength="11"
                       cachedName="CRMProspectID"
@@ -2942,7 +2943,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[TaxableSubjectToDiscount]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[TaxableSubjectToDiscount]"
                       cachedDataType="r8"
                       cachedName="TaxableSubjectToDiscount"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[TaxableSubjectToDiscount]">
@@ -2954,7 +2955,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[NonTaxableSubjectToDiscount]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[NonTaxableSubjectToDiscount]"
                       cachedDataType="r8"
                       cachedName="NonTaxableSubjectToDiscount"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[NonTaxableSubjectToDiscount]">
@@ -2966,7 +2967,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[TaxSubjToDiscPrcntOfTotSubjTo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[TaxSubjToDiscPrcntOfTotSubjTo]"
                       cachedDataType="r8"
                       cachedName="TaxSubjToDiscPrcntOfTotSubjTo"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[TaxSubjToDiscPrcntOfTotSubjTo]">
@@ -2978,7 +2979,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[DiscountRate]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[DiscountRate]"
                       cachedDataType="r8"
                       cachedName="DiscountRate"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[DiscountRate]">
@@ -2990,7 +2991,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[DiscountAmt]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[DiscountAmt]"
                       cachedDataType="r8"
                       cachedName="DiscountAmt"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[DiscountAmt]">
@@ -3002,7 +3003,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[TaxableAmt]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[TaxableAmt]"
                       cachedDataType="r8"
                       cachedName="TaxableAmt"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[TaxableAmt]">
@@ -3014,7 +3015,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[NonTaxableAmt]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[NonTaxableAmt]"
                       cachedDataType="r8"
                       cachedName="NonTaxableAmt"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[NonTaxableAmt]">
@@ -3026,7 +3027,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalesTaxAmt]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalesTaxAmt]"
                       cachedDataType="r8"
                       cachedName="SalesTaxAmt"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[SalesTaxAmt]">
@@ -3038,7 +3039,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[Weight]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[Weight]"
                       cachedDataType="r8"
                       cachedName="Weight"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[Weight]">
@@ -3050,7 +3051,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[FreightAmt]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[FreightAmt]"
                       cachedDataType="r8"
                       cachedName="FreightAmt"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[FreightAmt]">
@@ -3062,7 +3063,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[DepositAmt]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[DepositAmt]"
                       cachedDataType="r8"
                       cachedName="DepositAmt"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[DepositAmt]">
@@ -3074,7 +3075,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[CommissionRate]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[CommissionRate]"
                       cachedDataType="r8"
                       cachedName="CommissionRate"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[CommissionRate]">
@@ -3086,7 +3087,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SplitCommRate2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SplitCommRate2]"
                       cachedDataType="r8"
                       cachedName="SplitCommRate2"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[SplitCommRate2]">
@@ -3098,7 +3099,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SplitCommRate3]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SplitCommRate3]"
                       cachedDataType="r8"
                       cachedName="SplitCommRate3"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[SplitCommRate3]">
@@ -3110,7 +3111,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SplitCommRate4]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SplitCommRate4]"
                       cachedDataType="r8"
                       cachedName="SplitCommRate4"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[SplitCommRate4]">
@@ -3122,7 +3123,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SplitCommRate5]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SplitCommRate5]"
                       cachedDataType="r8"
                       cachedName="SplitCommRate5"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[SplitCommRate5]">
@@ -3134,7 +3135,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[NumberOfShippingLabels]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[NumberOfShippingLabels]"
                       cachedDataType="r8"
                       cachedName="NumberOfShippingLabels"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[NumberOfShippingLabels]">
@@ -3146,7 +3147,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[LastNoOfShippingLabels]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[LastNoOfShippingLabels]"
                       cachedDataType="r8"
                       cachedName="LastNoOfShippingLabels"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[LastNoOfShippingLabels]">
@@ -3158,7 +3159,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[DateCreated]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[DateCreated]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DateCreated"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[DateCreated]">
@@ -3170,7 +3171,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[TimeCreated]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[TimeCreated]"
                       cachedDataType="wstr"
                       cachedLength="8"
                       cachedName="TimeCreated"
@@ -3183,7 +3184,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UserCreatedKey]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UserCreatedKey]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="UserCreatedKey"
@@ -3196,7 +3197,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[DateUpdated]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[DateUpdated]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DateUpdated"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[DateUpdated]">
@@ -3208,7 +3209,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[TimeUpdated]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[TimeUpdated]"
                       cachedDataType="wstr"
                       cachedLength="8"
                       cachedName="TimeUpdated"
@@ -3221,7 +3222,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UserUpdatedKey]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UserUpdatedKey]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="UserUpdatedKey"
@@ -3234,7 +3235,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_CANCEL_AFTER]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_CANCEL_AFTER]"
                       cachedDataType="dbTimeStamp"
                       cachedName="UDF_CANCEL_AFTER"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_CANCEL_AFTER]">
@@ -3246,7 +3247,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_ASN_CONSOLIDATED]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_ASN_CONSOLIDATED]"
                       cachedDataType="wstr"
                       cachedLength="6"
                       cachedName="UDF_TC_ASN_CONSOLIDATED"
@@ -3259,7 +3260,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_ASN_TYPE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_ASN_TYPE]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="UDF_TC_ASN_TYPE"
@@ -3272,7 +3273,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_BILL_OF_LADING]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_BILL_OF_LADING]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_TC_BILL_OF_LADING"
@@ -3285,7 +3286,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_CARRIER_PRO]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_CARRIER_PRO]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_TC_CARRIER_PRO"
@@ -3298,7 +3299,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_CARRIER_TRAILER_NO]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_CARRIER_TRAILER_NO]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_TC_CARRIER_TRAILER_NO"
@@ -3311,7 +3312,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_DC_CODE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_DC_CODE]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="UDF_TC_DC_CODE"
@@ -3324,7 +3325,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_DEPT_NO]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_DEPT_NO]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="UDF_TC_DEPT_NO"
@@ -3337,7 +3338,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_SCAC]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_SCAC]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="UDF_TC_SCAC"
@@ -3350,7 +3351,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_STORE_NO]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_STORE_NO]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="UDF_TC_STORE_NO"
@@ -3363,7 +3364,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_TIME_SHIPPED]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_TIME_SHIPPED]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="UDF_TC_TIME_SHIPPED"
@@ -3376,7 +3377,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_TRAILER_INITIAL]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_TRAILER_INITIAL]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="UDF_TC_TRAILER_INITIAL"
@@ -3389,7 +3390,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_TRANSPORT_METHOD]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_TRANSPORT_METHOD]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="UDF_TC_TRANSPORT_METHOD"
@@ -3402,7 +3403,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_USER_1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_USER_1]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_TC_USER_1"
@@ -3415,7 +3416,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC_USER_2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC_USER_2]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_TC_USER_2"
@@ -3428,7 +3429,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_DEFAULT_CARRIER]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_DEFAULT_CARRIER]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="UDF_DEFAULT_CARRIER"
@@ -3441,7 +3442,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_SHIP_ACCOUNT_NO]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_SHIP_ACCOUNT_NO]"
                       cachedDataType="wstr"
                       cachedLength="12"
                       cachedName="UDF_SHIP_ACCOUNT_NO"
@@ -3454,7 +3455,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_INCLUDE_INVOICE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_INCLUDE_INVOICE]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="UDF_INCLUDE_INVOICE"
@@ -3467,7 +3468,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_FREIGHT_TERMS]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_FREIGHT_TERMS]"
                       cachedDataType="wstr"
                       cachedLength="12"
                       cachedName="UDF_FREIGHT_TERMS"
@@ -3480,7 +3481,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TC]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TC]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="UDF_TC"
@@ -3493,7 +3494,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_PALLET]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_PALLET]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="UDF_PALLET"
@@ -3506,7 +3507,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_EXCHANGE_RATE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_EXCHANGE_RATE]"
                       cachedDataType="r8"
                       cachedName="UDF_EXCHANGE_RATE"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_EXCHANGE_RATE]">
@@ -3518,7 +3519,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TELEPHONE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TELEPHONE]"
                       cachedDataType="wstr"
                       cachedLength="17"
                       cachedName="UDF_TELEPHONE"
@@ -3531,7 +3532,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_FREE_FRGHT]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_FREE_FRGHT]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="UDF_FREE_FRGHT"
@@ -3544,7 +3545,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_COMMISSION_OVERRIDE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_COMMISSION_OVERRIDE]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="UDF_COMMISSION_OVERRIDE"
@@ -3557,7 +3558,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_CUSTOMER_TYPE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_CUSTOMER_TYPE]"
                       cachedDataType="wstr"
                       cachedLength="6"
                       cachedName="UDF_CUSTOMER_TYPE"
@@ -3570,7 +3571,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_ASAP]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_ASAP]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="UDF_ASAP"
@@ -3583,7 +3584,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_DELIVERY_CONTACT]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_DELIVERY_CONTACT]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_DELIVERY_CONTACT"
@@ -3596,7 +3597,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_DELIVERY_NOTE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_DELIVERY_NOTE]"
                       cachedDataType="wstr"
                       cachedLength="80"
                       cachedName="UDF_DELIVERY_NOTE"
@@ -3609,7 +3610,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_DELIVERY_PHONE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_DELIVERY_PHONE]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="UDF_DELIVERY_PHONE"
@@ -3622,7 +3623,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_DONT_SHIP_EARLY]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_DONT_SHIP_EARLY]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="UDF_DONT_SHIP_EARLY"
@@ -3635,7 +3636,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TOTAL_PIECES]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TOTAL_PIECES]"
                       cachedDataType="r8"
                       cachedName="UDF_TOTAL_PIECES"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_TOTAL_PIECES]">
@@ -3647,7 +3648,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TOTAL_SLP]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TOTAL_SLP]"
                       cachedDataType="r8"
                       cachedName="UDF_TOTAL_SLP"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_TOTAL_SLP]">
@@ -3659,7 +3660,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_TOTAL_WEIGHT]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_TOTAL_WEIGHT]"
                       cachedDataType="r8"
                       cachedName="UDF_TOTAL_WEIGHT"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_TOTAL_WEIGHT]">
@@ -3671,7 +3672,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_ADJUSTED_SHIP_DATE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_ADJUSTED_SHIP_DATE]"
                       cachedDataType="dbTimeStamp"
                       cachedName="UDF_ADJUSTED_SHIP_DATE"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_ADJUSTED_SHIP_DATE]">
@@ -3683,7 +3684,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_COMPLETED]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_COMPLETED]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="UDF_COMPLETED"
@@ -3696,7 +3697,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_BAK02]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_BAK02]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="UDF_BAK02"
@@ -3709,7 +3710,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_BT]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_BT]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="UDF_BT"
@@ -3722,7 +3723,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_CANCEL_DATE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_CANCEL_DATE]"
                       cachedDataType="dbTimeStamp"
                       cachedName="UDF_CANCEL_DATE"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_CANCEL_DATE]">
@@ -3734,7 +3735,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_CUST_ORD_NO]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_CUST_ORD_NO]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_CUST_ORD_NO"
@@ -3747,7 +3748,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_DEPT]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_DEPT]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="UDF_DEPT"
@@ -3760,7 +3761,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_DIV_REGION]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_DIV_REGION]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_DIV_REGION"
@@ -3773,7 +3774,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_LETTER_CR]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_LETTER_CR]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_LETTER_CR"
@@ -3786,7 +3787,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_MR]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_MR]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_MR"
@@ -3799,7 +3800,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_PO_DATE]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_PO_DATE]"
                       cachedDataType="dbTimeStamp"
                       cachedName="UDF_PO_DATE"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_PO_DATE]">
@@ -3811,7 +3812,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_PROMO_DEAL]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_PROMO_DEAL]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_PROMO_DEAL"
@@ -3824,7 +3825,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_REQUESTED_DELIVERY]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_REQUESTED_DELIVERY]"
                       cachedDataType="dbTimeStamp"
                       cachedName="UDF_REQUESTED_DELIVERY"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[UDF_REQUESTED_DELIVERY]">
@@ -3836,7 +3837,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_ST]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_ST]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="UDF_ST"
@@ -3849,7 +3850,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_VENDOR_NO]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_VENDOR_NO]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_VENDOR_NO"
@@ -3862,7 +3863,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_Z7]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_Z7]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="UDF_Z7"
@@ -3875,7 +3876,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToDivisionNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToDivisionNo]"
                       cachedDataType="wstr"
                       cachedLength="2"
                       cachedName="BillToDivisionNo"
@@ -3888,7 +3889,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[BillToCustomerNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[BillToCustomerNo]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="BillToCustomerNo"
@@ -3901,7 +3902,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[SalesOrderPrinted]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[SalesOrderPrinted]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="SalesOrderPrinted"
@@ -3914,7 +3915,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[PickingSheetPrinted]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[PickingSheetPrinted]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="PickingSheetPrinted"
@@ -3927,7 +3928,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_IMPORTER]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_IMPORTER]"
                       cachedDataType="wstr"
                       cachedLength="25"
                       cachedName="UDF_IMPORTER"
@@ -3940,7 +3941,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_PO_VENDOR]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_PO_VENDOR]"
                       cachedDataType="wstr"
                       cachedLength="9"
                       cachedName="UDF_PO_VENDOR"
@@ -3953,7 +3954,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_DC]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_DC]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="UDF_DC"
@@ -3966,7 +3967,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[UDF_ORD_REF_1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[UDF_ORD_REF_1]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="UDF_ORD_REF_1"
@@ -3979,7 +3980,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[PromotedDate]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[PromotedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="PromotedDate"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[PromotedDate]">
@@ -3991,7 +3992,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[AttachTaggedDocuments_234]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[AttachTaggedDocuments_234]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="AttachTaggedDocuments_234"
@@ -4004,7 +4005,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[PayBalance]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[PayBalance]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="PayBalance"
@@ -4017,7 +4018,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_AllocateOrder]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_AllocateOrder]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="D140_AllocateOrder"
@@ -4030,7 +4031,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_WavePickNo]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_WavePickNo]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="D140_WavePickNo"
@@ -4043,7 +4044,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_PickDate1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_PickDate1]"
                       cachedDataType="dbTimeStamp"
                       cachedName="D140_PickDate1"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickDate1]">
@@ -4055,7 +4056,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_PickTime1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_PickTime1]"
                       cachedDataType="wstr"
                       cachedLength="8"
                       cachedName="D140_PickTime1"
@@ -4068,7 +4069,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_PickDate2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_PickDate2]"
                       cachedDataType="dbTimeStamp"
                       cachedName="D140_PickDate2"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_PickDate2]">
@@ -4080,7 +4081,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_PickTime2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_PickTime2]"
                       cachedDataType="wstr"
                       cachedLength="8"
                       cachedName="D140_PickTime2"
@@ -4093,7 +4094,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_StageDate1]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_StageDate1]"
                       cachedDataType="dbTimeStamp"
                       cachedName="D140_StageDate1"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_StageDate1]">
@@ -4105,7 +4106,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_StageDate2]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_StageDate2]"
                       cachedDataType="dbTimeStamp"
                       cachedName="D140_StageDate2"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_StageDate2]">
@@ -4117,7 +4118,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[D140_QtyPicked]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[D140_QtyPicked]"
                       cachedDataType="r8"
                       cachedName="D140_QtyPicked"
                       lineageId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output].Columns[D140_QtyPicked]">
@@ -4129,7 +4130,7 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input].Columns[convCustomerPONumber]"
+                      refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input].Columns[convCustomerPONumber]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="convCustomerPONumber"
@@ -4147,9 +4148,9 @@ Where PaymentDocumentID is not null and TransactionPaymentID is null</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT Get Order Header Sage\Cache Transform.Outputs[Cache Output]"
+                  refId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Outputs[Cache Output]"
                   name="Cache Output"
-                  synchronousInputId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input]">
+                  synchronousInputId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -7869,7 +7870,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
               startId="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO.Outputs[ADO NET Source Output]" />
             <path
               refId="Package\DFT Get Order Header Sage.Paths[Data Conversion Output]"
-              endId="Package\DFT Get Order Header Sage\Cache Transform.Inputs[Cache Input]"
+              endId="Package\DFT Get Order Header Sage\Cache Sales Order Header.Inputs[Cache Input]"
               name="Data Conversion Output"
               startId="Package\DFT Get Order Header Sage\Data Conversion.Outputs[Data Conversion Output]" />
           </paths>
@@ -7891,11 +7892,11 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
           version="1">
           <components>
             <component
-              refId="Package\DFT Get Order Lines Sage\Cache Line Items"
+              refId="Package\DFT Get Order Lines Sage\Cache Order Lines"
               componentClassID="Microsoft.Cache"
               contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
-              name="Cache Line Items"
+              name="Cache Order Lines"
               version="1">
               <properties>
                 <property
@@ -7905,7 +7906,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT Get Order Lines Sage\Cache Line Items.Connections[CacheConnection]"
+                  refId="Package\DFT Get Order Lines Sage\Cache Order Lines.Connections[CacheConnection]"
                   connectionManagerID="Package.ConnectionManagers[Cache Sage Line Items]"
                   connectionManagerRefId="Package.ConnectionManagers[Cache Sage Line Items]"
                   description="The connection used to access the cache."
@@ -7913,12 +7914,12 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT Get Order Lines Sage\Cache Line Items.Inputs[Cache Input]"
+                  refId="Package\DFT Get Order Lines Sage\Cache Order Lines.Inputs[Cache Input]"
                   hasSideEffects="true"
                   name="Cache Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT Get Order Lines Sage\Cache Line Items.Inputs[Cache Input].Columns[CustomerPONo]"
+                      refId="Package\DFT Get Order Lines Sage\Cache Order Lines.Inputs[Cache Input].Columns[CustomerPONo]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="CustomerPONo"
@@ -7931,7 +7932,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Lines Sage\Cache Line Items.Inputs[Cache Input].Columns[SalesOrderNo]"
+                      refId="Package\DFT Get Order Lines Sage\Cache Order Lines.Inputs[Cache Input].Columns[SalesOrderNo]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="SalesOrderNo"
@@ -7944,7 +7945,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Lines Sage\Cache Line Items.Inputs[Cache Input].Columns[convCustomerPONumber]"
+                      refId="Package\DFT Get Order Lines Sage\Cache Order Lines.Inputs[Cache Input].Columns[convCustomerPONumber]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="convCustomerPONumber"
@@ -7957,7 +7958,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT Get Order Lines Sage\Cache Line Items.Inputs[Cache Input].Columns[convItemCode]"
+                      refId="Package\DFT Get Order Lines Sage\Cache Order Lines.Inputs[Cache Input].Columns[convItemCode]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="convItemCode"
@@ -7975,9 +7976,9 @@ WHERE UDF_CUSTOMER_TYPE = 'OO'</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT Get Order Lines Sage\Cache Line Items.Outputs[Cache Output]"
+                  refId="Package\DFT Get Order Lines Sage\Cache Order Lines.Outputs[Cache Output]"
                   name="Cache Output"
-                  synchronousInputId="Package\DFT Get Order Lines Sage\Cache Line Items.Inputs[Cache Input]">
+                  synchronousInputId="Package\DFT Get Order Lines Sage\Cache Order Lines.Inputs[Cache Input]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -8238,7 +8239,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
               startId="Package\DFT Get Order Lines Sage\Get Sage SO_SalesOrderDetail with OO.Outputs[ADO NET Source Output]" />
             <path
               refId="Package\DFT Get Order Lines Sage.Paths[Data Conversion Output]"
-              endId="Package\DFT Get Order Lines Sage\Cache Line Items.Inputs[Cache Input]"
+              endId="Package\DFT Get Order Lines Sage\Cache Order Lines.Inputs[Cache Input]"
               name="Data Conversion Output"
               startId="Package\DFT Get Order Lines Sage\Convert CustomerPO and ItemCode.Outputs[Data Conversion Output]" />
           </paths>
@@ -8249,6 +8250,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
       DTS:refId="Package\Execute Batch File that start VI Job in Sage"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
+      DTS:Disabled="True"
       DTS:DTSID="{3EC31C03-A217-43E7-9EA3-2DA1EC10DC2D}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -8413,7 +8415,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                   description="Specifies the timzone to convert DateTimes to"
                   expressionType="Notify"
                   name="OutputTimezone"
-                  typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone, KingswaySoft.IntegrationToolkit.ProductivityPack, Version=1.0.2019.0, Culture=neutral, PublicKeyToken=705df8e0751bcea7">2</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the text encoding to use when reading the document."
@@ -10022,7 +10024,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -10196,7 +10198,7 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                       description="Specifies the timzone to convert DateTimes to"
                       expressionType="Notify"
                       name="OutputTimezone"
-                      typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone, KingswaySoft.IntegrationToolkit.ProductivityPack, Version=1.0.2019.0, Culture=neutral, PublicKeyToken=705df8e0751bcea7">2</property>
+                      typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone">2</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the text encoding to use when reading the document."
@@ -11338,13 +11340,13 @@ WHERE UDF_CUSTOMER_TYPE = 'OO' and SO_SalesOrderHeader.SalesOrderNo = SO_SalesOr
                       description="Specifies the SQL statement that generates the lookup table."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.String"
                       description="Specifies a SQL statement that uses parameters to generate the lookup table."
                       expressionType="Notify"
                       name="SqlCommandParam"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from () [refTable]
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from () [refTable]
 where [refTable].[ItemCode] = ? and [refTable].[convCustomerPONumber] = ?</property>
                     <property
                       dataType="System.Int32"
@@ -11381,7 +11383,7 @@ where [refTable].[ItemCode] = ? and [refTable].[convCustomerPONumber] = ?</prope
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\1237:invalid};#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\1238:invalid};</property>
+                      name="ParameterMap">#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\900:invalid};#{Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace\901:invalid};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -11497,13 +11499,13 @@ where [refTable].[ItemCode] = ? and [refTable].[convCustomerPONumber] = ?</prope
                       description="Specifies the SQL statement that generates the lookup table."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[tblLines]</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[tblLines]</property>
                     <property
                       dataType="System.String"
                       description="Specifies a SQL statement that uses parameters to generate the lookup table."
                       expressionType="Notify"
                       name="SqlCommandParam"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[tblLines]) [refTable]
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[tblLines]) [refTable]
 where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property>
                     <property
                       dataType="System.Int32"
@@ -11816,7 +11818,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE tblLines SET  [Tries?] = [Tries?] + 1, Imported = 'Y' where SquareOrderNumber = ? and Imported = 'N' and itemCode = ?;
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE tblLines SET  [Tries?] = [Tries?] + 1, Imported = 'Y' where SquareOrderNumber = ? and Imported = 'N' and itemCode = ?;
 </property>
                     <property
                       dataType="System.Int32"
@@ -11933,7 +11935,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE tblLines SET  [Tries?] = [Tries?] + 1  where SquareOrderNumber = ? and Imported = 'N' and itemCode = ?;
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE tblLines SET  [Tries?] = [Tries?] + 1  where SquareOrderNumber = ? and Imported = 'N' and itemCode = ?;
 </property>
                     <property
                       dataType="System.Int32"
@@ -12177,7 +12179,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                       description="Specifies the timzone to convert DateTimes to"
                       expressionType="Notify"
                       name="OutputTimezone"
-                      typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone, KingswaySoft.IntegrationToolkit.ProductivityPack, Version=1.0.2019.0, Culture=neutral, PublicKeyToken=705df8e0751bcea7">2</property>
+                      typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone">2</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the text encoding to use when reading the document."
@@ -13373,7 +13375,7 @@ where [refTable].[ItemCode] = ? and [refTable].[SquareOrderNumber] = ?</property
                   contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
                   description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
                   name="Update CC Authorization"
-                  version="11">
+                  version="12">
                   <properties>
                     <property
                       dataType="System.String"
@@ -13838,7 +13840,7 @@ public class Variables
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SC_092616e832b34238836e0c991a93c985</RootNamespace>
     <AssemblyName>SC_092616e832b34238836e0c991a93c985</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
     <TargetFrameworkProfile></TargetFrameworkProfile>
@@ -13867,10 +13869,10 @@ public class Variables
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.TxScript, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
     <Compile Include="main.cs" />
     <Compile Include="BufferWrapper.cs" />
     <Compile Include="ComponentWrapper.cs" />
@@ -13906,7 +13908,7 @@ public class Variables
         <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
         <Host Name="ScriptComponent" GeneratedNamespace="SC_092616e832b34238836e0c991a93c985" IconIndex="0"></Host>
         <ProjectClient>
-          <HostIdentifier>SSIS_SC140</HostIdentifier>
+          <HostIdentifier>SSIS_SC150</HostIdentifier>
         </ProjectClient>
       </FlavorProperties>
     </VisualStudio>
@@ -13923,7 +13925,7 @@ public class Variables
     <msb:CodeName>SC_092616e832b34238836e0c991a93c985</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_092616e832b34238836e0c991a93c985</msb:DisplayName>
-    <msb:ProjectId>{D75CEE7A-BE3D-443C-909A-F55880899798}</msb:ProjectId>
+    <msb:ProjectId>{B750F8BE-FA60-4339-8A1C-8287BB04DF50}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_092616e832b34238836e0c991a93c985.csproj" />
@@ -14069,7 +14071,7 @@ namespace SC_092616e832b34238836e0c991a93c985.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAKVCxl8AAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAA6jYA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAI6EQGIAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAA6jYA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAJg2AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -14114,9 +14116,9 @@ AS4AEwBHAS4AGwBmAS4AIwBvAS4AKwCYAS4AMwCYAS4AOwCYAS4AQwBvAS4ASwCeAS4AUwCYAS4A
 WwC1AUMAYwD/AakAcwBmAckAcwBmAeMAawD/AUEBewD/ASAAAwABAAUAAwAGAAQABwAFAAgABwAA
 AC0BIgEAAFoEJgEAAPYAKgEAANkAIgEAACYGLwEAAPcBNAEAAAgIOQECAAcAAwACAAgABQACABAA
 BwACABIACQACABQACwACABUADQABABYADQACABcADwAEgAAAAQAAAAAAAAAAAAAAAACoAAAABAAA
-AAAAAAAAAAAAtAAgAQAAAAAOAAAAAAAAAAAAAAC9AFQIAAAAAA4AAAAAAAAAAAAAAL0AmgUAAAAA
-BAAAAAAAAAAAAAAAtAD+AAAAAAAOAAAAAAAAAAAAAAC9AHEIAAAAAAQAAAAAAAAAAAAAALQAgAQA
-AAAADgAAAAAAAAAAAAAAvQC9BQAAAAAAAAAAAQAAAAMHAAAAAAAAAElEVFNDb21wb25lbnRNZXRh
+AAAAAAAAAAAAtAAgAQAAAAAPAAAAAAAAAAAAAAC9AFQIAAAAAA8AAAAAAAAAAAAAAL0AmgUAAAAA
+BAAAAAAAAAAAAAAAtAD+AAAAAAAPAAAAAAAAAAAAAAC9AHEIAAAAAAQAAAAAAAAAAAAAALQAgAQA
+AAAADwAAAAAAAAAAAAAAvQC9BQAAAAAAAAAAAQAAAAMHAAAAAAAAAElEVFNDb21wb25lbnRNZXRh
 RGF0YTEwMABJRFRTVmFyaWFibGUxMDAASURUU1J1bnRpbWVDb25uZWN0aW9uQ29sbGVjdGlvbjEw
 MABJRFRTUnVudGltZUNvbm5lY3Rpb24xMDAASURUU0Nvbm5lY3Rpb25NYW5hZ2VyMTAwAElEVFNW
 YXJpYWJsZXMxMDAASURUU0V2YWx1YXRvckNvbnRleHQxMDAAU0NfMDkyNjE2ZTgzMmIzNDIzODgz
@@ -14164,8 +14166,8 @@ YQB5AG0AZQBuAHQASQBEACAAVwBoAGUAcgBlACAASQBEACAAPQAgAEAASQBEAAArQABUAHIAYQBu
 AHMAYQBjAHQAaQBvAG4AUABhAHkAbQBlAG4AdABJAEQAAAdAAEkARAAAD0kAbgBwAHUAdAAgADAA
 AA9jAG8AbgBuAEUAQwBTAAAhdgBhAHIAUwBxAHUAYQByAGUATwByAGQAZQByAEkARAAAcVMAQwBf
 ADAAOQAyADYAMQA2AGUAOAAzADIAYgAzADQAMgAzADgAOAAzADYAZQAwAGMAOQA5ADEAYQA5ADMA
-YwA5ADgANQAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAVgCcpIJ7
-9UO4ZS4zPkk5hQAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERbQQgARwcBAcBEkkGIAIBDhI9BCAA
+YwA5ADgANQAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAA2ahwSuS8
+a0C9dGB/c3p4NgAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERbQQgARwcBAcBEkkGIAIBDhI9BCAA
 En0HIAISgIEOHAMgAAgJIAMBElUdCBJZAwYSVQMGHQgEIAEOCAQgAQIIAyAAAgcgAgIOEYCNBSAB
 HQgIBSAAEoCRBSAAEoCVBiABEoCZDgQgABI5BSAAEoCdBiABEoChHAUAABKApQYgARwSgKkIAAES
 gK0RgLEFIAASgLUHIAIBDhKAtQi3elxWGTTgiQiJhF3NgIDMkQMGEjkDBhI9AwYSQQMGEhQDBhIY
@@ -14173,8 +14175,8 @@ AwYSXQMGEmUDBhJpAwYSIAQgAQEcBSABARIMAyAADgkgBAEIDhJVElkFIAEBEl0EAAASZQQAABJp
 BQABARJpBAAAEiADAAABAygADgMoAAIEKAASOQQIABJlBAgAEmkECAASIAgBAAgAAAAAAB4BAAEA
 VAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfMDkyNjE2ZTgzMmIzNDIz
 ODgzNmUwYzk5MWE5M2M5ODUAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMAAASQEAGi5ORVRG
-cmFtZXdvcmssVmVyc2lvbj12NC41AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1l
-d29yayA0LjUEAQAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJl
+cmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1l
+d29yayA0LjcEAQAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJl
 YWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNL
 ZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNl
 U2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAADANgAAAAAAAAAAAADaNgAAACAAAAAAAAAAAAAAAAAA
@@ -14342,7 +14344,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       description="Specifies the timzone to convert DateTimes to"
                       expressionType="Notify"
                       name="OutputTimezone"
-                      typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone, KingswaySoft.IntegrationToolkit.ProductivityPack, Version=1.0.2019.0, Culture=neutral, PublicKeyToken=705df8e0751bcea7">2</property>
+                      typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone">2</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the text encoding to use when reading the document."
@@ -15745,7 +15747,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
                   description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
                   name="Update tblOrders"
-                  version="11">
+                  version="12">
                   <properties>
                     <property
                       dataType="System.String"
@@ -15756,92 +15758,38 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       <arrayElements
                         arrayElementCount="30">
                         <arrayElement
-                          dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                          dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[UTF8]]></arrayElement>
                         <arrayElement
-                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
-*  Microsoft SQL Server Integration Services component wrapper
-*  This module defines the base class for your component
-*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+                          dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
 
-using System;
-using System.Data;
-using Microsoft.SqlServer.Dts.Pipeline;
-using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
-using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_6881f796e12d485ca9aa88d95a8cec7e")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_6881f796e12d485ca9aa88d95a8cec7e")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-public class UserComponent: ScriptComponent
-{
-    public Connections Connections;
-    public Variables Variables;
-    public UserComponent()
-    {
-        Connections = new Connections(this);
-        Variables = new Variables(this);
-    }
-
-    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
-    {
-
-        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
-        {
-            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
-        }
-
-    }
-
-    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
-    {
-        while (Buffer.NextRow())
-        {
-            Input0_ProcessInputRow(Buffer);
-        }
-    }
-
-    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
-    {
-    }
-
-}
-
-public class Connections
-{
-    ScriptComponent ParentComponent;
-
-    public Connections(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-    public IDTSConnectionManager100 connECS
-    {
-        get
-        {
-            return ParentComponent.ComponentMetaData.RuntimeConnectionCollection.GetRuntimeConnectionByName(@"connECS").ConnectionManager;
-        }
-    }
-
-}
-
-public class Variables
-{
-    ScriptComponent ParentComponent;
-
-    public Variables(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-    public String varSquareOrderID
-    {
-        get
-        {
-            return (String)(ParentComponent.ReadOnlyVariables["varSquareOrderID"].GetValueWithContext(ScriptComponent.EvaluatorContext));
-        }
-    }
-
-}
+[assembly: AssemblyVersion("1.0.0.0")]
 ]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
@@ -16159,36 +16107,91 @@ public class Input0Buffer: ScriptBuffer
 }
 ]]></arrayElement>
                         <arrayElement
-                          dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                          dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[UTF8]]></arrayElement>
                         <arrayElement
-                          dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_6881f796e12d485ca9aa88d95a8cec7e.Properties.Settings.get_Default():SC_6881f796e12d485ca9aa88d95a8cec7e.Properties.Sett" +
-    "ings")]
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
 
-namespace SC_6881f796e12d485ca9aa88d95a8cec7e.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
         }
     }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+    public IDTSConnectionManager100 connECS
+    {
+        get
+        {
+            return ParentComponent.ComponentMetaData.RuntimeConnectionCollection.GetRuntimeConnectionByName(@"connECS").ConnectionManager;
+        }
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+    public String varSquareOrderID
+    {
+        get
+        {
+            return (String)(ParentComponent.ReadOnlyVariables["varSquareOrderID"].GetValueWithContext(ScriptComponent.EvaluatorContext));
+        }
+    }
+
 }
 ]]></arrayElement>
                         <arrayElement
@@ -16209,7 +16212,7 @@ namespace SC_6881f796e12d485ca9aa88d95a8cec7e.Properties {
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SC_6881f796e12d485ca9aa88d95a8cec7e</RootNamespace>
     <AssemblyName>SC_6881f796e12d485ca9aa88d95a8cec7e</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
     <TargetFrameworkProfile></TargetFrameworkProfile>
@@ -16238,10 +16241,10 @@ namespace SC_6881f796e12d485ca9aa88d95a8cec7e.Properties {
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.TxScript, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
     <Compile Include="main.cs" />
     <Compile Include="BufferWrapper.cs" />
     <Compile Include="ComponentWrapper.cs" />
@@ -16277,7 +16280,7 @@ namespace SC_6881f796e12d485ca9aa88d95a8cec7e.Properties {
         <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
         <Host Name="ScriptComponent" GeneratedNamespace="SC_6881f796e12d485ca9aa88d95a8cec7e" IconIndex="0"></Host>
         <ProjectClient>
-          <HostIdentifier>SSIS_SC140</HostIdentifier>
+          <HostIdentifier>SSIS_SC150</HostIdentifier>
         </ProjectClient>
       </FlavorProperties>
     </VisualStudio>
@@ -16294,7 +16297,7 @@ namespace SC_6881f796e12d485ca9aa88d95a8cec7e.Properties {
     <msb:CodeName>SC_6881f796e12d485ca9aa88d95a8cec7e</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_6881f796e12d485ca9aa88d95a8cec7e</msb:DisplayName>
-    <msb:ProjectId>{BE5AD774-2F3A-416C-BF21-5D1F5B43FE23}</msb:ProjectId>
+    <msb:ProjectId>{53A41578-E91D-4C88-B981-AA3B567B7A2F}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_6881f796e12d485ca9aa88d95a8cec7e.csproj" />
@@ -16309,38 +16312,37 @@ namespace SC_6881f796e12d485ca9aa88d95a8cec7e.Properties {
   </msb:ItemGroup>
 </c:Project>]]></arrayElement>
                         <arrayElement
-                          dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                          dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[UTF8]]></arrayElement>
                         <arrayElement
-                          dataType="System.String"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                          dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("SC_6881f796e12d485ca9aa88d95a8cec7e")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SC_6881f796e12d485ca9aa88d95a8cec7e")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_6881f796e12d485ca9aa88d95a8cec7e.Properties.Settings.get_Default():SC_6881f796e12d485ca9aa88d95a8cec7e.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.0.0")]
+namespace SC_6881f796e12d485ca9aa88d95a8cec7e.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
 ]]></arrayElement>
                         <arrayElement
                           dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
@@ -16441,7 +16443,7 @@ namespace SC_6881f796e12d485ca9aa88d95a8cec7e.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAGtBxl8AAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAAojYA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJCEQGIAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAAojYA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAFA2AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -16486,9 +16488,9 @@ AS4AEwBHAS4AGwBmAS4AIwBvAS4AKwCYAS4AMwCYAS4AOwCYAS4AQwBvAS4ASwCeAS4AUwCYAS4A
 WwC1AUMAYwD/AakAcwBmAckAcwBmAeMAawD/AUEBewD/ASAAAwABAAUAAwAGAAQABwAFAAgABwAA
 AKwAIgEAAEsEJgEAAN0AKgEAAMAAIgEAAAgGLwEAAOgBNAEAAOoHOQECAAcAAwACAAgABQACABAA
 BwACABIACQACABQACwACABUADQABABYADQACABcADwAEgAAAAQAAAAAAAAAAAAAAAAAlAQAABAAA
-AAAAAAAAAAAAtAAHAQAAAAAOAAAAAAAAAAAAAAC9ADYIAAAAAA4AAAAAAAAAAAAAAL0AfAUAAAAA
-BAAAAAAAAAAAAAAAtADlAAAAAAAOAAAAAAAAAAAAAAC9AFMIAAAAAAQAAAAAAAAAAAAAALQAYgQA
-AAAADgAAAAAAAAAAAAAAvQCfBQAAAAAAAAAAAQAAAOUGAAAAAAAAAElEVFNDb21wb25lbnRNZXRh
+AAAAAAAAAAAAtAAHAQAAAAAPAAAAAAAAAAAAAAC9ADYIAAAAAA8AAAAAAAAAAAAAAL0AfAUAAAAA
+BAAAAAAAAAAAAAAAtADlAAAAAAAPAAAAAAAAAAAAAAC9AFMIAAAAAAQAAAAAAAAAAAAAALQAYgQA
+AAAADwAAAAAAAAAAAAAAvQCfBQAAAAAAAAAAAQAAAOUGAAAAAAAAAElEVFNDb21wb25lbnRNZXRh
 RGF0YTEwMABJRFRTVmFyaWFibGUxMDAASURUU1J1bnRpbWVDb25uZWN0aW9uQ29sbGVjdGlvbjEw
 MABJRFRTUnVudGltZUNvbm5lY3Rpb24xMDAASURUU0Nvbm5lY3Rpb25NYW5hZ2VyMTAwAElEVFNW
 YXJpYWJsZXMxMDAASURUU0V2YWx1YXRvckNvbnRleHQxMDAAZ2V0X3ZhbHVlNAA8TW9kdWxlPgBn
@@ -16535,7 +16537,7 @@ AEEAbQBvAHUAbgB0ACAAVwBoAGUAcgBlACAASQBEACAAPQAgAEAASQBEAAAdQABQAGEAeQBtAGUA
 bgB0AEEAbQBvAHUAbgB0AAAHQABJAEQAAA9JAG4AcAB1AHQAIAAwAAAPYwBvAG4AbgBFAEMAUwAA
 IXYAYQByAFMAcQB1AGEAcgBlAE8AcgBkAGUAcgBJAEQAAHFTAEMAXwA2ADgAOAAxAGYANwA5ADYA
 ZQAxADIAZAA0ADgANQBjAGEAOQBhAGEAOAA4AGQAOQA1AGEAOABjAGUAYwA3AGUALgBQAHIAbwBw
-AGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAA1LCwPPO4GUmK9j0MwMsMbAAEIAEB
+AGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAzH+dKzzxRES9/7DJvyn53wAEIAEB
 CAMgAAEFIAEBEREEIAEBDgUgAQERbQQgARwcBAcBEkkGIAIBDhI9BCAAEn0HIAISgIEOHAMgAAgJ
 IAMBElUdCBJZAwYSVQMGHQgEIAEOCAQgAQIIAyAAAgcgAgIOEYCNBSABHQgIBSAAEoCRBSAAEoCV
 BiABEoCZDgQgABI5BSAAEoCdBiABEoChHAUAABKApQYgARwSgKkIAAESgK0RgLEFIAASgLUHIAIB
@@ -16544,7 +16546,7 @@ IAQgAQEcBSABARIMAyAADgkgBAEIDhJVElkFIAEBEl0EAAASZQQAABJpBQABARJpBAAAEiADAAAB
 AygADgMoAAIEKAASOQQIABJlBAgAEmkECAASIAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2Vw
 dGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfNjg4MWY3OTZlMTJkNDg1Y2E5YWE4OGQ5NWE4Y2Vj
 N2UAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMAAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lv
-bj12NC41AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjUEAQAAALQA
+bj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAALQA
 AADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIs
 IFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1
 NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAA
@@ -17041,7 +17043,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   description="Specifies the timzone to convert DateTimes to"
                   expressionType="Notify"
                   name="OutputTimezone"
-                  typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone, KingswaySoft.IntegrationToolkit.ProductivityPack, Version=1.0.2019.0, Culture=neutral, PublicKeyToken=705df8e0751bcea7">2</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the text encoding to use when reading the document."
@@ -18973,13 +18975,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from () [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from () [refTable]
 where [refTable].[SalesOrderNo] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -19143,7 +19145,7 @@ where [refTable].[SalesOrderNo] = ?</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -19630,7 +19632,7 @@ where [refTable].[SalesOrderNo] = ?</property>
                   description="Specifies the timzone to convert DateTimes to"
                   expressionType="Notify"
                   name="OutputTimezone"
-                  typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone, KingswaySoft.IntegrationToolkit.ProductivityPack, Version=1.0.2019.0, Culture=neutral, PublicKeyToken=705df8e0751bcea7">2</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.ProductivityPack.TimeZone">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the text encoding to use when reading the document."
@@ -20947,13 +20949,13 @@ where [refTable].[SalesOrderNo] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from () [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from () [refTable]
 where [refTable].[_ParentKeyField] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -20990,7 +20992,7 @@ where [refTable].[_ParentKeyField] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Stage Orders in Sql Database ECSSquareSpace\1239:invalid};</property>
+                  name="ParameterMap">#{Package\Stage Orders in Sql Database ECSSquareSpace\902:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -21106,13 +21108,13 @@ where [refTable].[_ParentKeyField] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from () [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from () [refTable]
 where [refTable].[salesOrderId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -21369,14 +21371,14 @@ where [refTable].[salesOrderId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT  RTRIM(LTRIM(SquareOrderNumber)) as SquareOrderNumber
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT  RTRIM(LTRIM(SquareOrderNumber)) as SquareOrderNumber
  FROM tblOutletOrders</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (SELECT  RTRIM(LTRIM(SquareOrderNumber)) as SquareOrderNumber
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT  RTRIM(LTRIM(SquareOrderNumber)) as SquareOrderNumber
  FROM tblOutletOrders) [refTable]
 where [refTable].[SquareOrderNumber] = ?</property>
                 <property
@@ -21665,7 +21667,7 @@ where [refTable].[SquareOrderNumber] = ?</property>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE tblOutletOrders SET SageOrderNumber = ?, PaymentDocumentID = ?
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE tblOutletOrders SET SageOrderNumber = ?, PaymentDocumentID = ?
 WHERE SquareOrderNumber = ? </property>
                 <property
                   dataType="System.Int32"
@@ -21972,7 +21974,7 @@ WHERE SquareOrderNumber = ? </property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT q1.SquareOrderNumber, TotalLines, ISNULL(Imported,0) NotImported
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT q1.SquareOrderNumber, TotalLines, ISNULL(Imported,0) NotImported
 FROM
 (
 SELECT O.SquareOrderNumber, count(L.SquareOrderNumber) TotalLInes
@@ -22121,7 +22123,7 @@ GROUP BY O.SquareOrderNumber
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE tblOutletOrders SET Imported = 'Y', ImportedOn = getdate()
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE tblOutletOrders SET Imported = 'Y', ImportedOn = getdate()
 WHERE SquareOrderNumber = ? </property>
                 <property
                   dataType="System.Int32"
@@ -22313,46 +22315,46 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="239.333333333334,41.3333333333334"
+          Size="235.2,41.6"
           Id="Package\DFT Cache Orders with No Import"
           TopLeft="432.250001508743,202.40705983115" />
         <NodeLayout
-          Size="232.666666666667,41.3333333333334"
+          Size="232.8,41.6"
           Id="Package\DFT Cache Orders WO Payment"
           TopLeft="1193,228.666667430765" />
         <NodeLayout
-          Size="220,41.3333333333334"
+          Size="220,41.6"
           Id="Package\DFT Get Order Header Sage"
           TopLeft="173.611111111111,50.8214289150427" />
         <NodeLayout
-          Size="209.333333333334,41.3333333333334"
+          Size="209.6,41.6"
           Id="Package\DFT Get Order Lines Sage"
           TopLeft="434.642857142856,51.2420641785227" />
         <NodeLayout
-          Size="280.666666666667,41.3333333333334"
+          Size="280.8,41.6"
           Id="Package\Execute Batch File that start VI Job in Sage"
           TopLeft="861.611111111112,448.972224110939" />
         <NodeLayout
-          Size="204.666666666667,41.3333333333334"
+          Size="204.8,41.6"
           Id="Package\GetShipTypes and Cache"
           TopLeft="687.968253968254,50.8769852131728" />
         <NodeLayout
-          Size="333.333333333334,42.6666666666667"
+          Size="333.6,42.4"
           Id="Package\Loop through tblOrders - Flagged as not imported\Stage Order Lines in Sql Database ECSSquareSpace"
           TopLeft="12.142857142857,10.4464286163982" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="350.666666666667,108"
-          Size="350.666666666667,150.666666666667"
+          PanelSize="350.4,107.2"
+          Size="350.4,150.4"
           Id="Package\Loop through tblOrders - Flagged as not imported"
-          TopLeft="767.611111111111,180.640875132518" />
+          TopLeft="770.11111101177,158.97420829366" />
         <NodeLayout
-          Size="187.333333333334,41.3333333333334"
+          Size="187.2,41.6"
           Id="Package\Loop Through tblOrdersWOPayments\Apply CC Authorization"
           TopLeft="45,82.9166670594782" />
         <NodeLayout
-          Size="223.333333333334,41.3333333333334"
+          Size="223.2,41.6"
           Id="Package\Loop Through tblOrdersWOPayments\DFT Apply Payment to Staging"
           TopLeft="31.357142857143,6.91666693033449" />
         <EdgeLayout
@@ -22380,20 +22382,20 @@ WHERE SquareOrderNumber = ? </property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="279.333333333334,180.666666666667"
-          Size="279.333333333334,223.333333333334"
+          PanelSize="279.2,180.8"
+          Size="279.2,223.2"
           Id="Package\Loop Through tblOrdersWOPayments"
           TopLeft="115.5,368.041667406551" />
         <NodeLayout
-          Size="280.666666666667,41.3333333333334"
+          Size="280.8,41.6"
           Id="Package\Retrieve Payment Transaction from Square"
           TopLeft="959.285714285714,48.005952532773" />
         <NodeLayout
-          Size="305.333333333334,41.3333333333334"
+          Size="305.6,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace"
           TopLeft="58.6746031746029,200.49206422695" />
         <NodeLayout
-          Size="297.333333333334,41.3333333333334"
+          Size="297.6,41.6"
           Id="Package\Update Order Headers will all Lines Imported"
           TopLeft="475.333333333333,454.125001423267" />
         <EdgeLayout
@@ -22486,18 +22488,18 @@ WHERE SquareOrderNumber = ? </property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="364.674603174603,222.44956202905">
+          TopLeft="364.274603174603,222.24956202905">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="67.5753983341401,0"
+              EndConnector="67.9753983341401,0"
               Start="0,0"
-              End="60.0753983341401,0">
+              End="60.4753983341401,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="60.0753983341401,0" />
+                    End="60.4753983341401,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22508,30 +22510,30 @@ WHERE SquareOrderNumber = ? </property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="671.750001508743,223.40705983115">
+          TopLeft="667.450001508743,223.20705983115">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="95.8611096023679,32.483815301368"
+              EndConnector="102.661109503027,10.9671484625102"
               Start="0,0"
-              End="88.3611096023679,32.483815301368">
+              End="95.1611095030266,10.9671484625102">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="43.930554801184,0" />
+                    End="47.3305547515133,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="43.930554801184,0"
-                    Point2="47.930554801184,0"
-                    Point3="47.930554801184,4" />
+                    Point1="47.3305547515133,0"
+                    Point2="51.3305547515133,0"
+                    Point3="51.3305547515133,4" />
                   <mssgle:LineSegment
-                    End="47.930554801184,28.483815301368" />
+                    End="51.3305547515133,6.96714846251015" />
                   <mssgle:CubicBezierSegment
-                    Point1="47.930554801184,28.483815301368"
-                    Point2="47.930554801184,32.483815301368"
-                    Point3="51.930554801184,32.483815301368" />
+                    Point1="51.3305547515133,6.96714846251015"
+                    Point2="51.3305547515133,10.9671484625102"
+                    Point3="55.3305547515133,10.9671484625102" />
                   <mssgle:LineSegment
-                    End="88.3611096023679,32.483815301368" />
+                    End="95.1611095030266,10.9671484625102" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22542,18 +22544,30 @@ WHERE SquareOrderNumber = ? </property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="1107.11111111111,252.778771281641">
+          TopLeft="1120.51111101177,234.17420829366">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="85.8888888888891,0"
+              EndConnector="72.4888889882304,15.2924591371048"
               Start="0,0"
-              End="78.3888888888891,0">
+              End="64.9888889882304,15.2924591371048">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="78.3888888888891,0" />
+                    End="32.2444444941152,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.2444444941152,0"
+                    Point2="36.2444444941152,0"
+                    Point3="36.2444444941152,4" />
+                  <mssgle:LineSegment
+                    End="36.2444444941152,11.2924591371048" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.2444444941152,11.2924591371048"
+                    Point2="36.2444444941152,15.2924591371048"
+                    Point3="40.2444444941152,15.2924591371048" />
+                  <mssgle:LineSegment
+                    End="64.9888889882304,15.2924591371048" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22661,11 +22675,11 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="186.666666666667,42"
+          Size="186.4,41.6"
           Id="Package\DFT Cache Orders with No Import\Recordset Destination"
           TopLeft="520,273" />
         <NodeLayout
-          Size="193.333333333334,42"
+          Size="193.6,41.6"
           Id="Package\DFT Cache Orders with No Import\Retrieve Order Numbers"
           TopLeft="521,35" />
         <EdgeLayout
@@ -22767,13 +22781,51 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
-          Id="Package\DFT Get Order Header Sage\Data Conversion"
-          TopLeft="508,140" />
-        <NodeLayout
-          Size="285.333333333334,42"
+          Size="285.6,41.6"
           Id="Package\DFT Get Order Header Sage\Sage 100 SO_SalesOrderHeader with OO"
           TopLeft="506,27" />
+        <NodeLayout
+          Size="203.2,41.6"
+          Id="Package\DFT Get Order Header Sage\Cache Sales Order Header"
+          TopLeft="513.749992344529,248.368425727551" />
+        <NodeLayout
+          Size="158.4,42.4"
+          Id="Package\DFT Get Order Header Sage\Data Conversion"
+          TopLeft="508,140" />
+        <EdgeLayout
+          Id="Package\DFT Get Order Header Sage.Paths[Data Conversion Output]"
+          TopLeft="587.2,182.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="28.149992344529,65.968425727551"
+              Start="0,0"
+              End="28.149992344529,58.468425727551">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.9842128637755" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.9842128637755"
+                    Point2="0,32.9842128637755"
+                    Point3="4,32.9842128637755" />
+                  <mssgle:LineSegment
+                    End="24.149992344529,32.9842128637755" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.149992344529,32.9842128637755"
+                    Point2="28.149992344529,32.9842128637755"
+                    Point3="28.149992344529,36.9842128637755" />
+                  <mssgle:LineSegment
+                    End="28.149992344529,58.468425727551" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT Get Order Header Sage.Paths[ADO NET Source Output]"
           TopLeft="648.666666666667,69">
@@ -22808,32 +22860,6 @@ WHERE SquareOrderNumber = ? </property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.333333333334,42.6666666666667"
-          Id="Package\DFT Get Order Header Sage\Cache Transform"
-          TopLeft="513.749992344529,248.368425727551" />
-        <EdgeLayout
-          Id="Package\DFT Get Order Header Sage.Paths[Data Conversion Output]"
-          TopLeft="590.874996172264,182.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65.7017590608845"
-              Start="0,0"
-              End="0,58.2017590608845">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.2017590608845" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -22843,31 +22869,31 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="277.333333333334,42"
+          Size="277.6,41.6"
           Id="Package\DFT Get Order Lines Sage\Get Sage SO_SalesOrderDetail with OO"
           TopLeft="195,44" />
         <NodeLayout
-          Size="164,42"
-          Id="Package\DFT Get Order Lines Sage\Cache Line Items"
+          Size="165.6,41.6"
+          Id="Package\DFT Get Order Lines Sage\Cache Order Lines"
           TopLeft="257,282" />
         <NodeLayout
-          Size="256,42"
+          Size="256,41.6"
           Id="Package\DFT Get Order Lines Sage\Convert CustomerPO and ItemCode"
           TopLeft="214,155" />
         <EdgeLayout
           Id="Package\DFT Get Order Lines Sage.Paths[Data Conversion Output]"
-          TopLeft="340.5,197">
+          TopLeft="340.9,196.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,85"
+              EndConnector="0,85.4"
               Start="0,0"
-              End="0,77.5">
+              End="0,77.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,77.5" />
+                    End="0,77.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22919,11 +22945,11 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="146,42"
+          Size="145.6,41.6"
           Id="Package\GetShipTypes and Cache\JSON Source"
           TopLeft="74,47" />
         <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\GetShipTypes and Cache\CacheShipType"
           TopLeft="60,170" />
         <EdgeLayout
@@ -23477,11 +23503,11 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="182.666666666667,42"
+          Size="182.4,41.6"
           Id="Package\Retrieve Payment Transaction from Square\Retrieve Payment Info"
           TopLeft="1152,27" />
         <NodeLayout
-          Size="182.666666666667,42"
+          Size="182.4,41.6"
           Id="Package\Retrieve Payment Transaction from Square\Cache Payment Table"
           TopLeft="1146,235" />
         <EdgeLayout
@@ -23517,51 +23543,51 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="162,42"
+          Size="161.6,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Header In Sage?"
           TopLeft="849,288" />
         <NodeLayout
-          Size="170.666666666667,42"
+          Size="170.4,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Lookup Payment ID"
           TopLeft="544,230.791666669357" />
         <NodeLayout
-          Size="224,42"
+          Size="224,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Convert AddressLines to String"
           TopLeft="164.333333333333,578" />
         <NodeLayout
-          Size="224.666666666667,42"
+          Size="224.8,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Orders Created in Last 30 days"
           TopLeft="518.5,137.58333264995" />
         <NodeLayout
-          Size="145.333333333334,42"
+          Size="145.6,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\TrimColumns"
           TopLeft="572.222222222222,70.6666667527623" />
         <NodeLayout
-          Size="146,42"
+          Size="145.6,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\JSON Source"
           TopLeft="569.722219080561,8.5263161758307" />
         <NodeLayout
-          Size="207.333333333334,42"
+          Size="207.2,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Import Orders into Stagging"
           TopLeft="179,767.791666669357" />
         <NodeLayout
-          Size="174.666666666667,50.6666666666667"
+          Size="174.4,50.4"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\LkupShipType"
           TopLeft="204.444444444444,349.666666666666" />
         <NodeLayout
-          Size="250,42"
+          Size="249.6,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\convert Order Date and ShipExpire"
           TopLeft="160,670.333333333333" />
         <NodeLayout
-          Size="306.666666666667,42"
+          Size="306.4,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Update Staging Header with Sage Order Number"
           TopLeft="783,464.49999945114" />
         <NodeLayout
-          Size="178,42"
+          Size="177.6,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Apply New Columns"
           TopLeft="164,465.777777777777" />
         <NodeLayout
-          Size="120,42"
+          Size="120,41.6"
           Id="Package\Stage Orders in Sql Database ECSSquareSpace\Staged?"
           TopLeft="564.444444444445,325.333333118094" />
         <EdgeLayout
@@ -23923,7 +23949,7 @@ WHERE SquareOrderNumber = ? </property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -23946,15 +23972,15 @@ WHERE SquareOrderNumber = ? </property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="170.666666666667,42"
+          Size="170.4,41.6"
           Id="Package\Update Order Headers will all Lines Imported\Update Line Fields"
           TopLeft="502,220" />
         <NodeLayout
-          Size="158.666666666667,42"
+          Size="158.4,41.6"
           Id="Package\Update Order Headers will all Lines Imported\Conditional Split"
           TopLeft="509,116" />
         <NodeLayout
-          Size="153.333333333334,42"
+          Size="153.6,41.6"
           Id="Package\Update Order Headers will all Lines Imported\OLE DB Source"
           TopLeft="507,8" />
         <EdgeLayout
